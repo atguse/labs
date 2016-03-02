@@ -1,0 +1,99 @@
+﻿
+    body {
+        background-color: black;
+    }
+
+    @font-face {
+        font-family: 'StarCraft';
+        src: url('Starcraft Normal.ttf');
+    }
+    .page{
+        display:none;
+    }
+    .link{
+        color:gold;
+    }
+    .backvid {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 35%;
+        height: auto;
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        opacity: 0.7;
+        margin-top: -22.5%;
+        margin-bottom: 8%;
+    }
+    .himghistory{
+        margin-left:30%;
+        margin-top:-10%;
+        border:5px solid gold;
+    }
+    .himgphysiology{
+        margin-left:30%;
+        margin-top:-15%;
+        border:5px solid gold;
+    }
+    .himgculture{
+        margin-left:40%;
+        margin-top:-35%;
+        border:5px solid gold;
+    }
+    .himgfactions{
+        margin-left:32%;
+        margin-top:-30%;
+        border:5px solid gold;
+    }
+    .himgtechnology{
+        margin-left:32%;
+        margin-top:-43%;
+        border:5px solid gold;
+    }
+    .himgtrivia{
+        margin-left:60%;
+        margin-top:-85%;
+        border:5px solid gold;
+    }
+    
+    .titlehead {
+        color: gold;
+        text-align: center;
+        position: relative;
+        font-family: 'StarCraft';
+    }
+
+    header {
+        color: gold;
+        font-family: 'StarCraft';
+    }
+    nav{
+        line-height:30px;
+        padding:5px;
+        margin-left:40%;
+        color: gold;
+        font-family: 'StarCraft';
+    }
+    section{
+        color: gold;
+    }
+    .hover_img a { position:relative; }
+    .hover_img a span { position:absolute; display:none; z-index:99; }
+    .hover_img a:hover span { display:block; }
+
+    <!--                                                                          -->
+
+
+    .div1{
+        color:aqua;
+        text-align:center;
+        font-style:italic;
+    }
+
+
+
