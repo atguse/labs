@@ -1,0 +1,38 @@
+*	{ 
+	margin : 10px;
+	padding : 0px; 
+	font-family : "Lucida Console"
+}
+
+div {
+	background-color : #ddf;
+	margin:20px 150px ;
+}
+
+span {
+	background-color : #99f;
+	border : 2px solid #33f;
+	padding : 5px;
+}
+
+
+
+#displayInline {
+	display : inline;
+}
+
+#displayInlineBlock {
+	display : inline-block;
+}
+
+#displayBlock {
+	display : block;
+}
+
+#displayNone {
+	display : none;
+}
+
+#visibilityHidden {
+	visibility : hidden;
+}

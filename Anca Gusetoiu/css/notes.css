@@ -1,0 +1,25 @@
+p {
+	padding-left:40px;
+	background-color:#f6f6f6;
+}
+
+p.example {
+	background-color:#fff;
+}
+
+p img{
+   opacity:0.3;
+   width:40px;
+}
+
+.question img:hover {
+   opacity:1;
+}
+
+.answer img:hover {
+   opacity:1;
+}
+
+.note img:hover {
+   opacity:1;
+}
