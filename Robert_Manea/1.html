@@ -1,6 +1,7 @@
 <html>
 <head>
 <style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 *{margin:0;
 padding:0;}
 .a{background-image:url("http://www.menucool.com/slider/jsImgSlider/images/image-slider-2.jpg");
@@ -38,6 +39,12 @@ padding:0;}
 }
 #im1:hover{opacity:0;}
 #im2:hover{opacity:0.25;}
+#div1{float:right;}
+#tab, #tab th, #tab td{width: 20vw; 
+	 height: 8vh;
+	 padding:1px;
+	 border-collapse:collapse;
+	 border: 5px solid black;}
 </style>
 </head>
 <body>
@@ -51,6 +58,28 @@ padding:0;}
 		<a id="im2" href="https://www.linkedin.com">
 		<img class="imf" src="https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no/photo.jpg" alt="LinkedIn">
 		</a>
+		<div id="div1">
+		<table id="tab">
+		<tr> <th> Nume </th>
+			<th> Prenume </th>
+			<th> Chestii </th>
+			<th> blabla </th>
+		</tr>
+		<tr> <td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr> <td rowspan="2"> 5 </td>
+			<td> 6</td>
+			<td> 7</td>
+			<td> 8</td>
+		</tr>
+		<tr> <td> 9</td>
+			<td colspan="2"> 11</td>
+		</tr>
+		</table>
+		</div>
 	</div>
 </body>
 </html>
