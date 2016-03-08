@@ -1,0 +1,97 @@
+.top{ 
+	background-image:url("https://pmcdeadline2.files.wordpress.com/2013/11/knitting_wool__131101184931.jpg");
+	height: 250px;	
+	vertical-align: baseline;
+	}
+	
+.middle{
+			background-image:url("cat.jpg");
+			background-repeat: no repeat;
+			height: 200px;
+			width: 200px;
+			text-align:center;
+			margin-top: -450px;
+			margin-bottom: 100px;
+			margin-right: 580px;
+			margin-left: 580px;
+			
+		}
+
+.bottom {	background-color:#cce6ff;
+			height: 360px;
+			vertical-align: top;
+			padding: 1px;
+			color: #e67300;
+	
+		}	
+
+h2{
+	
+	position:relative;
+	top:135px;
+	left: 100px;
+}	
+
+ul {
+	position:relative;
+	top:135px;
+	left: 100px;
+	font-size: 20px;
+  }	
+  
+#fb {
+	 height: 20px;
+	 width: 20px;
+	 margin-top: -100px;
+	 margin-bottom: 100px;
+	 margin-right: 580px;
+	 margin-left: 50px;
+	
+
+	
+    }  
+	
+#tweet {
+	    height: 20px;
+		width: 20px;
+		margin-top: -120px;
+		margin-bottom: 100px;
+		margin-right: 580px;
+		margin-left: 150px;
+		
+			
+		}
+		
+#fb:hover	{
+			opacity: 0.4;
+			filter: alpha(opacity=40);
+								
+			}	
+
+#tweet:hover {
+	          opacity: 0.4;
+			  filter: alpha(opacity=40);
+				}			
+
+.tabel { margin-top: -170px;
+	     margin-bottom: 100px;
+	     margin-right: 500px;
+	     margin-left: 800px;
+	     
+			}	
+
+.tabel table, th, td { 
+				border: 1px solid #4881ea;
+				border-width: 2px;
+
+
+				}		
+
+.tabel table {	
+				border-collapse: collapse;
+
+				width: 500px;	
+				height: 300px;				
+
+					}	
+					
