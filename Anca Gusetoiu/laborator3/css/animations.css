@@ -46,7 +46,7 @@ div {
     25%  {left:800px; top:0px;}
     50%  {left:800px; top:300px;}
     75%  {left:0px; top:300px;}
-    100% {left:0px; top:200px;position:relative;}
+    100% {left:0px; top:200px;}
 }
 
 /* Standard syntax */
@@ -55,5 +55,5 @@ div {
     25%  {left:800px; top:0px;}
     50%  {left:800px; top:300px;}
     75%  {left:0px; top:300px;}
-    100% {left:0px; top:200px;position:relative;}
+    100% {left:0px; top:200px;}
 }
