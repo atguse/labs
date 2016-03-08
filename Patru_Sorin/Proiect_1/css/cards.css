@@ -1,0 +1,36 @@
+.pachet {
+        perspective: 700;
+        }
+
+.card {
+      position: relative;
+
+      width: 200px;
+      height: 300px;
+      transition: all 0.6s ease;
+      transform-style: preserve-3d;
+      }
+
+.card:hover {
+            transform: rotateY(180deg);
+            }
+
+.fata {
+      background: green;
+      width: 200px;
+      height: 300px;
+      }
+
+.spate {
+       background: blue;
+       transform: rotateY(180deg);
+       }
+
+.fata .spate {
+             position: absolute;
+             top: 0px;
+             left: 0px;
+             width: 200px;
+             height: 300px;
+             backface-visibility: hidden;
+             }
