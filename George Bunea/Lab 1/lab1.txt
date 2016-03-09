@@ -1,0 +1,21 @@
+tipuri de elemente:
+	inline:
+		<span>...</span>
+	
+	
+	block:
+		<div>...</div>
+		
+		
+1. Un div rosu si un span albastru
+
+2. Comportare - Div ca span si invers
+
+
+!!!Blocul ocupa toata latimea paginii (si a parintelui)
+
+De facut o pagina de prezentare despre noi, gen facebook
+	cu div, stiluri.
+	stil pt elementul div
+	stiluri separate pentru fiecare div
+	-height comun pentru cele 2 parti (cover photo si about)
