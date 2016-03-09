@@ -10,16 +10,18 @@ body {
       }
 
 .titlu {
-       font-size: 50px;
-       padding: 10px;
+
+       margin: 0px 5px 10px 5px;
+       padding-top: 10px
        }
 
 .body {
-      position: relative;
+      position: absolute;
       background-color: white;
       height: 1000px;
       width: 900px;
       margin-left: 200px;
+
       }
 
 .p_meniu {
@@ -57,7 +59,7 @@ body {
 .meniu-content {
                 display: none;
                 position: relative;
-                
+
                 width: 200px;
                 height: 200px
                 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -68,7 +70,7 @@ body {
                    {
                     background-color: #1a75ff;
                     color: white;
-                    padding: 20px 200px 20px 80px;
+                    padding: 20px 80px 20px 80px;
                     text-align: center;
                     text-decoration: none;
                     display: inline-block;
@@ -80,3 +82,11 @@ body {
                 {
                 background-color: #002966;
                 }
+.body p {
+        text-indent: 30px;
+        margin: 5px;
+        }
+
+.body h1 {
+         margin: 5px 5px 10px 5px;
+         }
