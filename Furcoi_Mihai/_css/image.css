@@ -8,19 +8,11 @@
 .image img{
     max-height: 100%;
     max-width: 100%;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px #e3e3e3;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1000px){
     .image{
-        width: 45%;
-        height: 300px;
-    }
-}
-
-@media screen and (max-width: 650px){
-    .image{
-        width: 90%;
-        height: auto;
+        min-width: 250px;
     }
 }
