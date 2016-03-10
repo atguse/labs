@@ -1,5 +1,5 @@
 .pachet {
-        perspective: 700;
+        perspective: 800;
         }
 
 .card {
@@ -17,6 +17,7 @@
 
 .fata {
       background: green;
+
       width: 200px;
       height: 300px;
       }
@@ -24,9 +25,11 @@
 .spate {
        background: blue;
        transform: rotateY(180deg);
+
+
        }
 
-.fata .spate {
+.fata, .spate {
              position: absolute;
              top: 0px;
              left: 0px;
