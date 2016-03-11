@@ -9,6 +9,9 @@ article{
     min-height: 550px;
     box-shadow: 5px 5px 5px #e3e3e3;
     background: white;
+    
+    -webkit-animation-name: fadeUp;
+    -webkit-animation-duration: 1s;
 }
 
 article h3{

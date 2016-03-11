@@ -77,13 +77,18 @@ header{
     
 }
 
-.articole{
+#articole{
     background: white;
     padding-left: 70px;
     height: 350px;
     border: 2px solid #e3e3e3;
     border-radius: 5em;
     box-shadow: 0px 2px 6px #e3e3e3;
+    
+    position: relative;
+    -webkit-animation-name: fadeUp;
+    -webkit-animation-duration: 1s;
+    
     
 }
 
@@ -95,6 +100,11 @@ header{
     border: 1px solid #e3e3e3;
 }
 
+.articol:hover{
+    -webkit-animation-name: rotateLeft;
+    -webkit-animation-duration: 1s;
+}
+
 .articol img{
     border-bottom-right-radius: 1em;
     width: 98%;
@@ -102,7 +112,7 @@ header{
     bottom: 0;
 }
 
-.imagini{
+#imagini{
     margin-top: 30px;
     background: white;
     padding-left: 70px;
@@ -110,6 +120,10 @@ header{
     border: 2px solid #e3e3e3;
     border-radius: 5em;
     box-shadow: 0px 2px 6px #e3e3e3;
+    
+    position: relative;
+    opacity: 0;
+   
 }
 
 .imagine{
@@ -120,7 +134,12 @@ header{
     border: 1px solid #e3e3e3;
 }
 
-.videoclipuri{
+.imagine:hover{
+    -webkit-animation-name: rotateRight;
+    -webkit-animation-duration: 1s;
+}
+
+#videoclipuri{
     margin-top: 30px;
     background: white;
     padding-left: 70px;
@@ -128,6 +147,9 @@ header{
     border: 2px solid #e3e3e3;
     border-radius: 5em;
     box-shadow: 0px 2px 6px #e3e3e3;
+    
+    position: relative;
+    opacity: 0;
 }
 
 .videoclip{
@@ -200,8 +222,18 @@ header{
     background-color: #14bcc8;
 }
 
+.blue:hover{
+    -webkit-animation-name: rotateLeft;
+    -webkit-animation-duration: 1s;
+}
+
 .pink{
     background-color: #ff7e70;
+}
+
+.pink:hover{
+    -webkit-animation-name: rotateRight;
+    -webkit-animation-duration: 1s;
 }
 
 footer{
@@ -218,6 +250,86 @@ footer p{
 #menu{
     display: none;
 }
+
+@-webkit-keyframes rotateRight {
+    0% {
+         
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotateLeft {
+    0% {
+         
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.animateRight {
+    left: -500px;
+    
+    transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s; 
+}
+
+.animateLeft {
+    left: 500px;
+    
+    transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -webkit-transition: 1s ease-in-out;
+    
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    
+    animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s; 
+}
+
+
+#imagini.animateRight {
+    opacity: 1;
+    transform: translateX(500px);
+    -moz-transform:translateX(500px);
+    -webkit-transform: translateX(500px);
+}
+
+#videoclipuri.animateLeft {
+    opacity: 1;
+    transform: translateX(-500px);
+    -moz-transform:translateX(-500px);
+    -webkit-transform: translateX(-500px);
+}
+
 
 @media screen and (max-width: 1000px){
     body{
@@ -236,7 +348,7 @@ footer p{
     .fixedwidth{
         width: 100%;
     }
-    .articole{
+    #articole{
         background-color: white;
         border-style: none;
         padding: 0;
@@ -258,7 +370,7 @@ footer p{
         border-radius: 0;
     }
     
-    .imagini{
+    #imagini{
         background-color: white;
         border-style: none;
         padding: 0;
@@ -274,7 +386,7 @@ footer p{
         border-radius: 0;
     }
     
-    .videoclipuri{
+    #videoclipuri{
         background-color: white;
         border-style: none;
         padding: 0;
