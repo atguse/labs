@@ -1,10 +1,13 @@
 body{
 	background: #e3e3e3;
 	font-family: 'Indie Flower', cursive;
+	-webkit-animation-name: color_change;
+  	-webkit-animation-iteration-count: infinite;  
+  	-webkit-animation-duration: 5s;
 }
 .cover{
 	background-image: url("../img/cover.jpg"); 
-	 min-height: 150px;;
+	 min-height: 150px;
 	 height: 100%;
     background-size:100%;
 	background-repeat: repeat-x;
@@ -38,7 +41,7 @@ body{
 }
 .header ul li{
 	display: inline;
-	padding-right: 15px;
+	margin-right: 25px;
 
 }
 .header ul li a{
@@ -120,6 +123,7 @@ article img{
 }
 #adresa:hover,.atractii:hover,a.atr:hover{
 	color:grey;
+
 }
 
 /* Atractii */
@@ -130,4 +134,56 @@ article .atractii {
 	margin-right: 30px;
 	float: left;
 	width: 40%;
+}
+
+/* Drop down */
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 246px;
+    margin-left: 65px;
+}
+
+.dropdown-content a {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: center;
+}
+/* Cplor change */
+
+@-webkit-keyframes color_change {
+	0% { background-color: #e3e3e3; }
+  	50% { background-color: white; }
+  	100% { background-color: #e3e3e3; }
+}
+
+/* img transformation */
+
+#zoom{
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+#zoom:hover {
+  width: 60%;
 }
