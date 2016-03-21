@@ -73,17 +73,17 @@ td {
 	padding: 0.5vw;
 	border: thin solid #333;
 }
-#content {
+.content {
 	margin-right: 5vw;
 	margin-top: 5vh;
 	float: right;
 }
-#food {
+.food {
 	width: 50vw;
 	height: 50vh;
 	border-radius: 3vw;
 }
-#drink {
+.drink {
 	width: 23vw;
 	height: 50vh;
 	border-radius: 3vw;

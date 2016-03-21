@@ -59,15 +59,6 @@ li.dropdown {
     display: block;
 }
 body {background-color:#D9D9D9;}
-#p1 {
-	width: 90vw;
-	height: 80vh;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	border: thick solid #333;
-	border-radius: 10vw;
-}
 h1 {
 	font-family: serif, Times New Roman, Verdana;
 	font-style: italic;
@@ -99,13 +90,39 @@ iframe {
 #fb{
 	display: contents;
 }
-img {
+img .ca {
 	width: 20vw;
 	height: 20vw;
 	margin-left: 3.5vw;
 	margin-top: 2vw;
 }
+#detalii{
+	display: block;
+	float: left;
+	margin-left: 3vw;
+}
+#formular{
+	display: block;
+	float: right;
+	margin-right: 3vw;
+}
 #sponsori{
+	margin-top: 3vw;
 	background-color: #5A1C1C;
 	border: thick solid;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+}
+#test{
+	margin-right: 3.12vw;
+}
+form {
+	margin-top: 3vw;
+}
+#da {
+	border-radius: 1vw;
+}
+#liv{
+	margin-top: 3vw;
 }
