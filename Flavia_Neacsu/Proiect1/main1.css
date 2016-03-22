@@ -26,6 +26,7 @@ ul{
 	background-color:#746345;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 li{
@@ -53,7 +54,7 @@ li.dropdown{
 	position:absolute;
 	background-color:#f9f9f9;
 	min-width:160px;
-	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -63,6 +64,7 @@ li.dropdown{
 	padding:12px 16px;
 	text-decoration:none;
 	text-align:left;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dropdown-content a:hover{
@@ -83,23 +85,40 @@ li.dropdown{
 	height:500px;
     background-image: url('Photos/concert.jpg');
 	background-size: cover;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main h1{
     color:#fff;
-    font-size:48px;
+    /*font-size:48px;*/
     font-weight:bold;
 	font-family:'Shift',sans-serif;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	margin:1%;
+	animation-name:titlu;
+	animation-duration:4s;
+	animation-fill-mode:forwards;
 }
+
+@keyframes titlu{
+	from {font-size:48px;}
+	to {font-size:60px;}
+	}
 
 .main p{
 	color:#fff;
-	font-size:30px;
+	/*font-size:30px;*/
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	margin:1%;
+	animation-name:paragraf;
+	animation-duration:4s;
+	animation-fill-mode:forwards;
 }
+
+@keyframes paragraf{
+	from {font-size:30px;}
+	to {font-size:42px;}
+	}
 
 .learn-more h3{
     font-family:'Shift',sans-serif;
@@ -123,6 +142,7 @@ a{
 	color:black;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }}
 
 @media screen and (max-width: 629px){
@@ -137,6 +157,7 @@ a{
 	color:black;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }}
 
 .learn-more .container a{
@@ -157,6 +178,7 @@ a{
 	color:black;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mainc h3, .mainl h3, .maina h3, .mainb h3, .mainco h3, .mainluck h3{
@@ -210,27 +232,26 @@ a{
     font-size:20px;
 	font-family:'Shift',sans-serif;
 }
-
+ 
 .maina img{
 	width:200px;
 	height:200px;
-}
-
-.maina a{
-	color:blue;
-	font-size:20px;
-	font-family:'Shift',sans-serif;
-}
-
-.maina a:hover{
-	background-color:white;
-	opacity:0.5;
+	display:block;
 }
 
 .maina audio{
 	background-color:#746345;
 	width:60%;
+	display:block;
 }
+
+.maina ol {
+	float:left;
+}
+
+#par p{
+	float:left;
+	}
 
 
 /* BILETE */
