@@ -4,11 +4,14 @@ article{
     margin: 1%;
     border-radius: 5px;
     padding: 10px 1%;
-    border: 1px solid #999999;
+    border: 1px solid #e3e3e3;
     max-height: 600px;
     min-height: 550px;
-    box-shadow: 5px 5px 5px #888888;
+    box-shadow: 5px 5px 5px #e3e3e3;
     background: white;
+    
+    -webkit-animation-name: fadeUp;
+    -webkit-animation-duration: 1s;
 }
 
 article h3{
@@ -25,9 +28,8 @@ article p{
     
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 1000px){
     article{
-        width:95%;
-            
+        min-width: 250px;
     }
 }

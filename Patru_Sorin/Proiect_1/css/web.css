@@ -3,64 +3,72 @@ body {
      }
 
 .head {
-      position: relative;
-      height: 70px;
+
+      height: 60px;
       background-color: #1a75ff;
-      text-align: center;
+      min-width: 700px;
+
+
       }
 
 .titlu {
-       font-size: 50px;
-       padding: 10px;
+       margin: 0px 5px 10px 0px;
+       padding-top: 10px;
+       text-align: center;
+
        }
 
 .body {
-      position: relative;
+
       background-color: white;
       height: 1000px;
-      width: 900px;
-      margin-left: 200px;
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+      min-width: 300px;
+
       }
 
 .p_meniu {
-        margin-top: -58px;
+         margin: 0px;
          font-size: 50px;
-         padding: 10px;
+         padding: 0px;
          }
 
 .meniu {
-       position: relative;
-       height: 70px;
-       width: 200px;
+       position: absolute;
+
+
+       height: 60px;
+       width: 150px;
        background-color: #0052cc;
-       margin-top: -70px;
        }
 
+
 .meniu:hover {
-              position: relative;
-              height: 70px;
-              width: 200px;
+              margin:0px;
+              position: absolute;
+              height: 60px;
+              width: 150px;
               background-color: #002966;
-              margin-top: -70px;
-
-
               }
 
 .meniu:hover .meniu-content {
-              position: relative;
+
               height: 200px;
-              width: 200px;
-              margin-top: -58px;
+              width: 150px;
               display: block;
+              z-index: 1;
 
              }
 .meniu-content {
                 display: none;
                 position: relative;
-                
-                width: 200px;
-                height: 200px
-                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+                width: 150px;
+                height: 200px;
+
+
                 }
 
 
@@ -68,11 +76,12 @@ body {
                    {
                     background-color: #1a75ff;
                     color: white;
-                    padding: 20px 200px 20px 80px;
-                    text-align: center;
+                    padding: 20px 200px 20px 5px;
+                    max-width: 20px;
                     text-decoration: none;
                     display: inline-block;
-                    with: 1000px
+
+                      margin:0px;
                    }
 
 
@@ -80,3 +89,11 @@ body {
                 {
                 background-color: #002966;
                 }
+.body p {
+        text-indent: 30px;
+        margin: 5px;
+        }
+
+.body h1 {
+         margin: 0px 5px 10px 5px;
+         }

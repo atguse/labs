@@ -1,0 +1,59 @@
+
+span {
+	position:absolute;
+	background-color: #bbf;
+	width:200px;
+	height:200px;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    10%  {left:800px; top:0px;}
+    30%  {left:800px; top:200px;}
+    55%  {left:0px; top:200px;}
+    90% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    10%  {left:800px; top:0px;}
+    30%  {left:800px; top:200px;}
+    55%  {left:0px; top:200px;}
+    90% {left:0px; top:0px;}
+}
+
+
+
+.red {
+	position:absolute;
+	background-color: #fbb;
+	width:200px;
+	height:200px;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example2 {
+    0%   {left:0px; top:0px;}
+    25%  {left:800px; top:0px;}
+    50%  {left:800px; top:300px;}
+    75%  {left:0px; top:300px;}
+    100% {left:0px; top:200px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {left:0px; top:0px;}
+    25%  {left:800px; top:0px;}
+    50%  {left:800px; top:300px;}
+    75%  {left:0px; top:300px;}
+    100% {left:0px; top:200px;}
+}
