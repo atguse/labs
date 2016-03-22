@@ -10,6 +10,7 @@ ul {
     overflow: hidden;
     background-color: #333;
 	border-radius: 10px;
+	box-shadow: 6px 3px olive;
 }
 
 li {
@@ -44,6 +45,7 @@ li.dropdown {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	border-radius: 20px;
+	box-shadow: 4px 4px #5A5A5A;
 }
 
 .dropdown-content a {
@@ -73,6 +75,8 @@ td {
 	padding: 0.5vw;
 	border: thin solid #333;
 }
+tr:nth-child(odd){background-color:#79913E;}
+tr:nth-child(even){background-color:#9F1129;}
 .content {
 	margin-right: 5vw;
 	margin-top: 5vh;

@@ -9,6 +9,7 @@ ul {
     overflow: hidden;
     background-color: #333;
 	border-radius: 10px;
+	box-shadow: 6px 3px olive;
 }
 
 li {
@@ -43,6 +44,7 @@ li.dropdown {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	border-radius: 20px;
+	box-shadow: 4px 4px #5A5A5A;
 }
 
 .dropdown-content a {
@@ -90,7 +92,7 @@ iframe {
 #fb{
 	display: contents;
 }
-img .ca {
+.ca {
 	width: 20vw;
 	height: 20vw;
 	margin-left: 3.5vw;
@@ -115,6 +117,10 @@ img .ca {
 	display: inline-block;
 }
 #test{
+	width: 20vw;
+	height: 20vw;
+	margin-left: 3.5vw;
+	margin-top: 2vw;
 	margin-right: 3.12vw;
 }
 form {
@@ -122,7 +128,17 @@ form {
 }
 #da {
 	border-radius: 1vw;
+	width: 20vw;
+	height: 30vw;
 }
 #liv{
 	margin-top: 3vw;
+}
+.ca:hover{
+	transform: rotate(360deg);
+	transition: all 0.5s ease-in-out;
+}
+#test:hover{
+	transform: rotate(360deg);
+	transition: all 0.5s ease-in-out;
 }
