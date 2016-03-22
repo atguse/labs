@@ -42,7 +42,7 @@
 .dropdown span {
 	background-color: #dbdbfb;
 	min-width:120px;
-	display:inline-block;
+	display:block;
 	padding : 15px;
 }
 
@@ -60,5 +60,8 @@
 @media screen and (max-width: 650px) {
    .dropdown {
     	display : block;
+	}
+	.dropdown span {
+		display:inline-block;
 	}
 }
