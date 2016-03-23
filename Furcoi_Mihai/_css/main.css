@@ -1,7 +1,15 @@
 body{
     margin: 0;
     font-family: Arial,sans-serif;
-    background: #f8f8f8;
+    background: #C1E1A6; 
+
+    /*
+    background: -webkit-linear-gradient(to left, #DAD299 , #B0DAB9);
+    background: linear-gradient(to left, #DAD299 , #B0DAB9); */
+
+    background: -webkit-linear-gradient(to left, #ECE9E6 , #FFFFFF);
+    background: linear-gradient(to left, #ECE9E6 , #FFFFFF);
+          
 }
 
 #container{
@@ -16,20 +24,31 @@ body{
 header{
     padding-top: 0.1px;
     height: 100px;
-    padding-top: px;
     background: #1a202c;
     color: white;
+    border-bottom: 2px dotted white;
+    z-index: 0;
 }
 
 #title{
+    margin:0;
+    line-height: 80px;
+    font-family: 'Indie Flower', cursive;
     text-align: center;
+    font-size: 50px;
+    
+    -webkit-animation-name: changecolor, fadeDown;
+    -webkit-animation-duration: 6s, 1s;
+    -webkit-animation-iteration-count: infinite, 1;
 }
 
 #main_menu{
+    border-top: 2px dotted white;
     position: relative;
     top: -20px;
-    background: #d13f31;
+    background: #C63D0F;
     border-radius: 1em;
+    z-index: 1;
 }
 
 #main_menu ul{
@@ -52,18 +71,27 @@ header{
     text-decoration: none;
     color:white;
     padding: 0 15px;
-    border-right: 1px solid #990000;
+    border-right: 1px solid #7D1935;
 }
 
 #main_menu ul li a:hover{
-    background: #f8f8f8;
+    background: #FCFCFB;
     color: #1a202c;
 }
 
 #main_menu ul li .current_page{
-    background: #f8f8f8;
+    background: #FCFCFB;
     color: #1a202c;
     font-weight: bold;
+}
+
+.signature{
+    line-height: 40px;
+    float: right !important;
+    margin-right: 25px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
 }
 
 .page{
@@ -86,9 +114,6 @@ header{
     box-shadow: 0px 2px 6px #e3e3e3;
     
     position: relative;
-    -webkit-animation-name: fadeUp;
-    -webkit-animation-duration: 1s;
-    
     
 }
 
@@ -100,9 +125,13 @@ header{
     border: 1px solid #e3e3e3;
 }
 
-.articol:hover{
-    -webkit-animation-name: rotateLeft;
-    -webkit-animation-duration: 1s;
+.flip{
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+}
+
+.flip:hover{
+    transform: rotateY(180deg);
 }
 
 .articol img{
@@ -132,11 +161,6 @@ header{
     border-top-left-radius: 1em;
     box-shadow: 0px 2px 6px #e3e3e3;
     border: 1px solid #e3e3e3;
-}
-
-.imagine:hover{
-    -webkit-animation-name: rotateRight;
-    -webkit-animation-duration: 1s;
 }
 
 #videoclipuri{
@@ -183,7 +207,7 @@ header{
 
 .previewtitle{
     margin:0;
-    background-color: #d13f31;
+    background-color: #C63D0F;
     width: 120px;
     height: 35px;
     line-height: 35px;
@@ -202,12 +226,15 @@ header{
 .jump{
     padding: 0;
     margin-top: 0;
+    height: 200px !important;
     text-align: center;
-    line-height: 260px; 
+    line-height: 200px; 
     font-size: 1.1em;
     text-decoration: none;
     color: white;
-    border-radius: 1em;
+    border-radius: 150px;
+    position: relative;
+    top: 40px;
 }
 
 .jdown{
@@ -218,8 +245,26 @@ header{
     margin: 0;
 }
 
+.green{
+    background-color: #118C4E;
+}
+
+.green:hover{
+    -webkit-animation-name: rotateLeft;
+    -webkit-animation-duration: 1s;
+}
+
+.orange{
+    background-color: #FF9009;
+}
+
+.orange:hover{
+    -webkit-animation-name: rotateRight;
+    -webkit-animation-duration: 1s;
+}
+
 .blue{
-    background-color: #14bcc8;
+    background-color: #4A96AD;
 }
 
 .blue:hover{
@@ -227,18 +272,9 @@ header{
     -webkit-animation-duration: 1s;
 }
 
-.pink{
-    background-color: #ff7e70;
-}
-
-.pink:hover{
-    -webkit-animation-name: rotateRight;
-    -webkit-animation-duration: 1s;
-}
-
 footer{
     margin-top: 25px;
-    background: #1a202c;
+    background-color: #4A96AD;
     padding: 7px;
 }
 
@@ -247,40 +283,17 @@ footer p{
     color: white;
 }
 
+footer a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
 #menu{
     display: none;
-}
-
-@-webkit-keyframes rotateRight {
-    0% {
-         
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes rotateLeft {
-    0% {
-         
-    }
-
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
-}
-
-@-webkit-keyframes fadeUp {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(20px);
-    }
-
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
 }
 
 .animateRight {
@@ -316,6 +329,13 @@ footer p{
 }
 
 
+#articole.animateLeft {
+    opacity: 1;
+    transform: translateX(-500px);
+    -moz-transform:translateX(-500px);
+    -webkit-transform: translateX(-500px);
+}
+
 #imagini.animateRight {
     opacity: 1;
     transform: translateX(500px);
@@ -341,15 +361,16 @@ footer p{
         min-width: 250px;
         height: auto;
         min-height: 350px;
-        
-    
+        border-radius: 1.5em;
+        position: static; 
+        -webkit-animation: 0;
     }
     
     .fixedwidth{
         width: 100%;
     }
     #articole{
-        background-color: white;
+        background-color: transparent;
         border-style: none;
         padding: 0;
         height: auto;
@@ -362,6 +383,8 @@ footer p{
         box-shadow: none;
         border:none;
         border-radius: 0;
+        
+        -webkit-animation: 0;
     }
     
     .articol img{
@@ -370,8 +393,12 @@ footer p{
         border-radius: 0;
     }
     
+    .flip:hover{
+        transform: none;
+    }
+    
     #imagini{
-        background-color: white;
+        background-color: transparent;
         border-style: none;
         padding: 0;
         height: auto;
@@ -384,10 +411,12 @@ footer p{
         box-shadow: none;
         border:none;
         border-radius: 0;
+        
+        -webkit-animation: 0;
     }
     
     #videoclipuri{
-        background-color: white;
+        background-color: transparent;
         border-style: none;
         padding: 0;
         height: auto;
@@ -408,8 +437,12 @@ footer p{
         text-align: left;
     }
     
-    #title{
-        font-size: 1.3em;
+    .signature{
+        text-align: center;
+    }
+    
+    footer{
+        margin-top: 60px;
     }
     
     /*Drop-Down Menu*/
@@ -435,7 +468,7 @@ footer p{
     
     .menu-content li{
         width: 100%;
-        background-color: #d13f31; 
+        background-color: #C63D0F; 
         margin-top: 15px;
     }
     
