@@ -40,7 +40,7 @@ body{
 .wrapper .nav ul li a:hover{
 	color: black;
 }
-.header #logo{	
+.header .logo{	
 	background: url(../img/logo.png);
 	width: 142px;
 	height: 180px;
@@ -189,3 +189,58 @@ body{
 .fade:hover {
   opacity: 0.7;
  }
+
+/*
+****************
+*=Logo animation
+****************
+*/
+.header .logoback{	
+	background: url(../img/logoback.png);
+	width: 142px;
+	height: 180px;
+	background-repeat: no-repeat;
+	margin: 3% auto 0px auto;
+	text-indent: -9999px;
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 142px;
+	height: 180px;
+	margin: 3% auto 0px auto;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	margin: 3% auto 0px auto;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
