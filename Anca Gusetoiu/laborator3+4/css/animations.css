@@ -4,8 +4,6 @@ span {
 	background-color: #bbf;
 	width:200px;
 	height:200px;
-	top: 40px;
-	left: 20px;
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example2;
