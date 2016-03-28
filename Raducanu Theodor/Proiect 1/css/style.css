@@ -127,7 +127,6 @@ body{
 	color: #ff8000;
 }
 
-/* Style The Dropdown Button */
 .dropbtn {
 		background-color: white;
         border: medium none;
@@ -146,13 +145,11 @@ body{
 	background: none repeat scroll 0 0 transparent;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
 	background: none repeat scroll 0 0 transparent;
     display: none;
@@ -162,19 +159,16 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover {
     background-color: #3e8e41;
 }
@@ -203,11 +197,9 @@ body{
 	margin: 3% auto 0px auto;
 	text-indent: -9999px;
 }
-/* entire container, keeps perspective */
 .flip-container {
 	perspective: 1000;
 }
-	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
 	}
@@ -218,7 +210,6 @@ body{
 	margin: 3% auto 0px auto;
 }
 
-/* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
@@ -226,21 +217,17 @@ body{
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
 	margin: 3% auto 0px auto;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
-	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }
