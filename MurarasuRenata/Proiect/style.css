@@ -26,10 +26,21 @@
 		position: absolute;
 		left:0px;
 		top:48px;
+		width: 100%;
+	}
+
+	.menu_container {
+		width: 100%;
+		background-color: red;
 	}
 
 	.menu nav {
 		padding-left: 145px;
+	}
+
+	.search_image {
+		font-size: 14px;
+		padding: 16px!important;
 	}
 
 	.menu nav a {
@@ -100,12 +111,13 @@
 
 	#menu {
 		display:none;
-		padding-left: 0px ;
+		padding-left: 55px ;
 		padding-right: 0px;
 		margin-left: 0px;
 		position: absolute;
-		left:55px;
+		left:0px;
 		top:48px;
+		width: 100%;
 	}
 
 	.menu nav {
@@ -186,6 +198,7 @@
 		padding-right: 0px ;
 		margin-left: 40px;
 		position: inherit;
+		width: initial;
 	}
 
 	.menu nav {
