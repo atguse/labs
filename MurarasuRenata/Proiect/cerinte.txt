@@ -1,0 +1,14 @@
+Primul proiect
+
+Tema: construirea unui site, cu respectarea anumitor cerinte minimale; aceste cerinte pot fi completate de fiecare laborant. Tematica siteului este lasata la alegerea studentilor.
+
+Cerinte minimale:
+
+HTML: proiectul sa contina minim 4 pagini si
+sa treaca testul de validare: http://validator.w3.org/.
+CSS: stilizarea sa fie facuta in fisiere separate;
+siteul sa fie responsive;
+layout-ul sa fie realizat fara tabele;
+sa contina un menu drop-down realizat cu CSS;
+sa se foloseasca transformari CSS;
+Atentie! Utilizarea framework-urilor front-end este interzisa.
