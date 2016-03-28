@@ -337,8 +337,13 @@ header {
 	height: 16px;
 }
 
-#search_image, #menu-image {
+.search_image, #menu-image {
 	padding: 14px 16px;
+}
+
+#search-black, #search-white {
+	height: 48px;
+	width: 48px;
 }
 
 .search img{
@@ -575,15 +580,15 @@ footer .developement {
 	padding-right:50px;
 }
 
-footer .copyright a {
+footer .copyright a, footer .developement a {
 	text-decoration: underline;
 	color:black;
 
 }
 
-footer .copyright a:hover {
+footer .copyright a:hover, footer .developement a:hover {
 	color: red;
-	}
+}
 
 #projects{
 	padding: 40px;
