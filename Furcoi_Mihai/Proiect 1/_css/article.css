@@ -38,7 +38,7 @@ article a{
 }
 
 article a:hover{
-    color: #1A202C+;
+    color: #1A202C;
 }
 
 @media screen and (max-width: 1000px){
