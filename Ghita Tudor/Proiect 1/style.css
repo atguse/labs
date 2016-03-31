@@ -26,20 +26,69 @@ body {
 	border-radius: 30px;
 }
 
+.menu_link {
+	text-decoration: none;
+	color: black;
+}
+
 .menu_item {
 	display: inline-block;
 	padding: 10px 80px 10px 80px;
 	font-size: 2em;
 	margin: 5px 0px 5px 0px;
 	border-radius: 15px;
+	text-align: center;
+	position: relative;
 	/*animation-name: menu_anim;
 	animation-duration: 4s;*/
+}
+
+.menu_item:hover .menu_link {
+	color: #BB3333;
 }
 
 .menu_item:hover {
 	background: linear-gradient(#FFFFFF,#000000,#FFFFFF);
 	cursor: pointer;
 	color: #BB3333;
+}
+
+.dropdown_item {
+	padding: 10px;
+	margin: 10px 0px 10px 0px;
+	position: absolute;
+	text-align: center;
+	display: none;
+}
+
+.menu_item span {
+	display: block;
+}
+
+.menu_item:hover .dropdown_item {
+	display: inline-block;
+	background: linear-gradient(#FFFFFF,#AAAAAA,#FFFFFF);
+	color: black;
+	padding: 15px;
+	border-radius: 10px;
+	left: 0px;
+	width: 100%;
+}
+
+.menu_item .dropdown_item a {
+	display: block;
+	padding: 10px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
+	border-radius: 5px;
+}
+
+.menu_item .dropdown_item a:hover {
+	color: #AA5555;
+}
+
+.menu_item .dropdown_item a {
+	text-decoration: none;
+	color: black;
 }
 
 #menu1 {
@@ -62,7 +111,7 @@ body {
 	animation-duration: 3s;
 }
 
-#index_content {
+#content {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
@@ -103,6 +152,22 @@ body {
 	display: inline-block;
 	animation-name: index_content_title_word4_anim;
 	animation-duration: 3s;
+}
+
+.content_item {
+	margin: 15px;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #DDDDDD;
+	overflow: scroll;
+}
+
+.content_photo {
+	/*display: inline-block;*/
+	height: 300px;
+	width: 450px;
+	float:right;
+	margin: 0px;
 }
 
 @keyframes menu_anim {
@@ -160,4 +225,10 @@ body {
 	0% {transform: translate(1200px,0px);}
 	50% {transform: translate(1200px,0px);}
 	100% {transform: translate(0px,0px);}
+}
+
+@media screen and (max-width: 1000px) {
+   #content {
+	   background-color: red;
+   }
 }
