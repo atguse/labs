@@ -5,7 +5,7 @@
   background:white; 
   border-radius:20px 20px;
   text-decoration:none;
-  width:800px;
+  width:70%;
   margin-left:75px;
   list-style-type:none;
   text-align:left;
@@ -21,8 +21,6 @@
 
 .slist li{ 
   direction:display:inline;
-  position:relative;
-  z-index:999;
   margin-right:20px;
   font-size:25px;
   float:left;

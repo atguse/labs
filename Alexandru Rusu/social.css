@@ -9,8 +9,7 @@
 }
 
 .social li { 
-	direction:display:inline; 
-    position:relative;
+	direction:display:inline;
     z-index:9999;
 	float:left; 
 	background-repeat:no-repeat; 
@@ -27,8 +26,8 @@
 }
 
 .social li a strong { 
-	font-weight:normal; 
-	position:absolute; 
+	font-weight:normal;
+    position:relative;
 	left:20px; top:0px; 
 	color:#fff; 
 	padding:3px; 
