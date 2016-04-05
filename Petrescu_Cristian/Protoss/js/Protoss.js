@@ -5,3 +5,6 @@ function show(shown, hidden)
     document.getElementById(hidden).style.display = 'none';
     return false;
 }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}

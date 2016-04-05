@@ -1,0 +1,4 @@
+desktop menu - rgb(241, 241, 241)
+hover menu - rgb(220, 220, 220)
+donate - rgb(252, 110, 47)
+yellow - rgb(240, 224, 40)

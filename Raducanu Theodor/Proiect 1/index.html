@@ -10,11 +10,24 @@
 <body>
 	<div class="wrapper">
 		<div class="header">
-			<h1 id="logo">Squirrel Logo</h1>
+			<div class="flip-container">
+				<div class="flipper">
+						<div class="front logo"></div>
+						<div class="back logoback"></div>
+				</div>
+			</div>
 			<h1 id="title">About Squirrels</h1>
 			<div class="nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><div class="dropdown">
+							  <a href="index.html" class="dropbtn">Source</a>
+							  <div class="dropdown-content">
+								    <a href="https://en.wikipedia.org/wiki/Squirrel">Wikipedia</a>
+								    <a href="http://animals.nationalgeographic.com/animals/mammals/squirrel/">Nat. Geographic</a>
+								    <a href="http://www.onekind.org/education/animals_a_z/squirrel">One Kind</a>
+								</div>
+						</div>
+					</li>
 					<li><a href="characteristics.html">Characteristics</a></li>
 					<li><a href="etymology.html">Etymology</a></li>
 					<li><a href="behaviour.html">Behaviour</a></li>
@@ -22,7 +35,7 @@
 			</div>
 		</div>
 		<div class="body">
-			<img class="firstImage" src="img/home.jpg" alt="veverita">
+			<img class="firstImage fade" src="img/home.jpg" alt="veverita">
 			<h1>Introduction</h1>
 			<p>
 				Squirrels are members of the family Sciuridae, consisting of small or medium-size rodents. The family includes tree squirrels, ground squirrels, chipmunks, marmots (including woodchucks), flying squirrels, and prairie dogs. Squirrels are indigenous to the Americas, Eurasia, and Africa, and have been introduced to Australia. The earliest known squirrels date from the Eocene and are most closely related to the mountain beaver and to the dormouse among living rodent families.

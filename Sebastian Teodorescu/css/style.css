@@ -1,0 +1,135 @@
+
+  .background{
+    position:fixed;
+    background:url("");
+    top:0;
+    left:0;
+    min-width:100%;
+    min-height:100%;
+    z-index:-1;
+  }
+  body{
+    width:100%;
+    background-color: #780000;
+  }
+.titlu {
+      position: relative;
+      height: 25%;
+      background-color:  #780000;
+      text-align: center;
+      color:white;
+  font-size: 300%;
+  margin-top: -5px;
+      
+
+      }
+
+.pmeniu {
+        margin-top: -58px;
+         font-size: 300%;
+         padding: 0;
+         color:white;
+         width:100%;
+         text-align: center;
+         }
+
+.meniu {
+       position: relative;
+       height: 70px;
+       width: 15%;
+       background-color:  #780000;
+       margin-top: 7%;
+
+
+       }
+
+.meniu:hover {
+                            background-color: black;
+
+              }
+
+.meniu:hover .meniu1 {
+              position: relative;
+              display: block;
+
+             }
+.meniu .meniu1 {
+                
+                display: none;
+                position: relative;
+              
+                height: 6em;
+                
+                }
+
+
+.link:link, .link:visited
+                   {
+                    background-color:  #780000;
+                    color: white;
+                    padding:  1.25em 0em;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    width: 100%;
+                   }
+
+
+.link:hover, .link:active
+                {
+                background-color: black;
+
+                }
+
+.text{
+
+  color:white;
+  position: relative;
+  width:70%;
+  height:auto;
+  margin-left: 20%;
+  border-style: solid;
+  border-width: 20px;
+  border-color: #404040;
+  background-color: #606060;
+}
+
+.detalii{
+
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  margin-left: 11px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+
+}
+
+.idv3 {
+ width:116px;
+ height:79px;
+ }
+
+.idv3:hover {
+ transform: scale(1.6, 1.5);
+ -webkit-transform: scale(1.6, 1.5);
+}
+
+
+.vid{
+
+    text-align: center;
+    text-decoration: underline;
+}
+@media screen and (max-width:640px){
+    .pmeniu{
+      font-size:1.6em;
+    }
+    .meniu{
+      margin-top: 20%;
+    }
+    .titlu{
+      font-size:2.2em;
+      margin-right:2%;
+    }
+}

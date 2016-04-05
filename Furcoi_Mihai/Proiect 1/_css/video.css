@@ -1,0 +1,31 @@
+.video{
+    margin: 20px 30px 30px 20px;
+    width: 45%;
+    height: 350px;
+    float: left;
+    
+    
+    
+    -webkit-animation-name: fadeUp;
+    -webkit-animation-duration: 1s;
+}
+
+.video video{
+    max-height: 300px;
+    width: 100%;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.video h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .video{
+        width: 40%;
+        height: auto;
+        min-width: 170px;
+
+    }
+    
+}
