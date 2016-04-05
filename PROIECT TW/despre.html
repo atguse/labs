@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Coffee Hour</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<link rel="stylesheet" type="text/css" href="media.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="despre.css">
+<link rel="stylesheet" type="text/css" href="slider.css">
+<meta charset="UTF-8">
+
+</head>
+
+<body>
+	<div id="top-image-despre" class="box fade-in three"></div>
+
+	<div class="buttons" >
+		
+		<div class="button-content">
+			<a href="index.html"><h1 class="underline">Home</h1></a>
+			<a href="despre.html"><h1 class="underline">Despre Noi</h1></a>
+			
+			<!-- Separator pentru logo -->
+			<h1 id="separator"></h1>
+
+		<a href="meniu.html"><h1 class="underline">Meniu</h1></a>
+		<a href="contact.html"><h1 class="underline">Contact</h1></a>
+		</div>
+
+		<div id="vizibil">
+		<img class="logo" src="Images/logo-scris_burned.png" alt="LOGO"/>
+		</div>
+		
+	</div>
+
+	<div class="content" id="content-despre">
+		
+		<div id="about">
+			 <p>Coffee Hour a luat nastere prin colaborarea a 5 prieteni foarte buni in urma cu 3 ani.</p>
+			 <p>Ideea a venit din partea unuia dintre ei, in timp ce se bucurau cu totii de o cafea buna facuta de mama acestuia.</p>
+			 <p>Vestita cafea a doamnei Mioara, cum ii spun apropiatii, sta la baza fiecarei retete Coffee Hour.</p>
+			 <p>Cei 5 prieteni care au infiintat aceasta cafenea sunt patroni si in prezent si recomanda Coffee Hour, deoarece este cea mai buna cafea din oras.</p>
+			 <p>De asemenea, deserturile din meniu sunt facute dupa retete de casa folosite in familiile celor 5.</p>
+			 <p>Vino la Coffee Hour si te vei simti ca acasa!</p>
+			 <p>Acesta este locul unde vei gasi cafeaua ta preferata, potrivita oricarei ore a zilei.</p>
+	
+		</div>	
+
+		<div class="stage">
+			<div id="SLDR-ONE" class="sldr">
+				<ul class="wrp animate">
+					<li class="elmnt-one"><div class="skew"><div class="wrap"><img src="Images/11.jpg" alt="poza-locatie-1" ></div></div></li>
+					<li class="elmnt-two"><div class="skew"><div class="wrap"><img src="Images/22.jpg" alt="poza-locatie-2"></div></div></li>
+					<li class="elmnt-three"><div class="skew"><div class="wrap"><img src="Images/33.jpg" alt="poza-locatie-3"></div></div></li>
+					<li class="elmnt-four"><div class="skew"><div class="wrap"><img src="Images/44.jpg" alt="poza-locatie-4"></div></div></li>
+				</ul>
+			</div>
+
+			<div class="clear"></div>
+
+			<div class="captions">
+	 			<div class="focalPoint"><p>Coffee Hour pune la dispozitie 100 de locuri la parter si etaj.</p></div>
+				<div><p>Cafeneaua noastra este un loc luminos, relaxant cu muzica potrivita atmosferei degajate.</p></div>
+				<div><p>Fa-ne o vizita, ia o pauza din agitatia orasului si savureaza cafeaua noastra delicioasa!</p></div>
+				<div><p>Intre orele 9:00-10:00 va asteptam toata saptamana la 'coffe hour'. Comandati un desert si primiti din partea casei un espresso, ceai sau o cafea cu lapte.</p></div>
+			</div>
+
+			<ul class="selectors">
+				<li class="focalPoint"><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li><li><a href="">•</a></li>
+			</ul>
+
+			<div class="clear"></div>
+
+		</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.sldr.js"></script>
+<script>
+
+$( window ).load( function() {
+
+	$( '.sldr' ).each( function() {
+		var th = $( this );
+		th.sldr({
+			focalClass    : 'focalPoint',
+			offset        : th.width() / 2,
+			sldrWidth     : 'responsive',
+			nextSlide     : th.nextAll( '.sldr-nav.next:first' ),
+			previousSlide : th.nextAll( '.sldr-nav.prev:first' ),
+			selectors     : th.nextAll( '.selectors:first' ).find( 'li' ),
+			toggle        : th.nextAll( '.captions:first' ).find( 'div' ),
+			sldrInit      : sliderInit,
+			sldrStart     : slideStart,
+			sldrComplete  : slideComplete,
+			sldrLoaded    : sliderLoaded,
+			sldrAuto      : true,
+			sldrTime      : 5000,
+			hasChange     : true
+		});
+	});
+
+});
+
+/**
+ * Sldr Callbacks
+ */
+
+/**
+ * When the sldr is initiated, before the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderInit( args ) {
+
+}
+
+/**
+ * When individual slides are loaded
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideLoaded( args ) {
+
+}
+
+/**
+ * When the full slider is loaded, after the DOM is manipulated
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function sliderLoaded( args ) {
+
+}
+
+/**
+ * Before the slides change focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideStart( args ) {
+
+}
+
+/**
+ * After the slides are done changing focal points
+ * @param {object} args the slides, callback, and config of the slider
+ * @return null
+ */
+function slideComplete( args ) {
+
+}
+
+</script>
+
+
+		
+	</div>	
+
+
+
+</body>
+
+
+</html>

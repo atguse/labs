@@ -1,0 +1,36 @@
+#content-contact h2
+{
+	font-family: Helvetica;
+	position: relative;
+   text-align: center;
+
+	
+}
+
+#first-contact
+{	
+	padding: 3em 0 0 0;
+}
+
+#content-contact
+{
+	height: 30em;
+	margin-top: -1.25em;
+}
+
+#separator-c{width: 10em;}
+
+#top-image-contact {
+   position: relative;
+   background: #000 url('Images/top.jpg') top center;
+   background-size: 100% auto;
+   background-attachment: fixed;
+   width:101.15%;
+   height: 23em ;
+   margin-top: -0.47em;
+   margin-left: -0.47em;
+   
+}
+
+
+
