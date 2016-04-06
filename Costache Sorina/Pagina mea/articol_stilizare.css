@@ -1,0 +1,31 @@
+body{
+	background: url('texture.jpg');
+}
+
+.poza_articol{
+	background-image: url("fumaat.jpg");
+	height: 122px;
+	width: 179px;
+	position:relative;
+	align : "right";
+	top : -30px;
+	z-index: 10;
+}
+
+.menu_wrap
+{
+	width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#FFCC99;
+}
+
+.cuprins
+{
+	position: relative;
+	width: 300px;
+	left:500px;
+	top:0px;
+	box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+	background:#FF9966;
+}
+

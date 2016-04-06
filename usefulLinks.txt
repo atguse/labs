@@ -1,0 +1,2 @@
+Another very, very basic git tutorial : 
+http://rogerdudler.github.io/git-guide/

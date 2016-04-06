@@ -1,0 +1,49 @@
+.d1 {
+    width:100%;
+    height:228px;
+    z-index:1
+    }
+
+.d2 {
+	
+    text-align:center;
+    position:relative;
+    top : -50px;
+    }
+
+.d2 img {
+        width: 200px;
+        height: 200px;
+        border-style: solid;
+        }
+
+.d4 {
+  border-style: solid;
+    }
+
+.img2 {
+      width: 50px;
+      height: 50px;
+      }
+
+.img3 {
+        width: 70px;
+        height: 50px;
+      }
+.img3:hover {
+            content:url("5.png");
+            }
+.img2:hover {
+            content:url("5.png");
+            }
+.tab1{
+      width:100%;
+     }
+
+table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+              }
+th, td {
+        padding: 15px;
+        }

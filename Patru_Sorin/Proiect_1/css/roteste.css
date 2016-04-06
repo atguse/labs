@@ -1,0 +1,9 @@
+.img:hover {
+      transform:rotate(-90deg);
+      transition: all 0.6s ease;
+     }
+
+img {
+    width: 300px;
+    height: 200px;
+    }

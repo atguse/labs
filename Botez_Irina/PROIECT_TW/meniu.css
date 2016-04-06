@@ -1,0 +1,109 @@
+#intro-menu-box
+{
+  
+  background: rgba(230, 0, 92, 0.5);
+  border-radius: 0.8em;
+  width:70%;
+  position: absolute;
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 130%;
+  top: 65%;
+  left: 15%;
+}
+
+#intro-menu-box h1{opacity: 0.8; }
+
+#top-image-menu
+{
+   position: relative;
+   background: #000 url('Images/top.jpg') top center;
+   background-size: 100% auto;
+   background-attachment: fixed;
+   width:101.15%;
+   height: 23em ;
+   margin-top: -0.47em;
+   margin-left: -0.47em;
+   overflow: hidden;
+}
+
+
+
+.drop-right-menu,.drop-right-menu li ul 
+{ padding:0px; 
+  list-style:none; 
+  width: 15%;
+  background: rgba(255, 255, 255, 0.6); 
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
+  margin-left: 7%; 
+  margin-top: 20%;
+
+  
+}
+
+.drop-right-menu li ul li{ font-size: 70%; }
+
+.drop-right-menu li,.drop-right-menu li ul li 
+{ 
+  position:relative; }
+
+.drop-right-menu li a,.drop-right-menu li ul li a 
+{ padding:7px 10px; 
+  display:block; 
+  text-decoration: none;
+  font-size: 2em;
+  color:#8c8c8c; }
+
+.drop-right-menu li ul 
+{ display:none; 
+  position:absolute; 
+  left:150px; 
+  top:0px; }
+
+.drop-right-menu li:hover ul 
+{ display:block; 
+  left: 80%;
+  background-color: white;
+  top:-3em;
+  width: 100%;
+}
+
+.drop-right-menu li a:hover 
+{
+  color:#e6005c;
+
+}
+
+#content-menu
+{
+  margin-top: 0em;
+  height: 52em;
+}
+
+
+.poze-meniu
+{
+  width:50%;
+
+}
+
+
+ .poze-meniu div img
+{
+  max-width: 100%;
+  max-height: 100%;
+  float: left;
+  padding-right: 5%;
+  height: 9em;
+  width: 10em;
+  position: relative;
+  top: -17em;
+  left: 75%;
+  padding-bottom: 3%;
+  margin-right: 1%;
+
+   }
+
+ 
+
+

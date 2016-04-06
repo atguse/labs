@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Stronghold</title>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Vladimir Voinea</h1>
+
+	</div>
+
+	<div id="nav" >
+		<div class="dropdown">
+			<span class="links">Links</span>
+			<div class="dropdown-content">
+				<p><a href="home.html">Home</a></p>
+				<p><a href="viking.html">Viking</a></p>
+				<p><a href="stronghold.html">Stronghold</a></p>
+				<p><a href="contact.html">Contact</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="section">
+		<h2 class="main-text-title">Stronghold</h2>
+		<p class="main-text">
+			Stronghold is a clone of Dropbox, in which the data encryption is done on the client, instead of the server <br/> <br/>
+			Currently, dropbox will encrypt the files that it stores on the <strong>server side</strong>, meaning that they have access to the encryption key and can decrypt the user's data at any time. <br/> <br/>
+
+			Both programs use the rsync algorithm for synchronization, but the difference is that before computing signatures or applying patches, Stronghold will encrypt/decrypt the files in memory before taking any action. While this may pose an inconvenience to the users, it adds the extra benefit of having increased privacy. <br/> <br/>
+
+			The advantage of this approach is that the server will have a dramatically reduced load, allowing several users to store their files on the same server. <br/>
+		</p>
+	</div>
+</body>
+</html>
