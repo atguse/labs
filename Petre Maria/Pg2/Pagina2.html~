@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>
+Pui
+</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<div id="header">
+<h1>Comportamentul la pisici</h1>
+</div>
+
+<div id="nav" >
+   <div class="dropdown">
+  <span><h3 class="title">Comportamentul pisicii</h3></span>
+  <div class="dropdown-content">
+    <p><a href="../Pg1/Pagina1.html " target="_blank">Prima pagina</a></p>
+    <p><a href="../Pg3/Pagina3.html " target="_blank">Adult</a></p>
+    <p><a href="../Pg4/Pagina4.html " target="_blank">Mama</a></p>
+    <p><a href="../Index/Index.html " target="_blank">Link-uri</a></p>
+  </div>
+</div>
+</div>
+
+<div id="section">
+<h2 class="cent">Puii de pisica</h2>
+<p>Stiai ca...</p>
+<p class="alig">Daca o pisicuta a ramas orfana sau o fost agresata de la o varsta frageda, va avea probleme de comportament, cu siguranta. Pisicile-mame sunt foarte tandre cu puiii lor si comunica cu ei intr-un fel in care oamenii nu pot comunica cu pisicile.</p>
+<p class="alig">Agresivitatea <q>din joaca</q> este des intalnita in cazul puilor, este bine stiut ca puii de pisica au obiceiul de a-si musca sau zgaria partenerii de joaca indiferent ca acestia sunt oameni sau animale. Atata timp cat nu incurajati acest comportament el nu se va mai manifesta si cand puiul creste, daca el este incurajat – chiar si binecunoscutul obicei de a-i da pisicii un deget pe care sa-l muste este o incurajare a acestui comportament – la maturitate pisica o sa va creeze probleme din cauza acestui tip de agresivitate.</p>
+<img class="pui" src="pui.jpg" alt="pui de pisica" >
+</div>
+
+<div id="footer">
+<b><i>Miau! Miau! Miau!</i></b>
+</div>
+
+
+</body>
+</html>

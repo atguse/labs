@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Viking</title>
+</head>
+<body>
+
+	<div id="header">
+		<h1>Vladimir Voinea</h1>
+	</div>
+
+	<div id="nav" >
+		<div class="dropdown">
+			<span class="links">Links</span>
+			<div class="dropdown-content">
+				<p><a href="home.html">Home</a></p>
+				<p><a href="viking.html">Viking</a></p>
+				<p><a href="stronghold.html">Stronghold</a></p>
+				<p><a href="contact.html">Contact</a></p>
+			</div>
+		</div>
+	</div>
+
+	<div id="section">
+		<h2 class="main-text-title">Viking</h2>
+		<p class="main-text">
+			Viking is a web server written from scratch in modern C++ <br/> <br/>
+			It implements the HTTP protocol and allows the user to implement fast web applications or any kind of servers using C++ directly. <br/>
+			The preferred way of interacting with the server is via AJAX calls or various frameworks, for example AngularJS/jQuery. <br/> <br/>
+
+			Features: <br/>
+			<ul>
+				<li>High performance</li>
+				<li>Sendfile support. Transfers files from the filesystem with no userspace copying</li>
+				<li>Used as a library. One only has to provide the route/method/callback combinations</li>
+				<li>Can be used for anything - Game servers, Website backends, Application backends</li>
+				<li>HTTP responses can be returned asynchronously via std::future objects. Works great if you don't want other clients to wait for expensive operations</li>
+				<li>Works fast on embedded platforms - for hobbyists</li>
+			</ul>
+		<div id="github-link">
+			<a href="https://github.com/vladimir-voinea/Viking">Github</a> <br/>
+		</div>
+	</div>
+</body>
+</html>

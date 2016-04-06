@@ -1,0 +1,264 @@
+
+#content-despre 
+{
+  margin-top: 0%;
+  height: 80em;
+  width: 100.5%;
+}
+
+#top-image-despre
+{
+  width: 100.5% !important;
+  position: relative;
+  background: #000 url('Images/top.jpg') top center;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  height: 23em ;
+  margin-top: -0.47em;
+  margin-left: -0.47em;
+  overflow: hidden;
+}
+
+.buttons
+{
+  width:100.6% !important;
+}
+  
+#about 
+{
+  font-family: Helvetica;
+  font-size: 140%;
+  color: black;
+  position: relative;
+  text-align: center;
+  opacity: 0.8;
+  font-weight: 700;
+  padding:0.3em 0 5em 0;
+  width: 75%;
+  top: 5%;
+  left:12%;
+}
+
+/*---------------------------------------------------*/
+
+@media only screen and (min-width: 320px) and (max-width: 360px) 
+{
+
+  #top-image-despre{height: 7.9em; margin-left: -0.20em; width:104%;}
+  .buttons{top:2.5em; height:2em; width: 102%; margin-left: -0.2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:2%;}
+  #separator{width:0em;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 70%;}
+}
+
+@media only screen and (min-width: 361px) and (max-width: 399px) 
+{
+  #top-image-despre{height: 8.8em; margin-left: -0.2em; width:104%;}
+  .buttons{top:2.5em; height:2em;width: 102%; margin-left: -0.2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:0em;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 70%;}
+  
+}
+
+@media only screen and (min-width: 400px) and (max-width: 430px) 
+{
+  #top-image-despre{height: 9.7em; margin-left: -0.2em; width:104%;}
+  .buttons{top:3.3em; height:2em;width: 102%; margin-left: -0.2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4.5%;}
+  #separator{width:0em;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 70%;}
+}
+
+@media only screen and (min-width: 431px) and (max-width: 480px) 
+{
+  #top-image-despre{height: 10.5em; margin-left: -0.2em; width:104%;}
+  .buttons{top:4em; height:2em; width: 102%; margin-left: -0.2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:0em;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;}
+}
+
+/*---------------------------------------------------------------*/
+
+@media only screen and (min-width: 481px) and (max-width: 499px)
+{
+  #top-image-despre{height: 11em; margin-left: -0.2em; width:104%;}
+  .buttons{top:15%; height: 7%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:15%; left:62.5%; top: 390%;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:3%;}
+  #separator{width:20%;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;}
+    
+} 
+
+@media only screen and (min-width: 500px) and (max-width: 550px)
+{
+  #top-image-despre{height: 12em; margin-left: -0.2em; width:104%;}
+  .buttons{top:15%; height: 7%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:15%; left:60%; top: 390%;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:20%;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;}  
+} 
+
+@media only screen and (min-width: 551px) and (max-width: 569px)
+{
+  #top-image-despre{height: 12.8em; margin-left: -0.2em; width:104%; }
+  .buttons{top:18%; height: 9%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:15%; left:61%; top: 300%;}
+  .buttons h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:10%;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;}  
+}
+
+@media only screen and (min-width: 570px) and (max-width: 599px)
+{
+  #top-image-despre{height: 13.5em; margin-left: -0.2em; width:104%; }
+  .buttons{top:18%; height: 9%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:15%; left:59%; top: 300%;}
+  .buttons h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:10%;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;}  
+}
+
+/*----------------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) and (max-width: 639px)
+{
+  #top-image-despre{height: 13.9em; margin-left: -0.2em; width:104%;}
+  .buttons{top:20%; height: 9%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:16%; left:58%; top: 280%;}
+  .buttons h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:5%;}
+  #separator{width:10%;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;} 
+} 
+
+@media only screen and (min-width: 640px) and (max-width: 689px)
+{
+  #top-image-despre{height: 14.4em; margin-left: -0.2em; width:104%;}
+  .buttons{top:20%; height: 9%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:16%; left:58%; top: 250%;}
+  .buttons h1{font-size: 135%; margin-top: 0.3em; margin-right: 0.5%; margin-left:5.5%;}
+  #separator{width:10%;}
+  #about{font-size: 100%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;} 
+} 
+
+@media only screen and (min-width: 690px) and (max-width: 730px)
+{
+  #top-image-despre{height: 15em; margin-left: -0.2em; width:104%;}
+  .buttons{top:20%; height: 9%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:16%; left:56%; top: 250%;}
+  .buttons h1{font-size: 135%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:10%;}
+  #about{font-size: 110%; top:2%;}
+  #content-despre{width:100.6%; height:64em; }
+  .captions{font-size: 100%;} 
+}
+
+@media only screen and (min-width: 731px) and (max-width: 799px)
+{
+  #top-image-despre{height: 17em; margin-left: -0.2em; width:104%;}
+  .buttons{top:20%; height: 9%; width: 102%; margin-left: -0.2em;}
+  .buttons .logo{width:16%; left:55%; top: 220%;}
+  .buttons h1{font-size: 145%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:10%;}
+  #about{font-size: 120%; top:2%;}
+  #content-despre{width:100.6%; height:68.5em; }
+  .captions{font-size: 100%;}  
+}
+
+/*-------------------------------------------------------------------*/
+
+@media only screen and (min-width: 800px) and (max-width: 865px)
+{
+  #top-image-despre{height: 18em; margin-left: -0.45em; width:104%; }
+  .buttons{top:26%; height: 9.6%; width: 90%; margin-left: -0.4em;}
+  .buttons .logo{width:16%; left:54%; top: 180%;}
+  .buttons h1{font-size: 155%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:10%;}
+  #about{font-size: 120%; top:2%;}
+  #content-despre{width:100.4%; height:69.5em; }
+  .captions{font-size: 100%;}  
+}
+
+@media only screen and (min-width: 866px) and (max-width: 980px)
+{
+  #top-image-despre{height: 20em; margin-left: -0.45em; width:104%; }
+  .buttons{top:28%; height: 10%; width: 90%; margin-left: -0.4em;}
+  .buttons .logo{width:16%; left:54%; top: 150%;}
+  .buttons h1{font-size: 165%; margin-top: 0.3em; margin-right: 0.5%; margin-left:7%;}
+  #separator{width:10%;}
+  #about{font-size: 120%; top:2%;}
+  #content-despre{width:100.4%; height:70.7em; }
+  .captions{font-size: 100%;}  
+} 
+
+/*---------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 981px) and (max-width: 1080px)
+{
+   #top-image-despre{height: 22em; margin-left: -0.45em; width:104%; }
+  .buttons{top:32%; height: 12%; width: 90%; margin-left: -0.4em;}
+  .buttons .logo{width:16%; left:52%; top: 100%;}
+  .buttons h1{font-size: 167%; margin-top: 0.3em; margin-right: 0.5%; margin-left:7%;}
+  #separator{width:10%;}
+  #about{font-size: 120%; top:2%;}
+  #content-despre{width:100.4%; height:72em; }
+  .captions{font-size: 100%;}
+   
+} 
+
+@media only screen and (min-width: 1081px) and (max-width: 1210px)
+{
+   #top-image-despre{height: 25em; margin-left: -0.45em; width:104%; }
+  .buttons{top:35%; height: 14%; width: 90%; margin-left: -0.4em;}
+  .buttons .logo{width:16%; left:52%; top: 70%;}
+  .buttons h1{font-size: 173%; margin-top: 0.5em; margin-right: 0.5%; margin-left:8%;}
+  #separator{width:10%;}
+  #about{font-size: 120%; top:2%;}
+  #content-despre{width:100.4%; height:72em; }
+  .captions{font-size: 100%;}
+ 
+} 
+
+@media only screen and (min-width: 1211px) and (max-width: 1324px)
+{
+   #top-image-despre{height: 26em; margin-left: -0.45em; width:104%; }
+  .buttons{top:39%; height: 14%; width: 90%; margin-left: -0.4em;}
+  .buttons .logo{width:16%; left:50%; top: 40%;}
+  .buttons h1{font-size: 180%; margin-top: 0.5em; margin-right: 0.5%; margin-left:8%;}
+  #separator{width:10%;}
+  #about{font-size: 120%; top:2%;}
+  #content-despre{width:100.4%; height:75em; }
+  .captions{font-size: 100%;}   
+   
+} 
+
+
+
+
