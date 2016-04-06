@@ -91,6 +91,10 @@
      position:relative;
      background-color:black;
      }
+.p{
+  margin: 200px;
+  padding: 150px;
+}
 .story{
   top:-20px;
   text-align:center;
