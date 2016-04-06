@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>
+Mama
+</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<meta name="viewport" content="width=device-width" />
+</head>
+<body>
+
+<div id="header">
+<h1>Comportamentul la pisici</h1>
+
+</div>
+
+<div id="nav" >
+   <div class="dropdown">
+  <span><h3 class="title">Comportamenul pisicii</h3></span>
+  <div class="dropdown-content">
+    <p><a href="../Pg1/Pagina1.html " target="_blank">Prima pagina</a></p>
+    <p><a href="../Pg2/Pagina2.html " target="_blank">Pui</a></p>
+    <p><a href="../Pg3/Pagina3.html " target="_blank">Adult</a></p>
+    <p><a href="../Index/Index.html " target="_blank">Link-uri</a></p>
+  </div>
+</div>
+</div>
+
+<div id="section">
+<h2 class="cent">Pisica mama</h2>
+<p class="alig">Pisicile sunt apte de reproducere în general începând cu vârsta de nouă luni (s-au văzut totuși pisici născând la numai șapte luni).</p>
+<p class="alig">Femela trece prin numeroase perioade de „călduri”, mai ales între primăvară și toamnă. În aceste perioade, femela pisică adoptă un comportament hiper-activ și destul de neplăcut pentru proprietari: caută mângâieri, se freacă și se tăvălește pe jos, miaună strident pentru a anunța starea ei motanilor din împrejurimi. Cât despre masculi, ei își marchează teritoriul proiectând jeturi de urină foarte puternic mirositoare. Dacă li se permite să iasă, ei se luptă adesea cu alți masculi, slăbesc și își neglijează toaleta, fapt care îi expune la riscuri de contaminare sau la contractarea de boli (coryza, leucoza, FIV etc.). În concluzie, este recomandată sterilizarea precoce.</p>
+<p class="alig">Gestația durează aproximativ 60 de zile, pisica purtând în medie 4 pui. La trei săptămâni, mamelele femelei se măresc în volum și se înroșesc. Apoi abdomenul i se umflă, iar pofta de mâncare va crește pe măsură ce sarcina înaintează către termen. În timpul gestației, pisica va căuta afecțiunea umană; se recomandă ca stăpânii sa mângâie abdomenul pisicii, pentru a obișnui puii cu contactul uman. La șapte săptămâni, pisica va începe să caute un loc liniștit și izolat, potrivit pentru a naște (un dulap, o cutie de carton...). La apropierea termenului (între 60 și 70 de zile de la concepție), pisica devine agitată, de aceea este important ca stăpânul să fie prezent, să o asiste. După aproximativ 20 de minute de la declanșarea contracțiilor, pisica va naște primul pui, apoi urmează ceilalți, rapid sau chiar după mai multe ore, mergând până la 24 de ore pentru a termina nașterea. Puii se nasc protejați de un înveliș pe care pisica îl sfâșie și apoi linge puiul pentru a-i stimula respirația, sfârșind prin a mânca placenta, care conține elemente nutritive și a tăia cordonul ombilical.</p>
+<p class="alig">Puiul va căuta să sugă imediat după naștere, continuând apoi la intervale de 20 de minute. Pentru a obișnui puii cu contactul uman, trebuie ca stăpânii să-i ia în mână zilnic, fără însă să se depășească durata de 5 minute. Puiul de pisică se naște orb și surd, cântărind între 80 și 100 de grame; după 7-10 zile de la naștere, când va deschide ochii, aceștia sunt de culoare albastră, până la vârsta de două luni, când se vor schimba în culoarea definitivă. Alăptarea durează trei luni, timp în care pisica își va învăța puii să se spele, să se hrănească, să vâneze etc.</p>
+<p class="alig">Pisica are instinctul matern foarte dezvoltat: ea se va ocupa cu devotament de pisoi, îi va supraveghea, își va petrece tot timpul cu ei și îi va disciplina, la nevoie. În general, pisicile adulte vor fi prezente atunci când puii pleacă să „descopere” lumea, iar la unele rase, chiar masculul ia parte la educația progeniturii.</p>
+</div>
+
+<div id="footer">
+<b><i>Miau! Miau! Miau!</i></b>
+</div>
+
+
+</body>
+</html>

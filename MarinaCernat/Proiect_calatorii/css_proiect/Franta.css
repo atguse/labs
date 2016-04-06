@@ -1,0 +1,104 @@
+.fundal{
+		font-family: Arial, Helvetica, sans-serif;
+		background-image: url("D:\\Anul 2\\Semestrul II\\Thenici web\\Proiect_calatorii\\img_proiect\\eiffel.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
+	}
+
+#TitluMare {
+		 margin-left: 60%;
+	     font-size: 270%;
+	     color: #1a1a1a;
+         letter-spacing: 3px; 
+		 text-shadow: 2px 2px  #333333; }
+		 
+	 
+#ImgDreapta1{
+		 padding: 10px;
+		 float: right;
+		 /*margin-left:10px;*/
+		 width:400px;
+		 height:200px;
+			}
+			
+
+#ImgStanga1{  
+         padding: 10px;
+		 float: left;
+		/* margin-left:10px;*/
+		 width:400px;
+		 height:200px;
+			}
+			
+#ImgDreapta2{  
+         padding: 10px;
+		 float: right;
+		 /8margin-left:10px;*/
+		 width:400px;
+		 height:200px;
+			}
+#ImgDreapta3{  
+         padding: 10px;
+		 float: right;
+		/* margin-left:10px;*/
+		 width:400px;
+		 height:200px;
+			}
+		 
+.HomePage{ 
+		  margin-left: 50%;
+		  padding: 10px;
+          
+		 }
+
+.scris{ 
+		text-align:justify; }
+
+.scris p {
+		 text-indent: 50px;
+		 color: #001433;
+		 font-family: Arial, Helvetica, sans-serif;
+		 font-size:120%;
+		   }
+
+
+@media screen and (max-width: 700px) 
+{
+   #ImgDreapta1{
+	     padding: 10px;
+		 float: right;
+		 /*margin-left:10px;*/
+		 max-width:250px;
+		 max-height:100px;
+			}
+			
+	#ImgStanga1{
+		 padding: 10px;
+		 float: left;
+		/* margin-left:10px;*/
+		 max-width:250px;
+		 max-height:150px;
+			}
+			
+	#ImgDreapta2{
+		 padding: 10px;
+		 float: right;
+		 /*margin-left:10px;*/
+		 max-width:250px;
+		 max-height:150px;
+			}
+			
+	#ImgDreapta3{
+		 padding: 10px;
+		 float: right;
+		/* margin-left:10px;*/
+		 max-width:250px;
+		 max-height:150px;
+			}
+	.HomePage{ 
+		  margin-left: 30%;
+		  padding: 10px;
+          
+		 }
+}

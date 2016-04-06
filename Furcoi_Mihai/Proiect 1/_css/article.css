@@ -1,0 +1,48 @@
+article{
+    float: left;
+    width: 45%;
+    margin: 1%;
+    border-radius: 5px;
+    padding: 10px 1%;
+    border: 1px solid #e3e3e3;
+    max-height: 600px;
+    min-height: 550px;
+    box-shadow: 5px 5px 5px #e3e3e3;
+    background: white;
+    
+    -webkit-animation-name: fadeUp;
+    -webkit-animation-duration: 1s;
+}
+
+article h3{
+    text-align: center;
+}
+
+article img{
+    width:100%;
+    height: auto;
+    
+}
+
+article p{
+    margin-bottom: 8px;
+}
+
+article a{
+    display: block;
+    color: #C63D0F;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+article a:hover{
+    color: #1A202C;
+}
+
+@media screen and (max-width: 1000px){
+    article{
+        min-width: 220px;
+    }
+}

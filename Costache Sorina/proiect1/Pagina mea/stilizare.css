@@ -1,0 +1,450 @@
+body{
+	background: url('texture.jpg');
+}
+.cover{
+	background-image:url("makeadifference.jpg");
+	height: 340px;
+	background-color: red;
+	opacity: 0.5; 
+}
+
+#divv
+{ 
+    text-align: center; 
+    margin-top:1%;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #FFF; }
+
+#div1
+{ 
+    text-align: center; 
+    margin-bottom: 0.6% ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3%;
+    padding: 2%;
+    }
+
+#div2
+{   text-align: center; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+    padding: 2%; 
+    background-color: #FFF; 
+    align-content: center;
+}
+
+@media screen and (min-width: 0)
+{
+    #divv{ width: 59%; 
+          font-size: 0.6em;  }
+    #div2 {width: 59%; font-size: 0.6em;}
+    #div1 {width 80%; font-size: 1em;}
+}
+
+
+@media screen and (min-width: 600px)
+{
+    #divv{ width: 60%; 
+                font-size: 0.9em;}
+    #div2 {width: 60%;
+    font-size: 0.9em;}
+    #div1 {width 70%; font-size: 1em;}
+    
+}
+
+}
+@media screen and (min-width: 1000px)
+{
+    #divv{ width: 60%;
+                font-size: 0.9em;}
+    #div2 {width: 60%;
+            font-size: 0.9em;}
+    #div1 {width 80%; font-size: 1.2em;}
+}
+
+}
+@media screen and (min-width: 1300px)
+{
+    #divv{ width: 60%; 
+            font-size: 1em;}
+    #div2 {width: 60%; font-size: 1em;}
+    #div1 {width 90%; font-size: 1.2em;}
+}
+@media screen and (min-width: 1400px)
+{
+    #divv{ width: 60%;
+            font-size: 1em;}
+    #div2 {width: 60%; font-size: 1em;}
+         #div1 {width 90%; font-size: 1.2em;}
+    
+}
+@media screen and (min-width: 0)
+{
+    #div1{ width: 25em; }
+}
+@media screen and (min-width: 1000px)
+{
+    #div1{ width: 45em; }
+}
+@media screen and (min-width: 1400px)
+{
+    #div1{ width: 65em; }
+}
+
+
+.videoclip{
+	position: relative;
+	margin-left: auto;
+	margin-top: auto;
+	width:100%;
+	height:50%;
+
+}
+
+.stilizare-campanie
+	{
+	width:80%;
+    box-shadow:10em 10em 5em rgba(0,0,0,0.4);
+    background:#FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+   }
+ 
+ h1{
+    animation-duration: 5s;
+    animation-name: slide;
+ 	text-align: center;
+	color:  #000000 ;
+	letter-spacing: 0.01em;
+	margin-top: 0.2em;
+	font-size: 2.5em;
+	text-shadow: 0.01em 0.01em;
+ }   
+
+ @keyframes slide{
+    from{
+        margin-right: 100%;
+        width: 300%;
+    }
+    to
+    {
+        margin-right: 0%;
+        width: 100%;
+    }
+ }
+
+ .text-content{
+	font-size: 1.2em;
+	font-family: Comic Sans MS;
+	margin-left: 1.6em;
+	margin-right: 1.6em;
+}
+
+
+
+h2{
+	border-width: 0.5em;
+	border-bottom-style: groove;
+	color:  #8B4513 ;
+	letter-spacing: 0.01em;
+	text-align: center;
+	font-size:2em;
+}
+
+.articol-content1{
+	display: inline-block;
+	width:30%;
+	box-shadow:10em 10em 5em rgba(0,0,0,0.4);
+    background:#FFFF99;
+    margin-left: 5em;
+    
+}
+
+.articol-content2{
+	display: inline-block;
+	width:30%;
+	box-shadow:10em 10em 5em rgba(0,0,0,0.4);
+    background:#FFFF99;
+    margin-left: 7em;
+}
+
+.sc-container {
+    font-size: 0em;
+    
+}
+
+.sc-container-1, .sc-container-2 {
+    width: 50%;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.sc-inside-container-1, .sc-inside-container-2 {
+    background-color: #FFFF99;
+    text-align: center;
+}
+
+.opinie-medic{
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.animatie{
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example2;
+    animation-duration: 4s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    10%  {left:800px; top:0px;}
+    30%  {left:800px; top:200px;}
+    55%  {left:0px; top:200px;}
+    90% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example2 {
+    0%   {left:0px; top:0px;}
+    10%  {left:800px; top:0px;}
+    30%  {left:800px; top:200px;}
+    55%  {left:0px; top:200px;}
+    90% {left:0px; top:0px;}
+}
+
+.anim{
+    position: relative;
+    animation:opacitate 5s infinite;
+    /*animation-name: opacitate;*/
+}
+
+@keyframes opacitate{
+     0%   {opacity: 1;}
+    10%  {opacity: 0.8}
+    30%  {opacity: 0.6;}
+    55%  {opacity: 0.4}
+    90% {opacity:0.2;}
+}
+
+
+
+
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: center;
+    margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: #222671;
+    text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+    background: #e65b00;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+    background: #000080;
+    color: #f3f3f3;
+    height: 40px;
+    line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+    background: #e65b00;
+    color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+    display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+    display: block;
+    float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #e65b00;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
+
+.poza_articol{
+    background-image: url("fumaat.jpg");
+    height: 10%;
+    width: 15%;
+    position:relative;
+    align : "right";
+    top : -30%;
+    margin-left: 40%;
+}
+
+.menu_wrap
+{
+    width:90%;
+    box-shadow:0em 1em 3em rgba(0,0,0,0.2);
+    background:#FFFFCC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cuprins
+{
+    width: 50%;
+    box-shadow: 0em 1em 3em rgba(0,0,0,0.5);
+    background:#FFFF99;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+.content-art {
+
+    float:left;
+    position: relative;
+    display:inline;
+}
+
+.text-content-art{
+    font-size:1.2em;
+    font-family: calibri;
+    margin-left: 1.5em;
+    margin-right:1.5em;
+}
+
+.sc-container-art {
+    font-size: 0em;
+    
+}
+
+.content-met, .content1-met {
+
+    float:left;
+    position: relative;
+    display:inline;
+}
+
+.text-content-met, .text-content1-met{
+    font-size:1.2em;
+    font-family: calibri;
+    margin-left: 1.5em;
+    margin-right:1.5em;
+}
+
+.sc-container-met {
+    font-size: 0em;
+    
+}
+
+.poza{
+    display: inline;
+    position: relative;
+    float: left;
+    width: 20%;
+    height: 40%;
+}
+
+ .text-content-stiri{
+    font-size:1.2em;
+    font-family: Comic Sans MS;
+    margin-left: 1.5em;
+    margin-right:1.5em;
+    display: inline;
+}
+
+.animatie_poza{
+    animation-duration: 4s;
+    animation-name: minim;
+}
+
+@keyframes minim{
+    from{
+        opacity: 0.1;
+    }
+    to{
+        opacity: 1;
+    }

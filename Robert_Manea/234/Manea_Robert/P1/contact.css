@@ -27,6 +27,8 @@ li a {
 
 li a:hover {
     background-color: red;
+	transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
 }
 
 .active {
@@ -137,8 +139,12 @@ form {
 .ca:hover{
 	transform: rotate(360deg);
 	transition: all 0.5s ease-in-out;
+	-webkit-transform: rotate(360deg);
+	-webkit-transition: all 0.5s ease-in-out;
 }
 #test:hover{
 	transform: rotate(360deg);
 	transition: all 0.5s ease-in-out;
+	-webkit-transform: rotate(360deg);
+	-webkit-transition: all 0.5s ease-in-out;
 }
