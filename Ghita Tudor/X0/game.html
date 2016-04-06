@@ -1,0 +1,121 @@
+<html>
+<head>
+<script>
+	var msize;
+	var turn = 1;
+	var gamesquares = new Array();
+	var win = 0;
+	function draw() {
+		var ing = document.getElementById("n").value;
+		msize = Number(ing);
+		var game = document.getElementById("content");
+		game.innerHTML="";
+		var i;
+		var j;
+		for (i=0;i<msize;i++) {
+			for (j=0;j<msize;j++) {
+				game.innerHTML = game.innerHTML + "<img src=\"blank.jpg\" class=\"gamesquare\" onclick=\"change(this)\" id=\""+ String(msize * i + j) +"\">";
+				gamesquares[msize * i + j] = 0;
+			}
+			game.innerHTML = game.innerHTML + "<br/>";
+		}
+		gamestyle();
+	}
+	function gamestyle() {
+		squares = document.getElementsByClassName("gamesquare");
+		noneed = document.getElementsByTagName("input");
+		var i;
+		for (i=0;i<squares.length;i++) {
+			squares[i].style.display = "inline-block";
+			squares[i].style.margin="5px";
+		}
+		for (i=0;i<noneed.length;i++) {
+			noneed[i].style.display = "none";
+		}
+	}
+	function change(square) {
+		if (win == 1) return;
+		if (square.src.search("blank.jpg") != -1) {
+			if (turn == 1) {
+				square.src = "x.jpg";
+				gamesquares[Number(square.id)] = turn + 1;
+				turn = 0;
+			}
+			else {
+				square.src = "o.jpg";
+				gamesquares[Number(square.id)] = turn + 1;
+				turn = 1;
+			}
+		}
+		var i;
+		var j;
+		var full;
+		var sum;
+		for (i=0;i<msize;i++) {
+			full = true;
+			sum = 0;
+			for (j=0;j<msize;j++) {
+				var index = i * msize + j;
+				if (gamesquares[index] == 0) {
+					full = false;
+					break;
+				}
+				sum += gamesquares[index];
+			}
+			if (full == false) continue;
+			if (sum == msize || sum == 2 * msize) gamewon();
+		}
+		for (i=0;i<msize;i++) {
+			full = true;
+			sum = 0;
+			for (j=0;j<msize;j++) {
+				var index = i + msize * j;
+				if (gamesquares[index] == 0) {
+					full = false;
+					break;
+				}
+				sum += gamesquares[index];
+			}
+			if (full == false) continue;
+			if (sum == msize || sum == 2 * msize) gamewon();
+		}
+		sum = 0;
+		full = true;
+		for (i=0;i<msize;i++) {
+			var index = msize * i + i;
+			if (gamesquares[index] == 0) {
+				full = false;
+				break;
+			}
+			sum += gamesquares[index];
+		}
+		if ((sum == msize || sum == 2 * msize) && full) gamewon();
+		sum = 0;
+		full = true;
+		for (i=0;i<msize;i++) {
+			var index = msize * i + (msize - 1 - i);
+			if (gamesquares[index] == 0) {
+				full = false;
+				break;
+			}
+			sum += gamesquares[index];
+		}
+		if ((sum == msize || sum == 2 * msize) && full) gamewon();
+	}
+	function gamewon() {
+		document.getElementById("wintext").innerHTML = "Game won by " + (turn == 0?"X":"0");
+		document.getElementsByTagName("body")[0].style.backgroundColor = "blue";
+		win = 1;
+	}
+	function rmeducation(text) {
+		text.value = "";
+	}
+</script>
+</head>
+<body>
+	<input type="text" id="n" value="Enter a number < 10" onclick="rmeducation(this)"/>
+	<input type="button" onclick="draw()" value="Generate"/><br/>
+	<div id="content"></div>
+	<p id="wintext"></p>
+</body>
+</html>
