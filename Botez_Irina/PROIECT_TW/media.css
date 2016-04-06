@@ -1,0 +1,523 @@
+@media only screen and (min-width: 320px) and (max-width: 360px) 
+{
+  #top-image{height: 7.9em; margin-left: -0.47em; width:103.5%;}
+  .buttons{top:2.5em; height:2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:2%;}
+  #separator{width:0em;}
+  #welcome{top:5%;}
+  #welcome h1{font-size: 1.7em; padding-top: 0.3em}
+  #welcome h3{font-size: 1em;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}
+  .content{width:104.3%;margin-left: -0.7em; margin-top: -7em; height: 25em; }
+  #content-menu{height: 45em !important;}  
+  #top-image-menu{height: 7.3em !important; margin-left: -0.47em; width:104% !important;}
+  #intro-menu-box{top: 30% !important; font-size: 60% !important;}
+  .poze-meniu{width:100% !important;} 
+  .poze-meniu div img{height: 5em !important; width: 6em !important; top:4em !important; left: 5% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7%; margin-top: 55% !important; width: 50% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 100% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 7.3em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:2.5em; height:2em;}
+  #b-c h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:2%;}
+  #separator-c{width: 0em !important;}
+  #content-contact{ width: 101%;}
+
+}
+
+@media only screen and (min-width: 361px) and (max-width: 399px) 
+{
+  #top-image{height: 8.8em; margin-left: -0.47em; width:103.5%;}
+  .buttons{top:2.5em; height:2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:0em;}
+  #welcome{top:5%;}
+  #welcome h1{font-size: 1.7em; padding-top: 0.3em}
+  #welcome h3{font-size: 1em;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}
+  .content{width:104.3%;margin-left: -0.7em; margin-top: -7em; height: 25em; }
+  #content-menu{height: 45em !important;}  
+  #top-image-menu{height: 8.2em !important; margin-left: -0.47em; width:104% !important;}
+  #intro-menu-box{top: 35% !important; font-size: 65% !important;}
+  .poze-meniu{width:100% !important;} 
+  .poze-meniu div img{height: 5em !important; width: 6em !important; top:4em !important; left: 10% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7%; margin-top: 55% !important; width: 50% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 100% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 8em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:2.5em; height:2em;}
+  #b-c h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator-c{width: 0em !important;}
+  #content-contact{ width: 101%;}
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 430px) 
+{
+  #top-image{height: 9.7em; margin-left: -0.47em; width:103.5%;}
+  .buttons{top:3.3em; height:2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4.5%;}
+  #separator{width:0em;}
+  #welcome{top:5%;}
+  #welcome h1{font-size: 1.7em; padding-top: 4%;}
+  #welcome h3{font-size: 1.3em;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}
+  .content{width:104.3%;margin-left: -0.7em; margin-top: -7em; height: 25em; }
+  #content-menu{height: 50em !important;}  
+  #top-image-menu{height: 9.3em !important; margin-left: -0.47em; width:104% !important;}
+  #intro-menu-box{top: 40% !important; font-size: 73% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 5em !important; width: 6em !important; top:7em !important; left: 7% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7%; margin-top: 55% !important; width: 50% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 120% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 9.3em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:3.3em; height:2em;}
+  #b-c h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4.5%;}
+  #separator-c{width: 0em !important;}
+  #content-contact{ width: 101%;}
+
+}
+
+@media only screen and (min-width: 431px) and (max-width: 480px) 
+{
+  #top-image{height: 10.5em; margin-left: -0.47em; width:103.5%;}
+  .buttons{top:4em; height:2em;}
+  .logo{visibility: hidden;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:0em;}
+  #welcome{top:5%;}
+  #welcome h1{font-size: 1.7em; padding-top: 4%;}
+  #welcome h3{font-size: 1.3em;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}
+  .content{width:104.3%;margin-left: -0.7em; margin-top: -7em; height: 25em; }
+  #content-menu{height: 64em !important;}  
+  #top-image-menu{height: 10em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 40% !important; font-size: 85% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 7em !important; width: 8em !important; top:7em !important; left: 7% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7%; margin-top: 55% !important; width: 50% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 120% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 10em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:4em; height:2em;}
+  #b-c h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator-c{width: 0em !important;}
+  #content-contact{ width: 101%;}
+}
+
+/*---------------------------------------------------------------*/
+
+@media only screen and (min-width: 481px) and (max-width: 499px)
+{
+  #top-image{height: 11em; margin-left: -0.47em; width:102.5%; }
+  .buttons{top:15%; height: 7%;}
+  .buttons .logo{width:15%; left:62.5%; top: 390%;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:3%;}
+  #separator{width:20%;}
+  .content{width: 103.21%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 200%; padding-top: 5%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}  
+  #content-menu{height: 64em !important;}  
+  #top-image-menu{height: 10em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 40% !important; font-size: 85% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 7em !important; width: 8em !important; top:7em !important; left: 7% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7%; margin-top: 55% !important; width: 50% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 120% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 10.5em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:15%; height:7%;}
+  #b-c h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:3%;}
+  #separator-c{width: 20% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:15%; left:62.5%; top: 390%;}
+
+
+} 
+
+@media only screen and (min-width: 500px) and (max-width: 550px)
+{
+  #top-image{height: 12em; margin-left: -0.47em; width:102.5%; }
+  .buttons{top:15%; height: 7%;}
+  .buttons .logo{width:15%; left:60%; top: 390%;}
+  .buttons h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:20%;}
+  .content{width: 103.21%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 200%; padding-top: 5%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}  
+  #content-menu{height: 57em !important;}  
+  #top-image-menu{height: 10em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 40% !important; font-size: 85% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:5em !important; left: 7% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7%; margin-top: 45% !important; width: 50% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 120% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 11.5em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:15%; height:7%;}
+  #b-c h1{font-size: 100%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator-c{width: 20% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:15%; left:60%; top: 390%;}
+} 
+
+@media only screen and (min-width: 551px) and (max-width: 569px)
+{
+  #top-image{height: 12.8em; margin-left: -0.47em; width:102.5%; }
+  .buttons{top:18%; height: 9%;}
+  .buttons .logo{width:15%; left:61%; top: 300%;}
+  .buttons h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:10%;}
+  .content{width: 103.21%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 200%; padding-top: 5%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}  
+  #content-menu{height: 63em !important;}  
+  #top-image-menu{height: 12.6em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 50% !important; font-size: 90% !important; width: 80% !important; left: 10% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:8em !important; left: 7% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7%; margin-top: 40% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 140% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 12.7em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:18%; height:9%;}
+  #b-c h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:15%; left:61%; top: 300%;}
+}
+
+@media only screen and (min-width: 570px) and (max-width: 599px)
+{
+  #top-image{height: 12.8em; margin-left: -0.47em; width:102.5%; }
+  .buttons{top:18%; height: 9%;}
+  .buttons .logo{width:15%; left:59%; top: 300%;}
+  .buttons h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator{width:10%;}
+  .content{width: 103.21%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 200%; padding-top: 5%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}  
+  #content-menu{height: 63em !important;}  
+  #top-image-menu{height: 13em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 53% !important; font-size: 90% !important; width: 80% !important; left: 10% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:6.3em !important; left: 11% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 11% !important; margin-top: 40% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 140% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 13em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:18%; height:9%;}
+  #b-c h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:4%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:15%; left:59%; top: 300%;}
+
+}
+
+/*----------------------------------------------------------------*/
+
+@media only screen and (min-width: 600px) and (max-width: 639px)
+{
+  #top-image{height: 13.9em; margin-left: -0.47em; width:102%; }
+  .buttons{top:20%; height: 9%; }
+  .buttons .logo{width:16%; left:58%; top: 280%;}
+  .buttons h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:5%;}
+  #separator{width:10%;}
+  .content{width: 102%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 200%; padding-top: 5%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;} 
+  #content-menu{height: 63em !important;}  
+  #top-image-menu{height: 13.9em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 53% !important; font-size: 90% !important; width: 80% !important; left: 10% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:6.3em !important; left: 11% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 11% !important; margin-top: 40% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 140% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 13.9em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:20%; height:9%;}
+  #b-c h1{font-size: 130%; margin-top: 0.3em; margin-right: 0.5%; margin-left:5%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:58%; top: 280%;}
+} 
+
+@media only screen and (min-width: 640px) and (max-width: 689px)
+{
+  #top-image{height: 14.4em; margin-left: -0.47em; width:102%; }
+  .buttons{top:20%; height: 9%;}
+  .buttons .logo{width:16%; left:58%; top: 250%;}
+  .buttons h1{font-size: 135%; margin-top: 0.3em; margin-right: 0.5%; margin-left:5.5%;}
+  #separator{width:10%;}
+  .content{width: 102.3%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 200%; padding-top: 5%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;} 
+  #content-menu{height: 53em !important;}  
+  #top-image-menu{height: 14.4em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 56% !important; font-size: 90% !important; width: 80% !important; left: 10% !important;}
+  .poze-meniu{width:100% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:5em !important; left: 5% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 11% !important; margin-top: 35% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 140% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 14.4em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:20%; height:9%;}
+  #b-c h1{font-size: 135%; margin-top: 0.3em; margin-right: 0.5%; margin-left:5.5%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:58%; top: 250%;}
+} 
+
+@media only screen and (min-width: 690px) and (max-width: 730px)
+{
+  #top-image{height: 15em; margin-left: -0.47em; width:102%; }
+  .buttons{top:20%; height: 9%;}
+  .buttons .logo{width:16%; left:56%; top: 250%;}
+  .buttons h1{font-size: 135%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:10%;}
+  .content{width: 102.3%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 205%; padding-top: 2.8%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;} 
+  #content-menu{height: 53em !important;}  
+  #top-image-menu{height: 15.2em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 62% !important; font-size: 90% !important; width: 80% !important; left: 10% !important;}
+  .poze-meniu{width:100% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:5em !important; left: 5% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 11% !important; margin-top: 32% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 140% !important;}
+  .drop-right-menu li ul li{ font-size: 100% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 15em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:20%; height:9%;}
+  #b-c h1{font-size: 135%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:56%; top: 250%;}
+}
+
+@media only screen and (min-width: 731px) and (max-width: 799px)
+{
+  #top-image{height: 17em; margin-left: -0.47em; width:102%; }
+  .buttons{top:20%; height: 9%;}
+  .buttons .logo{width:16%; left:55%; top: 220%;}
+  .buttons h1{font-size: 145%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:10%;}
+  .content{width: 102.2%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 205%; padding-top: 2.8%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;} 
+  #content-menu{height: 53em !important;}  
+  #top-image-menu{height: 17em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 70% !important; font-size: 100% !important; width: 80% !important; left: 10% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:5em !important; left: 10% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 11% !important; margin-top: 32% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 180% !important;}
+  .drop-right-menu li ul li{ font-size: 80% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 16em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:20%; height:9%;}
+  #b-c h1{font-size: 145%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:55%; top: 220%;}
+}
+
+/*-------------------------------------------------------------------*/
+
+@media only screen and (min-width: 800px) and (max-width: 865px)
+{
+  #top-image{height: 18em; margin-left: -0.47em; width:101%; }
+  .buttons{top:26%; height: 9.6%;}
+  .buttons .logo{width:16%; left:54%; top: 180%;}
+  .buttons h1{font-size: 155%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator{width:10%;}
+  .content{width: 101.5%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:7%;}
+  #welcome h1{font-size: 205%; padding-top: 2.8%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 17em 0 0 0;}
+  .quote{font-size:0.8em;}  
+  #content-menu{height: 53em !important;}  
+  #top-image-menu{height: 18em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 70% !important; font-size: 100% !important; width: 80% !important; left: 10% !important;}
+  .poze-meniu{width:80% !important;} 
+  .poze-meniu div img{height: 8em !important; width: 9em !important; top:5em !important; left: 10% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 11% !important; margin-top: 32% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 180% !important;}
+  .drop-right-menu li ul li{ font-size: 80% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 18em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:26%; height:9.6%;}
+  #b-c h1{font-size: 155%; margin-top: 0.3em; margin-right: 0.5%; margin-left:6%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:54%; top: 180%;}
+}
+
+@media only screen and (min-width: 866px) and (max-width: 980px)
+{
+  #top-image{height: 20em; margin-left: -0.47em; width:101%; }
+  .buttons{top:28%; height: 10%;}
+  .buttons .logo{width:16%; left:54%; top: 150%;}
+  .buttons h1{font-size: 165%; margin-top: 0.3em; margin-right: 0.5%; margin-left:7%;}
+  #separator{width:10%;}
+  .content{width: 101.3%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:10%;}
+  #welcome h1{font-size: 205%; padding-top: 2.8%;}
+  #welcome h3{font-size: 120%;}
+  #first-quote{padding: 18em 0 0 0;}
+  .quote{font-size:0.8em;} 
+  #content-menu{height: 60em !important;}  
+  #top-image-menu{height: 20em !important; margin-left: -0.47em; width:103% !important;}
+  #intro-menu-box{top: 85% !important; font-size: 120% !important; width: 90% !important; left: 5% !important;}
+  .poze-meniu{width:90% !important;} 
+  .poze-meniu div img{height: 9em !important; width: 10em !important; top:5em !important; left: 10% !important; margin-right: 2% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 11% !important; margin-top: 32% !important; width: 45% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 180% !important;}
+  .drop-right-menu li ul li{ font-size: 80% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;} 
+  #top-image-contact{height: 20em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:28%; height:10%;}
+  #b-c h1{font-size: 165%; margin-top: 0.3em; margin-right: 0.5%; margin-left:7%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:54%; top: 150%;}
+} 
+
+/*---------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 981px) and (max-width: 1080px)
+{
+   #top-image{height: 22em; margin-left: -0.47em; width:101%; }
+  .buttons{top:32%; height: 12%;}
+  .buttons .logo{width:16%; left:52%; top: 100%;}
+  .buttons h1{font-size: 167%; margin-top: 0.3em; margin-right: 0.5%; margin-left:7%;}
+  #separator{width:10%;}
+  .content{width: 101.5%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:12%;}
+  #welcome h1{font-size: 212%; padding-top: 2.8%;}
+  #welcome h3{font-size: 130%;}
+  #first-quote{padding: 18em 0 0 0;}
+  .quote{font-size:0.8em;}   
+  #content-menu{height: 60em !important; width: 101.5% !important;}  
+  #top-image-menu{height: 22em !important; margin-left: -0.47em; width:101% !important;}
+  #intro-menu-box{top: 85% !important; font-size: 120% !important; width: 90% !important; left: 5% !important;}
+  .poze-meniu{width:80% !important;} 
+  .poze-meniu div img{height: 9em !important; width: 10em !important; top:5em !important; left: 7% !important; margin-right: 2% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7% !important; margin-top: 23% !important; width: 30% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 180% !important;}
+  .drop-right-menu li ul li{ font-size: 80% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important;}
+  #top-image-contact{height: 22em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:32%; height:12%;}
+  #b-c h1{font-size: 167%; margin-top: 0.3em; margin-right: 0.5%; margin-left:7%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:52%; top: 100%;}
+   
+} 
+
+@media only screen and (min-width: 1081px) and (max-width: 1210px)
+{
+  #top-image{height: 25em; margin-left: -0.47em; width:101%; }
+  .buttons{top:35%; height: 14%;}
+  .buttons .logo{width:16%; left:52%; top: 70%;}
+  .buttons h1{font-size: 173%; margin-top: 0.5em; margin-right: 0.5%; margin-left:8%;}
+  #separator{width:10%;}
+  .content{width: 101.5%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:12%;}
+  #welcome h1{font-size: 212%; padding-top: 2.8%;}
+  #welcome h3{font-size: 130%;}
+  #first-quote{padding: 18em 0 0 0;}
+  .quote{font-size:0.8em;}  
+  #content-menu{height: 60em !important; width: 101.5% !important;}  
+  #top-image-menu{height: 25em !important; margin-left: -0.47em; width:101% !important;}
+  #intro-menu-box{top: 100% !important; font-size: 120% !important; width: 90% !important; left: 5% !important;}
+  .poze-meniu{width:50% !important;} 
+  .poze-meniu div img{height: 6em !important; width: 7em !important; top:-13em !important; left: 110% !important; margin-right: 2% !important;}
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 7% !important; margin-top: 30% !important; width: 25% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 180% !important;}
+  .drop-right-menu li ul li{ font-size: 80% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important; left:90% !important;} 
+  #top-image-contact{height: 25em !important; margin-left: -0.47em; width:101% !important;}
+  #b-c{top:35%; height:14%;}
+  #b-c h1{font-size: 173%; margin-top: 0.3em; margin-right: 0.5%; margin-left:8%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101%;}
+  #logo-c{width:16%; left:52%; top: 70%;}
+   
+} 
+
+@media only screen and (min-width: 1211px) and (max-width: 1324px)
+{
+   #top-image{height: 26em; margin-left: -0.47em; width:101%; }
+  .buttons{top:39%; height: 14%;}
+  .buttons .logo{width:16%; left:50%; top: 40%;}
+  .buttons h1{font-size: 180%; margin-top: 0.5em; margin-right: 0.5%; margin-left:8%;}
+  #separator{width:10%;}
+  .content{width: 101.5%; height:23em; margin-top: -6.4em;margin-left: -0.7em;}
+  #welcome{top:12%;}
+  #welcome h1{font-size: 235%; padding-top: 2.5%;}
+  #welcome h3{font-size: 150%;}
+  #first-quote{padding: 19em 0 0 0;}
+  .quote{font-size:0.8em;}   
+  #content-menu{height: 50em !important; width: 101.5% !important;}  
+  #top-image-menu{height: 28em !important; margin-left: -0.47em; width:101% !important;}
+  #intro-menu-box{top: 110% !important; font-size: 120% !important; width: 90% !important; left: 5% !important;}
+  .poze-meniu{width:50% !important;} 
+  .poze-meniu div img{height: 7em !important; width: 8em !important; top:-13em !important; left: 100% !important; }
+  .drop-right-menu,.drop-right-menu li ul{margin-left: 3% !important; margin-top: 25% !important; width: 25% !important;}
+  .drop-right-menu li a,.drop-right-menu li ul li a {font-size: 180% !important;}
+  .drop-right-menu li ul li{ font-size: 80% !important; }
+  .drop-right-menu li:hover ul {width: 90% !important; top:-9em !important; left:90% !important;} 
+  #top-image-contact{height: 26em !important; margin-left: -0.47em; width:101.3% !important;}
+  #b-c{top:39%; height:14%;}
+  #b-c h1{font-size: 180%; margin-top: 0.3em; margin-right: 0.5%; margin-left:8%;}
+  #separator-c{width: 10% !important;}
+  #content-contact{ width: 101.5%;}
+  #logo-c{width:16%; left:50%; top: 40%;}
+  
+   
+} 

@@ -1,0 +1,89 @@
+#header {
+    background-color:lightblue;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+
+
+#nav {
+    line-height:30px;
+    background-color:black;
+    float:right;
+    height:500px;
+    width:20%;  
+    padding:10px;	      
+
+ }
+#footer {
+    background-color:lightblue;
+    color:black;
+    clear:both;
+    text-align:center;
+   padding:5px;	 	 
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.apa {
+   width: 50%;
+   height: 50%;
+}
+.pui{
+   width: 30%;
+   height: 20%;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.title{
+ color:white;
+}
+.alig{
+   text-align: justify;
+}
+.font{
+   font-size:200%;
+}
+.cent{
+   text-align: center;
+}
+.myDiv {
+    width: 600px;
+    height: 80px;
+    background-color: lightblue;
+    border: 2px solid black;
+    text-align: center;
+    -ms-transform: rotate(10deg); 
+    -webkit-transform: rotate(10deg); 
+    	    transform: rotate(10deg); 
+}
+/* responsive code */
+/* pt smartphoneuri portrait mode */
+@media all and (max-width: 415px) {
+    #section {
+    width: 70%;
+    font-size: 3em;
+    }
+    #nav {
+        width: 20%;
+        font-size: 1.3em;
+    }
+	.dropdown {
+        word-break: break-word;
+    }
+    .dropdown-content {
+        min-width: 50px;
+    }
+}

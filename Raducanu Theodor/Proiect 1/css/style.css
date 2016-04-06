@@ -40,7 +40,7 @@ body{
 .wrapper .nav ul li a:hover{
 	color: black;
 }
-.header #logo{	
+.header .logo{	
 	background: url(../img/logo.png);
 	width: 142px;
 	height: 180px;
@@ -127,7 +127,6 @@ body{
 	color: #ff8000;
 }
 
-/* Style The Dropdown Button */
 .dropbtn {
 		background-color: white;
         border: medium none;
@@ -146,13 +145,11 @@ body{
 	background: none repeat scroll 0 0 transparent;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
 	background: none repeat scroll 0 0 transparent;
     display: none;
@@ -162,19 +159,16 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     text-decoration: none;
     display: block;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover {
     background-color: #3e8e41;
 }
@@ -189,3 +183,51 @@ body{
 .fade:hover {
   opacity: 0.7;
  }
+
+/*
+****************
+*=Logo animation
+****************
+*/
+.header .logoback{	
+	background: url(../img/logoback.png);
+	width: 142px;
+	height: 180px;
+	background-repeat: no-repeat;
+	margin: 3% auto 0px auto;
+	text-indent: -9999px;
+}
+.flip-container {
+	perspective: 1000;
+}
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 142px;
+	height: 180px;
+	margin: 3% auto 0px auto;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	margin: 3% auto 0px auto;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}

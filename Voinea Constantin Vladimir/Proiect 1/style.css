@@ -1,0 +1,58 @@
+#header {
+    background-color:grey;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+.links {
+    color: white;
+}
+.main-text {
+    text-align:justify;
+}
+.main-text-title {
+    text-align: center;
+}
+#nav {
+    line-height:30px;
+    background-color: #DCDCDC;
+    height:100vh;
+    width:25%;
+    float:left;
+    padding:10px;
+    margin-right:5%;	   
+    margin-bottom:100vh;   
+}
+#section {
+    width:70%;
+    padding-left:10px;	 	 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+#me {
+    width:50%;
+    height:50%;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#github-link {
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+}
+

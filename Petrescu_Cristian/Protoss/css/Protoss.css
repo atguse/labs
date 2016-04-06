@@ -1,11 +1,61 @@
-﻿
+﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
     body {
+        line-height: 1;
         background-color: black;
+        background-repeat:no-repeat;
+        background:fixed;
+        animation:animateback 40s linear infinite;
+        -webkit-animation:animateback 40s linear infinite;
     }
 
     @font-face {
         font-family: 'StarCraft';
-        src: url('Starcraft Normal.ttf');
+        src: url('assets/Starcraft Normal.ttf');
     }
     .page{
         display:none;
@@ -19,6 +69,8 @@
         display: block;
         margin: 0 auto;
     }
+    .videohead{
+    }
 
     .logo {
         width: 35%;
@@ -30,34 +82,7 @@
         margin-top: -22.5%;
         margin-bottom: 8%;
     }
-    .himghistory{
-        margin-left:30%;
-        margin-top:-10%;
-        border:5px solid gold;
-    }
-    .himgphysiology{
-        margin-left:30%;
-        margin-top:-15%;
-        border:5px solid gold;
-    }
-    .himgculture{
-        margin-left:40%;
-        margin-top:-35%;
-        border:5px solid gold;
-    }
-    .himgfactions{
-        margin-left:32%;
-        margin-top:-30%;
-        border:5px solid gold;
-    }
-    .himgtechnology{
-        margin-left:32%;
-        margin-top:-43%;
-        border:5px solid gold;
-    }
-    .himgtrivia{
-        margin-left:60%;
-        margin-top:-85%;
+    .himg{
         border:5px solid gold;
     }
     
@@ -69,31 +94,304 @@
     }
 
     header {
+        border-style:solid;
+        border-color:white;
+        border-width: 2px;
+        border-left:none;
+        border-right:none;
+        font-size:300%;
         color: gold;
         font-family: 'StarCraft';
+    }
+    .pheader{
+        font-size:250%;
+        color: white;
+        display:block;
+        position:relative;
+        margin-top:5%;
+        margin-left:2%;
     }
     nav{
+        background-color: black;
+        opacity: 0.9;
+        border: 2px solid white;
+        text-align:center;
+        font-size:120%;
         line-height:30px;
         padding:5px;
-        margin-left:40%;
         color: gold;
         font-family: 'StarCraft';
     }
+    h1{
+        background-color: black;
+        opacity: 0.9;
+    }
     section{
+        background-color: black;
+        opacity: 0.9;
+        border: 2px solid white;
         color: gold;
+        align-content:center;
+        margin-left:20%;
+        margin-right:20%;
     }
     .hover_img a { position:relative; }
-    .hover_img a span { position:absolute; display:none; z-index:99; }
+    .hover_img a span { position:relative; display:none; z-index:99; }
     .hover_img a:hover span { display:block; }
 
     <!--                                                                          -->
 
-
-    .div1{
+    .p1{
         color:aqua;
         text-align:center;
         font-style:italic;
+        padding:5%;
+        margin-left:30%;
+        margin-right:30%;
+        margin-top:-2%;
+        margin-bottom:-2%;
+        font-size:150%;
+    }
+    .psimple{
+        padding:2%;
+        font-size:150%;
+        line-height:130%;
     }
 
+    .div0{
+        margin-right:50%;
+    }
 
+    .div1{
+        border-style:solid;
+        border-color:white;
+        border-top-style:none;
+        border-bottom-style:none;
 
+    }
+    .spanHover{
+        color:rgb(116,35,188);
+    }
+span[desc]:hover:after {
+    content: attr(desc);
+    font-style:italic;
+    color:white;
+}
+
+    ul{
+        list-style-type: circle;
+    }
+    .li1{
+        margin-bottom:2%;
+    }
+    .ul1{
+        margin-left:3%;
+        margin-top:2%;
+        list-style-type:square;
+    }
+    .UI{
+        display:block;
+        position:relative;
+        width: 100% !important;
+        height: auto !important;
+    }
+    .UI2{
+        display:block;
+        position:relative;
+        width: 100% !important;
+        height: auto !important;
+    }
+    .moveUI{
+        display:block;
+        position:relative;
+    }
+    .img1{
+        display:block;
+        position:relative;
+        z-index:-1;
+        border: 1px solid white;
+        width: 20% !important;
+        height: 20% !important;
+        margin-top:-30%;
+        margin-left:70%;
+    }
+    .divimg{
+        color:white;
+        margin-left:60%;
+        text-align:center;
+        font-size:150%;
+        line-height:130%;
+    }
+    .img2{
+        display:block;
+        position:relative;
+        width: 20% !important;
+        height: 20% !important;
+        z-index:-1;
+        border: 1px solid white;
+        margin-left:60%;
+        margin-bottom:-30%;
+    }
+    .img3{
+        display:block;
+        position:relative;
+        width: 50% !important;
+        height: 50% !important;
+        z-index:-1;
+        border: 1px solid white;
+        margin-left:120%;
+        margin-bottom:-50%;
+    }
+    .img4{
+        display:block;
+        position:relative;
+        width: 80% !important;
+        height: 80% !important;
+        border: 1px solid white;
+        margin-left:10%;
+    }
+    .img5{
+        display:block;
+        position:relative;
+        width: 40% !important;
+        height: 40% !important;
+        border: 1px solid white;
+        margin-left:120%;
+        margin-top:-35%;
+    }
+    .img6{
+        display:block;
+        position:relative;
+        width: 40% !important;
+        height: 40% !important;
+        border: 1px solid white;
+        margin-top:-15%;
+        margin-left:5%;
+    }
+    .img7{
+        display:block;
+        position:relative;
+        width: 40% !important;
+        height: 40% !important;
+        border: 1px solid white;
+        margin-left:30%;
+    }
+    .img8{
+        display:block;
+        position:relative;
+        width: 20% !important;
+        height: 20% !important;
+        border: 1px solid white;
+        margin-left:15%;
+        margin-top:-35%;
+    }
+    .img9{
+        display:block;
+        position:relative;
+        width: 30% !important;
+        height: 30% !important;
+        border: 1px solid white;
+        margin-left:15%;
+        margin-top:5%;
+        margin-bottom:-15%;
+    }
+    .img10{
+        display:block;
+        position:relative;
+        width: 30% !important;
+        height: 30% !important;
+        border: 1px solid white;
+        margin-left:60%;
+        margin-top:-50%;
+    }
+    .img11{
+        display:block;
+        position:relative;
+        width: 30% !important;
+        height: 30% !important;
+        border: 1px solid white;
+        margin-left:15%;
+        margin-top:-20%;
+    }
+    .img12{
+        display:block;
+        position:relative;
+        width: 30% !important;
+        height: 30% !important;
+        border: 1px solid white;
+        margin-left:60%;
+        margin-top:-40%;
+    }
+    .img13{
+        display:block;
+        position:relative;
+        width: 40% !important;
+        height: 40% !important;
+        border: 1px solid white;
+        margin-left:-10%;
+    }
+    .img14{
+        display:block;
+        position:relative;
+        width: 40% !important;
+        height: 40% !important;
+        border: 1px solid white;
+        margin-left:30%;
+        margin-top:-24%;
+    }
+    .img15{
+        display:block;
+        position:relative;
+        width: 40% !important;
+        height: 40% !important;
+        border: 1px solid white;
+        margin-left:70%;
+        margin-top:-24%;
+    }
+    .divleft{
+        margin-left:50%;
+    }
+    .divtriv{
+        width: 30px;
+        height: 52px;
+        background:url(sign.png);
+        background-color:transparent;
+        animation:question 15s alternate infinite;
+        -webkit-animation:question 15s alternate infinite;
+        position:absolute;
+        z-index:-1;
+        left:10%;
+    }
+    .divtriv2{
+        left:90%;
+    }
+    .divtech{
+        background: url(spear.jpg);
+        background-size:cover;
+    }
+    @-webkit-keyframes question {
+    0%   {top:0px;}
+    50%  {top:97%;}
+    100% {top:0px;}
+    }
+
+    @keyframes question {
+    0%   {top:0px;}
+    50%  {top:97%;}
+    100% {top:0px;}
+    }
+
+    @keyframes background{
+        0% {opacity:initial}
+        50% {opacity:0.5}
+        100% {opacity:initial}
+    }
+    @-webkit-keyframes animateback{
+        from { background-position-y: 0 ; }
+	    to { background-position-y: 100% ; }
+    }
+    @keyframes animateback{
+        from { background-position-y: 0 ; }
+	    to { background-position-y: 100% ; }
+    }
+    

@@ -7,7 +7,7 @@ span {
     -webkit-animation-name: example; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
     animation-name: example2;
-    animation-duration: 4s;
+    animation-duration: 10s;
 }
 
 /* Chrome, Safari, Opera */
@@ -51,9 +51,9 @@ span {
 
 /* Standard syntax */
 @keyframes example2 {
-    0%   {left:0px; top:0px;}
-    25%  {left:800px; top:0px;}
-    50%  {left:800px; top:300px;}
-    75%  {left:0px; top:300px;}
-    100% {left:0px; top:200px;}
+    0%   {left:20px; top:40px;}
+    25%  {left:800px; top:40px; width: 300px; transform: rotate(75deg); background-color: red;}
+    50%  {left:600px; top:400px; width: 100px; transform: rotate(125deg); background-color: white;}
+    75%  {left:100px; top:300px; transform: rotate(180deg);background-color: #bbf;}
+    100% {left:20px; top:40px;transform: rotate(0deg);}
 }
