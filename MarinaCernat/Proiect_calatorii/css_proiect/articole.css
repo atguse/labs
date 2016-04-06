@@ -1,0 +1,286 @@
+body {   font-family: Arial, Helvetica, sans-serif;
+		background-image: url("D:\\Anul 2\\Semestrul II\\Thenici web\\Proiect_calatorii\\img_proiect\\tapet_articole.jpg");
+		background-repeat: repeat;
+		/*background-position: center;*/
+		background-attachment: fixed;
+	}
+	
+#header {color: #604020;
+	    float:clear;
+		text-align:left;
+		padding:2px;
+		width: 600px;
+		height: 240px;
+		border: 3px solid #604020;;
+		word-spacing: 2px;
+		}
+
+#header a  {  
+		text-decoration: none;
+		  }
+	
+#TitluMare {
+	     font-size: 270%;
+	     color: #604020;
+         letter-spacing: 3px; 
+		 text-shadow: 2px 2px #eaeafa; }
+
+#ImgCentru{ width: 320px; height:240px;
+float:right;
+			opacity: 0.4;
+			filter: alpha(opacity=40); /* For IE8 and earlier */
+			 }
+
+@-webkit-keyframes centru 
+{
+    from {opacity: 0.4;}
+       to {font-size: 1.0;}
+}
+@keyframes centru 
+{
+    from {opacity: 0.4;}
+       to {opacity: 1.0;}
+}
+#ImgCentru:hover {animation: centru 2s;
+					- webkit-animation: centru 2s; }	
+		 
+
+		 
+		 
+		 
+		 
+#ImgStanga1{ width: 270px; height:190px;  
+float: left;
+			 margin-right: 20px;
+			 -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);  
+			 }
+			 
+@-webkit-keyframes stg1 
+{
+    from { -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to { -ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+@keyframes stg1 
+{
+    from {-ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to {-ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+#ImgStanga1:hover { animation: stg1 2s;
+					- webkit-animation: stg1 2s; }
+			 
+			 
+
+			 
+
+
+
+			 
+#ImgDreapta1{ width: 270px; height:190px;
+float: right;
+			 margin-left: 20px;
+			 -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);  
+			 }
+			 
+@-webkit-keyframes dr1 
+{
+    from { -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to { -ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+@keyframes dr1 
+{
+    from {-ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to {-ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+#ImgDreapta1:hover { animation: stg1 2s;
+					- webkit-animation: stg1 2s; }
+			 
+			 
+			 
+			 
+			 
+			 
+	
+			 
+#ImgStanga2{ width: 220px; height:140px;  
+float: right;
+			 margin-left: 20px;}
+
+#ImgDreapta2{ width: 220px; height:140px;  
+float: right;
+			  margin-left: 5px;}
+			  
+#ImgStanga3{ width: 360px; height:240px;  
+float: left;
+			 margin-right: 20px;}
+			 
+#ImgDreapta3{ width: 320px; height:240px; 
+float: right;
+			  margin-left: 5px;}
+
+.HomePage{ 
+         text-align:justify;
+		 }
+
+
+.HomePage p {
+		 text-indent: 50px;
+		 color: #001433;
+		 font-family: Arial, Helvetica, sans-serif;
+		 font-size:120%;
+		   }
+		   
+    h2 { text-indent: 20px;
+	    text-decoration: underline;
+		color: #604020;
+		font-family: Arial, Helvetica, sans-serif;
+		 
+			}
+			
+@media screen and (max-width: 800px) 
+{  
+#ImgStanga1{ width: 135px; height:95px;
+float: left;
+			 margin-right: 20px;
+			 -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);  
+			 }
+			 
+@-webkit-keyframes stg1 
+{
+    from { -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to { -ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+@keyframes stg1 
+{
+    from {-ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to {-ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+#ImgStanga1:hover { animation: stg1 2s;
+					- webkit-animation: stg1 2s; }
+					
+
+					
+					
+
+#ImgDreapta1{ width: 135px; height:95px;
+float: right;
+			 margin-left: 20px;
+			 -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);  
+			 }
+			 
+@-webkit-keyframes dr1 
+{
+    from { -ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to { -ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+@keyframes dr1 
+{
+    from {-ms-transform: rotate(0deg); /* IE 9 */
+			 -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+			 transform: rotate(0deg);}
+       
+	   to {-ms-transform: rotate(360deg); /* IE 9 */
+			 -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+			 transform: rotate(360deg);}
+}
+#ImgDreapta1:hover { animation: stg1 2s;
+					- webkit-animation: stg1 2s; }
+					
+					
+					
+#ImgStanga2{  width: 110px; height:70px;
+float: right;
+			 margin-left: 20px;}
+
+#ImgDreapta2{ width: 110px; height:70px;
+float: right;
+			  margin-left: 5px;}
+			  
+#ImgStanga3{ width: 180px; height:120px;
+float: left;
+			 margin-right: 20px;}
+			 
+#ImgDreapta3{  width: 160px; height:120px;
+float: right;
+			  margin-left: 5px;}		
+
+#header {color: #604020;
+	    float:clear;
+		text-align:left;
+		padding:2px;
+		width: 300px;
+		height: 120px;
+		border: 3px solid #604020;;
+		word-spacing: 2px;
+		overflow: scroll;
+		}
+
+
+#header a  {  
+		text-decoration: none;
+		  }
+		
+#ImgCentru{ width: 160px; height:120px;
+float:right;
+			opacity: 0.4;
+			filter: alpha(opacity=40); /* For IE8 and earlier */
+			 }
+
+@-webkit-keyframes centru 
+{
+    from {opacity: 0.4;}
+       to {font-size: 1.0;}
+}
+@keyframes centru 
+{
+    from {opacity: 0.4;}
+       to {opacity: 1.0;}
+}
+#ImgCentru:hover {animation: centru 2s;
+					- webkit-animation: centru 2s; }	
+	
+
+}
+
