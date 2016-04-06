@@ -1,0 +1,90 @@
+#divv
+{ 
+    text-align: center; 
+    margin-top:1%;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #FFF;
+    display: inline-block;
+     }
+
+#div1
+{ 
+    text-align: center; 
+    margin-bottom: 0.6% ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3%;
+    padding: 2%;
+    display: none;
+    }
+
+#div2
+{   text-align: center; 
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+    padding: 2%; 
+    background-color: #FFF; 
+    align-content: center;
+}
+
+@media screen and (min-width: 0)
+{
+    #divv{ width: 59%; 
+          font-size: 0.6em;  }
+    #div2 {width: 59%; font-size: 0.6em;}
+    #div1 {width 80%; font-size: 1em;}
+}
+
+
+@media screen and (min-width: 600px)
+{
+    #divv{ width: 60%; 
+                font-size: 0.9em;}
+    #div2 {width: 60%;
+    font-size: 0.9em;}
+    #div1 {width 70%; font-size: 1em;}
+    
+}
+
+}
+@media screen and (min-width: 1000px)
+{
+    #divv{ width: 60%;
+                font-size: 0.9em;}
+    #div2 {width: 60%;
+            font-size: 0.9em;}
+    #div1 {width 80%; font-size: 1.2em;}
+}
+
+}
+@media screen and (min-width: 1300px)
+{
+    #divv{ width: 60%; 
+            font-size: 1em;}
+    #div2 {width: 60%; font-size: 1em;}
+    #div1 {width 90%; font-size: 1.2em;}
+}
+@media screen and (min-width: 1400px)
+{
+    #divv{ width: 60%;
+            font-size: 1em;}
+    #div2 {width: 60%; font-size: 1em;}
+         #div1 {width 90%; font-size: 1.2em;}
+    
+}
+@media screen and (min-width: 0)
+{
+    #div1{ width: 25em; }
+}
+@media screen and (min-width: 1000px)
+{
+    #div1{ width: 45em; }
+}
+@media screen and (min-width: 1400px)
+{
+    #div1{ width: 65em; }
+}
