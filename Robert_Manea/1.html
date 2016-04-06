@@ -1,0 +1,151 @@
+<html>
+<head>
+<style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+*{margin:0;
+padding:0;}
+#sus{animation-name:fade,move;
+animation-duration:3s,5s;
+}
+@keyframes fade{
+from{opacity:0.3;}
+ to{opacity:1.0;}
+}
+@keyframes move{
+0% { top: 0; left: 0; }
+  30% { top: 50px; }
+  68%, 72% { left: 50px; bottom: 100px;}
+  100% { top: 0; left: 0; }
+}
+.a{background-image:url("http://www.menucool.com/slider/jsImgSlider/images/image-slider-2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	 height:250;
+	 color: white;
+	 margin-left: auto;
+	 margin-right: auto;
+	 position:relative;
+	 color:black;
+}
+.b{background-image:url("http://indiabright.com/wp-content/uploads/2015/11/profile_picture_by_kyo_tux-d4hrimy.png");
+	background-position:center center;
+	width: 200;
+	height: 200;
+	 position:relative;
+	 margin-top: -40;
+	 margin-left: auto;
+	 margin-right: auto;
+	 z-index:23443334;
+}
+.b:hover{transform:rotate(360deg);
+		 transition:all 0.75s ease-in-out;}
+.imf{width:50;
+	height:50;
+	padding: 10 10 10 10;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40;
+	z-index:234432;
+}
+.ims{width:50;
+	height:50;
+	padding: 10 10 10 10;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40;
+}
+#im1:hover{opacity:0;}
+#im2:hover{opacity:0.25;}
+#div1{float:right;}
+#tab, #tab th, #tab td{width: 20vw; 
+	 height: 8vh;
+	 padding:1px;
+	 border-collapse:collapse;
+	 border: 5px solid black;}
+tr:nth-child(even){background-color:grey;}
+tr:nth-child(odd){background-color:white;}
+ul{list-style-type:none;
+	overflow:hidden;
+	background-color:black;}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover {
+    background-color: red;
+}
+li .dropdown{ display: inline-block;}
+.content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.content a {
+    color: yellow;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.content a:hover {background-color: white}
+
+.dropdown:hover .content {
+    display: block;
+}
+</style>
+</head>
+<body>
+	<div class="a" id="sus"> header </div>
+	<div class="b"> photo </div>
+	<div class="a" style="margin-top: -40; border:10px groove green; height:1000">
+		infolalalalalalalalalalaal	dfhdhfjdhgdhgjdhhg
+		<br/>
+		<a id="im1" href="http://www.w3schools.com/">
+		<img class="imf" src="https://lh3.ggpht.com/lSLM0xhCA1RZOwaQcjhlwmsvaIQYaP3c5qbDKCgLALhydrgExnaSKZdGa8S3YtRuVA=w300" alt="Twitter">
+		<a id="im2" href="https://www.linkedin.com">
+		<img class="imf" src="https://yt3.ggpht.com/-CepHHHB3l1Y/AAAAAAAAAAI/AAAAAAAAAAA/Z8MftqWbEqA/s900-c-k-no/photo.jpg" alt="LinkedIn">
+		</a>
+		<div id="div1">
+		<table id="tab">
+		<tr> <th> Nume </th>
+			<th> Prenume </th>
+			<th> Chestii </th>
+			<th> blabla </th>
+		</tr>
+		<tr> <td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr> <td rowspan="2"> 5 </td>
+			<td> 6</td>
+			<td> 7</td>
+			<td> 8</td>
+		</tr>
+		<tr> <td> 9</td>
+			<td colspan="2"> 11</td>
+		</tr>
+		</table>
+		</div>
+	</br>
+	<ul>
+		<li><a href="1.html">Acasa</a></li>
+		<li class="dropdown"><a>Dropdown</a>
+			<div class="content">
+				<a href="https://www.facebook.com">Fb</a>
+				<a href="https://www.google.com">Google</a>
+				<a href="https://www.w3schools.com">w3</a>
+			</div>
+		</li>
+	</ul>
+	</div>
+	
+</body>
+</html>

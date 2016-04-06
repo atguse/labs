@@ -1,0 +1,27 @@
+
+.cover{
+	height: 357px;
+	width: 635px;
+	border:4px Solid black;  
+    text-align: center;
+}
+
+#profile{
+	width:275px;
+	height:275px; 
+	margin-top:-100px;
+	text-align:center; 
+	border-style: ridge; 
+	border-radius: 25px;
+}
+
+#coperta{
+	height:357px; 
+	margin:auto;
+}
+
+.about{
+	height: 357px;
+	width: 635px;
+	border:4px Solid black;
+}

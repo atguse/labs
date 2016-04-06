@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+
+#top-image {
+   position: relative;
+   background: #000 url('Images/top.jpg') top center;
+   background-size: 100% auto;
+   background-attachment: fixed;
+   width:101.15%;
+   height: 23em ;
+   margin-top: -0.47em;
+   margin-left: -0.47em;
+   overflow: hidden;
+}
+
+
+.buttons {
+   width: 100%;
+   position: absolute;
+   top:10em;
+   margin-left: -0.5em;
+   background: #ffffff;
+   opacity: 0.9;
+   box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);  
+   background-clip: padding-box;
+   background-size: 100% auto;
+   /*overflow: hidden;*/
+}
+
+.button-content
+{overflow: hidden;}
+
+.buttons .button-content {
+   padding:0 0.8em;
+}
+
+
+
+.buttons .logo {
+   position: absolute;
+   left:50%;
+   top:50%;
+   margin-left: -5.6em;
+   margin-top: -12em;
+}
+
+.logo
+{
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+
+}
+
+.logo:hover
+{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.buttons h1 {
+   font-family: Helvetica;
+   color: #8c8c8c; 
+   font-size: 1.7em;
+   display: inline-block;
+   margin-left: 3em;
+   margin-right: 1.5em;
+   opacity: 0.97;
+   text-align: right;
+}
+
+#separator{
+           width: 10em;
+   }
+
+
+.button-content a h1:hover
+{ color: #e6005c;
+   }
+
+.underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: #e6005c;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.underline:hover:before, .underline:focus:before, .underline:active:before {
+  left: 0;
+  right: 0;
+} 
+
+
+#vizibil
+{
+   overflow: visible;
+} 
+
+.content 
+{
+  width:101.05%;
+  background-attachment: scroll;
+  background-image: url('Images/pattern.jpg');
+  margin-top: -8em;
+  margin-left: -0.4em;
+  height: 30.3em;
+  position: relative;
+}
+
+.quote
+{
+  margin-top: 2em;
+  text-align: center;
+  font-family: Helvetica;
+  font-size:1em;
+}
+
+#first-quote
+{
+  padding: 20em 0 0 0;
+  margin-top: 8em;
+}
+
+
+
+
+#content-menu
+{
+  height: 37em;
+  position: static;
+  margin-top: -6.1em;
+  padding-top: 1em;
+  
+
+}
+
+#welcome
+{
+   width:82%;
+   height: 10em; 
+   background: rgba(230, 0, 92, 0.5);
+   border-radius: 0.8em;
+   top:15%;
+   left:9%;
+   position: absolute;
+   font-family: Helvetica;
+   text-align: center;
+
+}
+
+#welcome h1
+{
+   font-size: 3em;
+   opacity: 0.8;
+   margin-top: 0.1em;
+   
+}
+
+#welcome h3
+{
+   font-size: 1.8em;
+   opacity: 0.8;
+   
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+ 
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+ 
+  -webkit-animation-duration:2s;
+  -moz-animation-duration:2s;
+  animation-duration:2s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 0s;
+-moz-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+
+
+.logo
+{max-width: 100%;}
+
+.buttons:before, .buttons:after {
+   content: '';
+   display: block;
+   clear:
+
+
+
+
+
