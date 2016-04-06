@@ -1,0 +1,29 @@
+body {
+	width: 310px;
+	margin: auto;
+	padding-top: 30px;
+}
+
+h1 {
+	font-family: Calibri;
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+	float: left;
+	background-color: rgb(0,162,232);
+	border: 1px solid black;
+}
+.line {
+	display: block;
+	overflow: hidden;
+
+}
+
+button {
+	margin-top: 20px;
+	font-weight: bold;
+	padding: 10px;
+	background-color: yellow;
+}
