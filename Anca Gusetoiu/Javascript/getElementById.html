@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script type = "text/javascript">
+
+/*
+	orice block javascript care nu este incapsulat 
+	intr-o functie se executa la incarcarea paginii
+	variabila a va cauta elementul cu id-ul pid
+	acest element fiind definit mai jos in pagina
+	nu va executa alert
+*/
+alert("this is a javascript block");
+var a  =  document.getElementById("pid").innerHTML;
+alert(a);
+
+/*
+	am incapsulat intr-o functie cautarea elementului pid
+	=> nu trebuie sa ne mai gandim daca elementul este definit
+	inaintea apelului getElementById
+*/
+function f(){
+	alert("this is a javascript function");
+	var a  =  document.getElementById("pid").innerHTML;
+	alert(a);
+}
+
+</script>
+<body>
+
+<h1>My Second JavaScript</h1>
+
+<button type="button"
+onclick="f()">
+Click me </button>
+
+<p id = "pid"> this is the paragraph's content</p>
+
+</body>
+</html> 
