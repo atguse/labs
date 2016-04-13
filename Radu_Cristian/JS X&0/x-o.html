@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type = "text/javascript">
+    var xwins;
+    var ywins;
+    var flag= true;
+    var objs= [];
+    var i;
+    function initsc()
+    {
+      xwins = parseInt(localStorage.getItem("xwins"));
+      if(isNaN(xwins) == true)
+        xwins = 0;
+      ywins = parseInt(localStorage.getItem("ywins"));
+      if(isNaN(ywins) == true)
+        ywins = 0;
+    }
+    function init()
+    {
+      for(i=0;i<9;i++)
+        objs.push(document.getElementById("img"+i));
+    }
+    function changeImg(Obj)
+    {
+      if( Obj.src.indexOf("blank.png",0) >= 0)
+      {
+          Obj.src="X.png";
+          flag = false;
+          var result=check();
+          if(result == 0)
+              AI();
+      }
+    }
+
+    function check()
+    {
+      for(i=0;i<9;i=i+3)
+      {
+        if(objs[i].src.endsWith("blank.png") == false && objs[i].src==objs[i+1].src && objs[i+1].src==objs[i+2].src)
+        {
+          if(flag)
+          {
+            ywins = ywins + 1;
+            localStorage.setItem("ywins", ywins);
+            alert("0 WINS!");
+            location.reload();
+              return 1;
+          }
+          else{
+            xwins = xwins + 1;
+            localStorage.setItem("xwins", xwins);
+            alert("X WINS!");
+            location.reload();
+              return 1;
+          }
+        }
+      }
+      for(i=0;i<3;i=i+1)
+      {
+        if(objs[i].src.endsWith("blank.png") == false && objs[i].src==objs[i+3].src && objs[i+3].src==objs[i+6].src)
+        {
+          if(flag)
+          {
+            ywins = ywins + 1;
+            localStorage.setItem("ywins", ywins);
+            alert("0 WINS!");
+            location.reload();
+              return 1;
+          }
+          else{
+            xwins = xwins + 1;
+            localStorage.setItem("xwins", xwins);
+            alert("X WINS!");
+            location.reload();
+              return 1;
+          }
+        }
+      }
+      if(objs[0].src.endsWith("blank.png") == false && objs[0].src==objs[4].src && objs[4].src==objs[8].src)
+      {
+        if(flag)
+        {
+          ywins = ywins + 1;
+          localStorage.setItem("ywins", ywins);
+          alert("0 WINS!");
+          location.reload();
+            return 1;
+        }
+        else{
+          xwins = xwins + 1;
+          localStorage.setItem("xwins", xwins);
+          alert("X WINS!");
+          location.reload();
+            return 1;
+        }
+      }
+      if(objs[2].src.endsWith("blank.png") == false && objs[2].src==objs[4].src && objs[4].src==objs[6].src)
+      {
+        if(flag)
+        {
+          ywins = ywins + 1;
+          localStorage.setItem("ywins", ywins);
+          alert("0 WINS!");
+          location.reload();
+            return 1;
+        }
+        else{
+          xwins = xwins + 1;
+          localStorage.setItem("xwins", xwins);
+          alert("X WINS!");
+          location.reload();
+            return 1;
+        }
+      }
+        return 0;
+    }
+      function AI() {
+          var rs= false;
+          for( i = 0; i < 9; i++)
+          {
+              if(objs[i].src.indexOf("blank.png",0) >= 0)
+              {
+                  rs = true;
+              }
+          }
+          if( rs == true ) {
+              var x = Math.floor((Math.random() * 10));
+              if (x < 9 && objs[x].src.indexOf("blank.png", 0) >= 0) {
+                  objs[x].src = "O.png";
+                  flag = true;
+                  check();
+              }
+              else
+                  AI();
+          }
+          else
+          {
+              alert("IT'S A TIE!");
+              location.reload();
+          }
+      }
+  </script>
+</head>
+<body>
+<script>
+  initsc();
+  document.writeln("X wins:",xwins,"<br>");
+  document.writeln("0 wins:",ywins,"<br>");
+</script>
+<table border="1">
+  <tr>
+    <td><img src="blank.png" id="img0" onclick="changeImg(this)" width="128" height="128"/></td>
+    <td><img src="blank.png" id="img1" onclick="changeImg(this)" width="128" height="128"/></td>
+    <td><img src="blank.png" id="img2" onclick="changeImg(this)" width="128" height="128"/></td>
+  </tr>
+  <tr>
+    <td><img src="blank.png" id="img3" onclick="changeImg(this)" width="128" height="128"/></td>
+    <td><img src="blank.png" id="img4" onclick="changeImg(this)" width="128" height="128"/></td>
+    <td><img src="blank.png" id="img5" onclick="changeImg(this)" width="128" height="128"/></td>
+  </tr>
+  <tr>
+    <td><img src="blank.png" id="img6" onclick="changeImg(this)" width="128" height="128"/></td>
+    <td><img src="blank.png" id="img7" onclick="changeImg(this)" width="128" height="128"/></td>
+    <td><img src="blank.png" id="img8" onclick="changeImg(this)" width="128" height="128"/></td>
+  </tr>
+</table>
+<script>
+  init();
+</script>
+</body>
+</html>
