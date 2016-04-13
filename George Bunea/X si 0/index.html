@@ -14,8 +14,12 @@ function init(){
 		objs[i].src="blank.gif";
 	}
 
-	alert("Scorul este: X: " + scorX + " VS 0: " + scor0);
+	//alert("Scorul este: X: " + scorX + " VS 0: " + scor0);
+	var element = document.getElementById("ScoreX");
+	element.innerHTML = "Scor X: " + scorX;
 
+	var element = document.getElementById("Score0");
+	element.innerHTML = "Scor 0: " + scor0;
 }
 
 function check(){
@@ -120,15 +124,18 @@ function changeImg(obj)
 <img src="blank.gif" id="img7" onClick="changeImg(this)">
 <img src="blank.gif" id="img8" onClick="changeImg(this)">
 
+
+
+<h1 id="ScoreX">Scor X: 0</h1>
+<h1 id="Score0">Scor 0: 0</h1>
+
+
 <script type="text/javascript">
 init();
 </script>
 
 
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
 
 </body>
 </html>
