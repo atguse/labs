@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+var flag=true,objs=[];
+var counter,scorX=0,scor0=0;
+
+function init(){
+	counter=0;
+	for(i=0;i<9;i++)
+	{
+		objs.push(document.getElementById("img" + i));
+		objs[i].src="blank.gif";
+	}
+
+	alert("Scorul este: X: " + scorX + " VS 0: " + scor0);
+
+}
+
+function check(){
+	//verificare pe linii
+	for(i=0;i<9;i+=3){
+		if(objs[i].src==objs[i+1].src && objs[i+1].src==objs[i+2].src && objs[i].src == objs[i+2].src && objs[i].src.indexOf("blank") < 0  && flag==false){
+			alert("0 castiga");
+			scor0++;
+			init();
+		}
+		if(objs[i].src==objs[i+1].src && objs[i+1].src==objs[i+2].src && objs[i].src == objs[i+2].src && objs[i].src.indexOf("blank") < 0 && flag==true){
+			alert("X castiga");
+			scorX++;
+			init();
+		}
+	}
+
+	//verificare pe coloane
+	for(i=0;i<3;i++){
+		if(objs[i].src==objs[i+3].src && objs[i+3].src==objs[i+6].src && objs[i].src == objs[i+6].src && objs[i].src.indexOf("blank") < 0  && flag==false){
+			alert("0 castiga");
+			scor0++;
+			init();
+		}
+		if(objs[i].src==objs[i+3].src && objs[i+3].src==objs[i+6].src && objs[i].src == objs[i+6].src && objs[i].src.indexOf("blank") < 0 && flag==true){
+			alert("X castiga");
+			scorX++;
+			init();
+		}
+	}
+
+	//verificare pe diagonala principala
+	if(objs[0].src==objs[4].src && objs[4].src==objs[8].src && objs[0].src == objs[8].src && objs[0].src.indexOf("blank") < 0  && flag==false){
+		alert("0 castiga");
+		scor0++;
+		init();
+	}
+	if(objs[0].src==objs[4].src && objs[4].src==objs[8].src && objs[0].src == objs[8].src && objs[0].src.indexOf("blank") < 0  && flag==true){
+		alert("X castiga");
+		scorX++;
+		init();
+	}
+
+	//verificare pe diagonala secundara
+	if(objs[2].src==objs[4].src && objs[4].src==objs[6].src && objs[2].src == objs[6].src && objs[2].src.indexOf("blank") < 0  && flag==false){
+		alert("0 castiga");
+		scor0++;
+		init();
+	}
+	if(objs[2].src==objs[4].src && objs[4].src==objs[6].src && objs[2].src == objs[6].src && objs[2].src.indexOf("blank") < 0  && flag==true){
+		alert("X castiga");
+		scorX++;
+		init();
+	}
+	
+
+}
+
+function changeImg(obj)
+{
+	if(obj.src.indexOf("blank") >= 0) {
+
+		if(flag){
+			obj.src="X.gif";
+			counter++;
+			check();
+			flag=false;
+		}
+		else{
+			obj.src="0.gif";
+			counter++;
+			check();
+			flag=true;
+		}
+	}
+
+	if(counter==9){
+		alert("Remiza");
+		init();
+	}
+
+}
+
+
+</script>
+
+</head>
+
+
+<body>
+
+<img src="blank.gif" id="img0" onClick="changeImg(this)">
+<img src="blank.gif" id="img1" onClick="changeImg(this)">
+<img src="blank.gif" id="img2" onClick="changeImg(this)">
+</br>
+
+<img src="blank.gif" id="img3" onClick="changeImg(this)">
+<img src="blank.gif" id="img4" onClick="changeImg(this)">
+<img src="blank.gif" id="img5" onClick="changeImg(this)">
+</br>
+<img src="blank.gif" id="img6" onClick="changeImg(this)">
+<img src="blank.gif" id="img7" onClick="changeImg(this)">
+<img src="blank.gif" id="img8" onClick="changeImg(this)">
+
+<script type="text/javascript">
+init();
+</script>
+
+
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
