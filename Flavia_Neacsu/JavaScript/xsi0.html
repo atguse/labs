@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script>
+		var flag=true;
+		var ids=["id0","id1","id2","id3","id4","id5","id6","id7","id8","id9"];
+		var objs=[];
+		
+		function check(obj){
+			if(flag==true && obj.src.indexOf("blank.jpg")>-1){
+		        flag=false;
+				obj.src="x.png"
+			}
+			else if(flag==false && obj.src.indexOf("blank.jpg")>-1){
+		        flag=true;
+				obj.src="0.png";
+			}
+			win();
+	    }
+		
+		function win(){
+			
+			var j;
+			for(j=1;j<=9;j++)
+				objs[j]=document.getElementById(ids[j]);
+			
+			if(objs[1].src==objs[2].src && objs[2]==objs[3].src)
+					alert("winner");
+			/*if(objs[4].src==objs[5].src && objs[5]==objs[6].src)
+					alert("winner");
+			if(objs[7].src==objs[8].src && objs[8]==objs[9].src)
+					alert("winner");*/
+			//for(j=0;j<=3;j=j+3)
+				//if(objs[j+1].src==objs[j+2].src && objs[j+2]==objs[j+3].src)
+					//alert("winner");
+		}
+	</script> 
+</head>
+
+<body>
+	<div id="xdiv">
+		<img src="blank.jpg" id="id1" onClick="check(this)">
+		<img src="blank.jpg" id="id2" onClick="check(this)">
+		<img src="blank.jpg" id="id3" onClick="check(this)">
+		<br/>
+		<img src="blank.jpg" id="id4" onClick="check(this)">
+		<img src="blank.jpg" id="id5" onClick="check(this)">
+		<img src="blank.jpg" id="id6" onClick="check(this)">
+		</br>
+		<img src="blank.jpg" id="id7" onClick="check(this)">
+		<img src="blank.jpg" id="id8" onClick="check(this)">
+		<img src="blank.jpg" id="id9" onClick="check(this)">
+	</div>
+</body>
+
+</html>
