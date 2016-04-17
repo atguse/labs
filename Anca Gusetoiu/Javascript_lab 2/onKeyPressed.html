@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var i = 0 ;
+		var noElem = 9;
+		var objs = [];
+		function onLoadEvent(){
+
+			document.addEventListener("keydown", onKeyPressEvent, false);
+			for(j = 0 ; j < noElem ; j ++ ) {
+				objs[j] = document.getElementById("img" + j);
+			}
+		  	objs[i].className = "selectedClass";
+		
+		}
+		
+		function onKeyPressEvent(e){
+		    var keynum;
+
+		    if(window.event) { // IE                    
+		      keynum = e.keyCode;
+		    } else if(e.which){ // Netscape/Firefox/Opera                   
+		      keynum = e.which;
+		    }
+
+		   // alert(String.fromCharCode(keynum));
+		    //alert(keynum);
+		    // A = 65;
+		    // D = 68;
+		
+		  	switch(keynum) {
+			    case 65:
+			        if(i > 0 ) {
+						i = i - 1; 
+					}else{
+						i = noElem -1;
+					}
+			        break;
+			    case 68:
+			        if(i < noElem - 1) {
+						i = i + 1; 
+					}else{
+						i = 0 ;
+					}
+			        break;
+			    default:
+			        alert("please press A or D");
+			        break;
+			}
+
+		  	clearElements();
+		  	objs[i].className = "selectedClass";
+
+		 }
+
+		 function clearElements(){
+		 	for(j = 0 ; j < noElem ; j ++ ) {
+				objs[j].className = "defaultClass";
+			}
+		 }
+	</script>
+
+	<style>
+	.defaultClass {
+		width :100px;
+		height :100px;
+		display:inline-block;
+		background-color: blue;
+	}
+	.selectedClass {
+		width :100px;
+		height :100px;
+		display:inline-block;
+		background-color: red;
+	}
+	</style>
+</head>
+
+<body onload="onLoadEvent()">
+<span id = "img0" class = "defaultClass" > </span>
+<span id = "img1" class = "defaultClass" > </span>
+<span id = "img2" class = "defaultClass" > </span>
+<br/>
+<span id = "img3" class = "defaultClass" > </span>
+<span id = "img4" class = "defaultClass" > </span>
+<span id = "img5" class = "defaultClass" > </span>
+<br/>
+<span id = "img6" class = "defaultClass" > </span>
+<span id = "img7" class = "defaultClass" > </span>
+<span id = "img8" class = "defaultClass" > </span>
+<br/>
+
+
+</body>
+</html> 

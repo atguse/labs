@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<script type="text/javascript">
+		function f(obj)
+		{
+			alert(obj.type);
+		}
+	</script>
+</head>
 <body>
 
 <h1>My First JavaScript</h1>
 
 <button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+onclick="f(this)">
 Click me to display Date and Time.</button>
 
 <p id="demo"></p>

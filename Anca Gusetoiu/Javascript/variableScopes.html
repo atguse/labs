@@ -8,7 +8,10 @@ function f(){
 	localOrGlobal = 8; // aceasta variabila va primi context global
 	alert(localVariable);
 }
-
+function g(){
+	localOrGlobal += 3;
+	alert(localOrGlobal);
+}
 </script>
 <body>
 
@@ -20,5 +23,6 @@ f();
 alert(localOrGlobal);
 
 </script>
+<button onClick = "g()">click me</button>
 </body>
 </html> 

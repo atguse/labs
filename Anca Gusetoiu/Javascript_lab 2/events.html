@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var inputButton = null;
+		var paragraph = null;
+		var cnt = 0 ;
+
+		function onChangeEvent(){
+			  var x = document.getElementById("demo");
+    			x.value = x.value.toUpperCase();
+		}
+
+		function onLoadEvent(){
+			inputButton = document.getElementById("button1");
+			paragraph = document.getElementById("demo");
+			paragraph.onchange=function(){onChangeEvent();};
+			/*
+				http://www.w3schools.com/jsref/met_document_addeventlistener.asp
+			*/
+			//inputButton.addEventListener('change', onChangeEvent, false);
+		
+		}
+		function onClickEvent()
+		{
+			cnt ++;
+			document.getElementById("demo").value = "You clicked the button " + cnt + " time(s)!";
+			inputButton.value = "click me again";
+		//	paragraph.onchange();
+		}
+		  function onKeyPressEvent(e){
+		    var keynum;
+
+		    if(window.event) { // IE                    
+		      keynum = e.keyCode;
+		    } else if(e.which){ // Netscape/Firefox/Opera                   
+		      keynum = e.which;
+		    }
+
+		    alert(String.fromCharCode(keynum));
+		  }
+	</script>
+</head>
+
+<body onload="onLoadEvent()">
+
+<h1>My First JavaScript</h1>
+
+<button type="button" id = "button1" onclick="onClickEvent()" >
+	Click me 
+</button>
+
+<br/>
+
+<input type = "text" id="demo" style = "width:600px" onkeypress="onKeyPressEvent(event)"/>
+
+</body>
+</html> 
