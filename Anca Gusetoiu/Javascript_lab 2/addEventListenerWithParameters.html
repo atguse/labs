@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var objs = [];
+		function check(obj){
+			alert(obj.src);
+		}
+		
+		function init()
+		{
+			objs[0] = document.getElementById("id1");
+			objs[1] = document.getElementById("id2");
+			/*
+				this will work just fine :)
+			*/
+			objs[0].addEventListener("click" , function(){check(objs[0]);});
+			/*
+				here we have a problem ...
+				check function expects one parameter that we didn't provide
+				this might seem to work, but it won't 
+			*/
+			objs[1].addEventListener("click" , check);
+		}
+	</script>
+</head>
+
+<body>
+
+<h1>My First JavaScript</h1>
+
+<img src ="abcd.jpg" id = "id1" />
+<img src ="abcd.png" id = "id2" />
+<script type="text/javascript">
+	init();
+</script>
+
+</body>
+</html>
