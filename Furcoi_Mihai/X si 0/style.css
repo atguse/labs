@@ -1,0 +1,44 @@
+#gameBoard{
+
+    width: 310px;
+    height: 310px;
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    -webkit-animation: flipIn 1s;
+}
+
+canvas{
+    background-color: lightcoral;
+    margin: 0;
+    padding: 0;
+}
+
+.flip{
+    -webkit-animation: flip 1s;
+}
+
+@-webkit-keyframes flip {
+    to{
+        -webkit-transform: rotateY(180deg);
+        -webkit-animation-timing-function: ease-in-out;
+    }
+}
+
+@-webkit-keyframes flipIn {
+    from{
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    to{
+        -webkit-transform: rotateY(180deg);
+        -webkit-animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+}
