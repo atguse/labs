@@ -1,7 +1,11 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
 #gameBoard{
 
     width: 310px;
-    height: 310px;
+    height: 370px;
 
     margin: auto;
     position: absolute;
@@ -10,7 +14,7 @@
     right: 0;
     left: 0;
 
-    -webkit-animation: flipIn 1s;
+    -webkit-animation: flipIn 1.5s;
 }
 
 canvas{
@@ -37,8 +41,26 @@ canvas{
     }
 
     to{
-        -webkit-transform: rotateY(180deg);
+        -webkit-transform: rotateY(360deg);
         -webkit-animation-timing-function: ease-in-out;
         opacity: 1;
     }
+}
+
+#scor{
+
+}
+
+#scor1{
+    float: left;
+}
+
+#scor2{
+    float: right;
+}
+
+.clear{
+    clear: both;
+    content: "";
+    display: table;
 }
