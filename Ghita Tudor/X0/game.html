@@ -1,3 +1,5 @@
+<!--NOT FINISHED-->
+
 <html>
 <head>
 <script>
@@ -5,6 +7,10 @@
 	var turn = 1;
 	var gamesquares = new Array();
 	var win = 0;
+	var selectedprevious = "blank.jpg";
+	var selected = 0;
+	var squaresmarked = 0;
+	
 	function draw() {
 		var ing = document.getElementById("n").value;
 		msize = Number(ing);
@@ -20,7 +26,51 @@
 			game.innerHTML = game.innerHTML + "<br/>";
 		}
 		gamestyle();
+		document.addEventListener("keydown",keyEvent,false);
+		document.getElementById(String(selected)).src="selected.jpg";
 	}
+	
+	function keyEvent(k) {
+		var selectedSquare;
+		var key = k.which;
+		if (key != 88) {
+			document.getElementById(String(selected)).src = selectedprevious;
+			switch (key) {
+				case(68):
+					if (selected == msize*msize - 1) selected = 0
+					else selected++;
+					break;
+				case(65):
+					if (selected == 0) selected = msize*msize - 1;
+					else selected--;
+			}
+			selectedSquare = document.getElementById(String(selected));
+			selectedprevious = selectedSquare.src;
+			selectedSquare.src = "selected.jpg";
+		}
+		else if (key == 88){
+			selectedSquare = document.getElementById(String(selected));
+			if (selectedprevious.search("blank.jpg") != -1) {
+				switch (turn) {
+					case(1):
+						selectedSquare.src = "x.jpg";
+						gamesquares[Number(selectedSquare.id)] = turn + 1;
+						turn = 0;
+						squaresmarked++;
+						computerOpponent();
+						break;
+					case(0):
+						selectedSquare.src = "o.jpg";
+						gamesquares[Number(selectedSquare.id)] = turn + 1;
+						turn = 1;
+						break;
+				}
+				selectedprevious = selectedSquare.src;
+				checkifwon();
+			}
+		}
+	}
+	
 	function gamestyle() {
 		squares = document.getElementsByClassName("gamesquare");
 		noneed = document.getElementsByTagName("input");
@@ -40,6 +90,8 @@
 				square.src = "x.jpg";
 				gamesquares[Number(square.id)] = turn + 1;
 				turn = 0;
+				squaresmarked++;
+				computerOpponent();
 			}
 			else {
 				square.src = "o.jpg";
@@ -47,6 +99,23 @@
 				turn = 1;
 			}
 		}
+		checkifwon();
+	}
+	
+	function computerOpponent() {
+		if (squaresmarked == msize*msize) return;
+		var found = 0;
+		while(found == 0) {
+			obj = document.getElementById(String(parseInt(Math.random() * 10) % (msize*msize)));
+			if (obj.src.search("blank.jpg") != -1) found = 1;
+		}
+		obj.src = "o.jpg";
+		gamesquares[Number(obj.id)] = turn + 1;
+		turn = 1;
+		squaresmarked++;
+	}
+	
+	function checkifwon() {
 		var i;
 		var j;
 		var full;
@@ -102,6 +171,7 @@
 		}
 		if ((sum == msize || sum == 2 * msize) && full) gamewon();
 	}
+	
 	function gamewon() {
 		document.getElementById("wintext").innerHTML = "Game won by " + (turn == 0?"X":"0");
 		document.getElementsByTagName("body")[0].style.backgroundColor = "blue";
