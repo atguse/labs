@@ -97,6 +97,13 @@
 			win();
 	    }
 		
+		function clear(){
+			var j;
+			for(j=0;j<9;j++)
+				document.getElementById("id"+(j+1)).src="blank.jpg";
+			init();
+		}
+		
 		function win(){
 			
 			var j; var sw=1;
@@ -105,22 +112,26 @@
 			for(j=0;j<9;j=j+3)
 				if(objs[j].src==objs[j+1].src && objs[j+1].src==objs[j+2].src && sw==1 && objs[j].src.indexOf("blank.jpg")==-1)
 					{	alert("winner");
+					    clear();
 					     sw=0;
 				    }
 			
 			for(j=0;j<3;j=j+1)
 				if(objs[j].src==objs[j+3].src && objs[j+3].src==objs[j+6].src && sw==1 && objs[j].src.indexOf("blank.jpg")==-1)
 					{	alert("winner");
+						clear();
 					     sw=0;
 				    }
 			
 			if(objs[0].src==objs[4].src && objs[4].src==objs[8].src && sw==1 && objs[4].src.indexOf("blank.jpg")==-1 )
 				{	alert("winner");
+					clear();
 					sw=0;
 				}
 			
 			if(objs[2].src==objs[4].src && objs[4].src==objs[6].src && sw==1 && objs[4].src.indexOf("blank.jpg")==-1 )
 				{	alert("winner");
+					clear();
 					sw=0;
 				}
 		}
