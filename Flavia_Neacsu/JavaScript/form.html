@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<script>
+	function f(){
+		var myForm=document.forms["f1"];
+		var mySelectValue=myForm.elements["inputs"].value;
+		var node=document.getElementById("container");
+		var child=document.createElement(mySelectValue);
+		
+		var e = document.getElementById("opt");
+		var type = e.options[e.selectedIndex].text;
+		child.type=type;
+		
+		ch2=document.getElementById("txt");
+		child2=document.createElement("LABEL");
+		child2.innerHTML=ch2.value;
+		
+		if(type=="Text"){
+			node.appendChild(child2);
+			node.innerHTML+="<br />"
+			node.appendChild(child);
+		}
+		else if(type=="Radio") {
+				node.appendChild(child2);
+				node.innerHTML+="<br />"
+				var a=prompt("Cate optiuni de raspuns avem?");
+				var nr=parseInt(a);
+	
+				var j;
+				for(j=0;j<nr;j++){ child=document.createElement(mySelectValue); child.type=type; child.text=prompt("Raspuns:"+(j+1));
+					node.appendChild(child); node.innerHTML+="<br />" }
+			}
+		else if(type=="Checkbox") {
+				node.appendChild(child2);
+				node.innerHTML+="<br />"
+				var a=prompt("Cate optiuni de raspuns avem?");
+				var nr=parseInt(a);
+				
+				var j;
+				for(j=0;j<nr;j++)
+					{ child=document.createElement(mySelectValue); child.type=type;
+					  node.appendChild(child); node.innerHTML+="<br />" }
+			}
+		return false;
+	}
+</script>
+</head>
+
+<body>
+	<form onsubmit="return f()" id="f1">
+		<select name="inputs" id="opt">
+			<option value="input" type="text">Text</option>
+			<option value="input" type="checkbox">Checkbox</option>
+			<option value="input" type="radio">Radio</option>
+		</select>
+		<br>
+		<textarea id="txt">
+		</textarea>
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+	
+	<form id="container">
+	</form>
+</body>
+
+</html>
