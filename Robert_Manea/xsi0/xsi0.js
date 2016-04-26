@@ -1,7 +1,10 @@
 var i=0;
 var objs=[];
 var k=0;
-
+var pp=0;
+var zerowins=0;
+var xwins=0;
+var draws=0;
 function init(){
 	var j;
 	document.addEventListener("keydown",press);
@@ -12,12 +15,19 @@ function init(){
 		objs[j].addEventListener("mouseout",function(){out(this)});
 	}
 	over(objs[k]);
+	document.getElementById("xw").innerHTML="X WINS: " + xwins;
+	document.getElementById("0w").innerHTML="0 WINS: " + zerowins;
+	document.getElementById("dr").innerHTML="DRAWS: " + draws;
 }
 
 function clear(){
 	for(j=0;j<9;j++){
 		objs[j].src="blank.jpg";
 	}
+	pp=0;
+	document.getElementById("xw").innerHTML="X WINS: " + xwins;
+	document.getElementById("0w").innerHTML="0 WINS: " + zerowins;
+	document.getElementById("dr").innerHTML="DRAWS: " + draws;
 }
 
 function over(obj){
@@ -96,10 +106,14 @@ function win(){
 	}
 	line(objs[0],objs[4],objs[8]);
 	line(objs[2],objs[4],objs[6]);
+	if(pp==0) if(objs[0].src.indexOf("blank.jpg")<0 && objs[1].src.indexOf("blank.jpg")<0 && objs[2].src.indexOf("blank.jpg")<0 && objs[3].src.indexOf("blank.jpg")<0 && objs[4].src.indexOf("blank.jpg")<0 && objs[5].src.indexOf("blank.jpg")<0 && objs[6].src.indexOf("blank.jpg")<0 && objs[7].src.indexOf("blank.jpg")<0 && objs[8].src.indexOf("blank.jpg")<0) {alert("DRAW"); draws++; clear();}
 }
 
 function line(o1,o2,o3){
-	if(o1.src==o2.src && o2.src==o3.src) if(o1.src.indexOf("blank.jpg")<0) {alert("WIN!"); clear();}
+	if(o1.src==o2.src && o2.src==o3.src) if(o1.src.indexOf("blank.jpg")<0) {alert("WIN!"); pp=1;
+																			if(o1.src.indexOf("x.jpg")>-1 || o1.src.indexOf("redx.jpg")>-1) xwins++;
+																			else if(o1.src.indexOf("0.jpg")>-1 || o1.src.indexOf("red0.jpg")>-1) zerowins++;
+																			clear();}
 }
 
 function ai(){
