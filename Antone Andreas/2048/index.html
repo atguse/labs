@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+
+<title>2048 Game</title>
+
+<link rel="stylesheet" href="style/style.css">
+
+<meta charset="UTF-8">
+
+<meta name="keywords" content="2048,games,arcade,miniclip,javascript,enjoy,google,youtube,facebook,facebook games">
+
+<meta name="description" content="2048 game">
+
+<meta name="author" content="Antone Andreas">
+
+<link rel="shortcut icon" href="img/favicon.ico">
+
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+<link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> 
+
+<link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> 
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="HandheldFriendly" content="True">
+
+<meta name="MobileOptimized" content="320">
+
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+<script src="js/jquery-2.2.3.min.js"></script>
+
+<script src="js/GameManager.js"></script>
+
+<script src="js/Tile.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="heading">
+
+<h1 class="title"><img src="img/logo.png" style="width:150px;height:150px;"/></h1>
+
+<div class="scores-container">
+
+<div class="score-container">0</div>
+
+<div class="best-container">0</div>
+
+<div class="above-game">
+
+<a class="restart-button">New Game</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="game-container">
+
+<div class="game-message">
+
+<p class="p-message"></p>
+
+
+<div class="lower">
+
+<a class="keep-playing-button">Keep going</a>
+
+<a class="retry-button">Try again</a>
+
+</div>
+
+</div>
+
+<div class="grid-container">
+
+<div class="grid-row">
+
+<div class="grid-cell" id="00"></div>
+
+<div class="grid-cell" id="01"></div>
+
+<div class="grid-cell" id="02"></div>
+
+<div class="grid-cell" id="03"></div>
+
+</div>
+
+<div class="grid-row">
+
+<div class="grid-cell" id="10"></div>
+
+<div class="grid-cell" id="11"></div>
+
+<div class="grid-cell" id="12"></div>
+
+<div class="grid-cell" id="13"></div>
+
+</div>
+
+<div class="grid-row">
+
+<div class="grid-cell" id="20"></div>
+
+<div class="grid-cell" id="21"></div>
+
+<div class="grid-cell" id="22"></div>
+
+<div class="grid-cell" id="23"></div>
+
+</div>
+
+<div class="grid-row">
+
+<div class="grid-cell" id="30"></div>
+
+<div class="grid-cell" id="31"></div>
+
+<div class="grid-cell" id="32"></div>
+
+<div class="grid-cell" id="33"></div>
+
+</div>
+
+</div>
+
+<div class="tile-container">
+
+</div>
+
+</div>
+
+<p class="game-explanation">
+
+<strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+
+</p>
+
+<hr>
+
+<p>
+
+&nbsp; &nbsp; &#9400;Copyright 2016 by Antone Andreas | <a href="http://fmi.unibuc.ro/ro/" title="Facultatea de Matematica si Informatica, Universitatea Bucuresti" target="_blank">FMI.UNIBUC.RO</a>
+
+</p>
+
+</div>
+
+</body>
+
+</html>
