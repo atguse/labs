@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type = "text/javascript">
+    var noElem = 9;
+    var xwins;
+    var ywins;
+    var flag= true;
+    var objs= [];
+    var i;
+    var j=0;
+    function initsc()
+    {
+      xwins = parseInt(localStorage.getItem("xwins"));
+      if(isNaN(xwins) == true)
+        xwins = 0;
+      ywins = parseInt(localStorage.getItem("ywins"));
+      if(isNaN(ywins) == true)
+        ywins = 0;
+    }
+    document.addEventListener("keydown", KeyPressed);
+    function init()
+    {
+      for(i=0;i<9;i++)
+      {
+        objs.push(document.getElementById("img"+i));
+        objs[i].addEventListener("mouseover", function() { overFunc(this);});
+        objs[i].addEventListener("mouseout", function() { overFunc2(this);});
+        objs[i].addEventListener("click", function() { changeImg(this);});
+      }
+    }
+    function KeyPressed(e)
+    {
+      var keynum;
+      if(window.event) { // IE
+        keynum = e.keyCode;
+      } else if(e.which){ // Netscape/Firefox/Opera
+        keynum = e.which;
+      }
+      switch(keynum) {
+        case 65: //A
+            if(j > 0 ) {
+          j = j - 1;
+        }else{
+          j = noElem -1;
+        }
+            break;
+        case 68: //D
+            if(j < noElem - 1) {
+          j = j + 1;
+        }else{
+          j = 0 ;
+        }
+            break;
+        case 87: //W
+        if(j>2)
+          j = j - 3;
+        else
+          j = noElem - 3 + j;
+        break;
+        case 83: //S
+        if( j > 5)
+          j = j - 6;
+        else {
+          j = j + 3;
+        }
+        break;
+        case 32: //SPACE
+        changeImg(objs[j]);
+        break;
+        default:
+            alert("please use AWSD and SPACE");
+            break;
+    }
+    overFunc(objs[j]);
+    for(h=0;h<9;h++)
+    if(j != h)
+    overFunc2(objs[h]);
+    }
+    function overFunc(Obj)
+    {
+      if( Obj.src.indexOf("blank.png",0) >= 0)
+      Obj.src = "X-faded.png";
+    }
+    function overFunc2(Obj)
+    {
+      if( Obj.src.indexOf("X-faded.png",0) >= 0)
+      Obj.src = "blank.png";
+    }
+    function changeImg(Obj)
+    {
+      if( Obj.src.indexOf("blank.png",0) >= 0 || Obj.src.indexOf("X-faded.png",0) >= 0)
+      {
+          Obj.src="X.png";
+          flag = false;
+          var result=check();
+          if(result == 0)
+              AI();
+      }
+    }
+
+    function check()
+    {
+      for(i=0;i<9;i=i+3)
+      {
+        if(objs[i].src.endsWith("blank.png") == false && objs[i].src==objs[i+1].src && objs[i+1].src==objs[i+2].src)
+        {
+          if(flag)
+          {
+            ywins = ywins + 1;
+            localStorage.setItem("ywins", ywins);
+            alert("0 WINS!");
+            location.reload();
+              return 1;
+          }
+          else{
+            xwins = xwins + 1;
+            localStorage.setItem("xwins", xwins);
+            alert("X WINS!");
+            location.reload();
+              return 1;
+          }
+        }
+      }
+      for(i=0;i<3;i=i+1)
+      {
+        if(objs[i].src.endsWith("blank.png") == false && objs[i].src==objs[i+3].src && objs[i+3].src==objs[i+6].src)
+        {
+          if(flag)
+          {
+            ywins = ywins + 1;
+            localStorage.setItem("ywins", ywins);
+            alert("0 WINS!");
+            location.reload();
+              return 1;
+          }
+          else{
+            xwins = xwins + 1;
+            localStorage.setItem("xwins", xwins);
+            alert("X WINS!");
+            location.reload();
+              return 1;
+          }
+        }
+      }
+      if(objs[0].src.endsWith("blank.png") == false && objs[0].src==objs[4].src && objs[4].src==objs[8].src)
+      {
+        if(flag)
+        {
+          ywins = ywins + 1;
+          localStorage.setItem("ywins", ywins);
+          alert("0 WINS!");
+          location.reload();
+            return 1;
+        }
+        else{
+          xwins = xwins + 1;
+          localStorage.setItem("xwins", xwins);
+          alert("X WINS!");
+          location.reload();
+            return 1;
+        }
+      }
+      if(objs[2].src.endsWith("blank.png") == false && objs[2].src==objs[4].src && objs[4].src==objs[6].src)
+      {
+        if(flag)
+        {
+          ywins = ywins + 1;
+          localStorage.setItem("ywins", ywins);
+          alert("0 WINS!");
+          location.reload();
+            return 1;
+        }
+        else{
+          xwins = xwins + 1;
+          localStorage.setItem("xwins", xwins);
+          alert("X WINS!");
+          location.reload();
+            return 1;
+        }
+      }
+        return 0;
+    }
+      function AI() {
+          var rs= false;
+          for( i = 0; i < 9; i++)
+          {
+              if(objs[i].src.indexOf("blank.png",0) >= 0)
+              {
+                  rs = true;
+              }
+          }
+          if( rs == true ) {
+              var x = Math.floor((Math.random() * 10));
+              if (x < 9 && objs[x].src.indexOf("blank.png", 0) >= 0) {
+                  objs[x].src = "O.png";
+                  flag = true;
+                  check();
+              }
+              else
+                  AI();
+          }
+          else
+          {
+              alert("IT'S A TIE!");
+              location.reload();
+          }
+      }
+  </script>
+</head>
+<body>
+<script>
+  initsc();
+  document.writeln("X wins:",xwins,"<br>");
+  document.writeln("0 wins:",ywins,"<br>");
+</script>
+    <img src="blank.png" style="border:5px solid black" id="img0" width="128" height="128"/>
+    <img src="blank.png" style="border:5px solid black" id="img1" width="128" height="128"/>
+    <img src="blank.png" style="border:5px solid black" id="img2" width="128" height="128"/>
+    <br>
+    <img src="blank.png" style="border:5px solid black" id="img3" width="128" height="128"/>
+    <img src="blank.png" style="border:5px solid black" id="img4" width="128" height="128"/>
+    <img src="blank.png" style="border:5px solid black" id="img5" width="128" height="128"/>
+    <br>
+    <img src="blank.png" style="border:5px solid black" id="img6" width="128" height="128"/>
+    <img src="blank.png" style="border:5px solid black" id="img7" width="128" height="128"/>
+    <img src="blank.png" style="border:5px solid black" id="img8" width="128" height="128"/>
+<script>
+  init();
+</script>
+</body>
+</html>

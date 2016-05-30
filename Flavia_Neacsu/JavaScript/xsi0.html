@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script>
+		var flag=true;
+		var objs=[];
+		var i=0;
+		
+		function init(){
+			var j;
+			document.addEventListener("keydown", onKeyPressEvent, false);
+			for(j=0;j<9;j++)
+			{
+				objs.push(document.getElementById("id"+(j+1)));
+				objs[j].addEventListener("click",function(){check(this);});
+				objs[j].addEventListener("mouseover", function(){ this.style.opacity="0.5";});
+				objs[j].addEventListener("mouseout", function(){ this.style.opacity="1.0";});
+				
+			}
+			
+			objs[i].style.border="solid #d9d9d9";
+		}
+		
+		function onKeyPressEvent(e){
+		    var keynum;
+
+		    if(window.event) { // IE                    
+		      keynum = e.keyCode;
+		    } else if(e.which){ // Netscape/Firefox/Opera                   
+		      keynum = e.which;
+		    }
+		
+		  	switch(keynum) {
+			    case 65:
+			        if(i > 0 ) {
+						i = i - 1; 
+						
+					}
+					else{
+						i = 8;
+						
+					}
+			        break;
+			    case 68:
+			        if(i < 8) {
+						i = i + 1; 
+					}
+					else{
+						i = 0 ;
+					}
+			        break;
+				case 87:
+					if(i>2)
+						i=i-3;
+					else 
+						i=i+6;
+					break;
+				case 83:
+					if(i<6)
+						i=i+3;
+					else
+						i=i-6;
+					break;
+				
+				case 13:
+					check(objs[i]);
+					break;
+			    
+				default:
+			        alert("please press W/A/S/D/Enter");
+			        break;
+				
+			}
+
+		    clearElem();
+		  	objs[i].style.border="solid #d9d9d9";
+
+		 }
+		 
+		 function clearElem(){
+		 	for(j = 0 ; j < 9 ; j ++ ) {
+				objs[j].style.border="none";
+			}
+		 }
+
+		
+		function check(obj){
+			if(flag==true && obj.src.indexOf("blank.jpg")>-1){
+		        flag=false;
+				obj.src="x.png"
+			}
+			else if(flag==false && obj.src.indexOf("blank.jpg")>-1){
+		        flag=true;
+				obj.src="0.png";
+			}
+			win();
+	    }
+		
+		function clear(){
+			var j;
+			for(j=0;j<9;j++)
+				document.getElementById("id"+(j+1)).src="blank.jpg";
+			init();
+		}
+		
+		function win(){
+			
+			var j; var sw=1;
+			
+		
+			for(j=0;j<9;j=j+3)
+				if(objs[j].src==objs[j+1].src && objs[j+1].src==objs[j+2].src && sw==1 && objs[j].src.indexOf("blank.jpg")==-1)
+					{	alert("winner");
+					    clear();
+					     sw=0;
+				    }
+			
+			for(j=0;j<3;j=j+1)
+				if(objs[j].src==objs[j+3].src && objs[j+3].src==objs[j+6].src && sw==1 && objs[j].src.indexOf("blank.jpg")==-1)
+					{	alert("winner");
+						clear();
+					     sw=0;
+				    }
+			
+			if(objs[0].src==objs[4].src && objs[4].src==objs[8].src && sw==1 && objs[4].src.indexOf("blank.jpg")==-1 )
+				{	alert("winner");
+					clear();
+					sw=0;
+				}
+			
+			if(objs[2].src==objs[4].src && objs[4].src==objs[6].src && sw==1 && objs[4].src.indexOf("blank.jpg")==-1 )
+				{	alert("winner");
+					clear();
+					sw=0;
+				}
+		}
+	</script> 
+</head>
+
+<body>
+	<div id="xdiv">
+		<img src="blank.jpg" id="id1" onClick="check(this)">
+		<img src="blank.jpg" id="id2" onClick="check(this)">
+		<img src="blank.jpg" id="id3" onClick="check(this)">
+		<br/>
+		<img src="blank.jpg" id="id4" onClick="check(this)">
+		<img src="blank.jpg" id="id5" onClick="check(this)">
+		<img src="blank.jpg" id="id6" onClick="check(this)">
+		</br>
+		<img src="blank.jpg" id="id7" onClick="check(this)">
+		<img src="blank.jpg" id="id8" onClick="check(this)">
+		<img src="blank.jpg" id="id9" onClick="check(this)">
+	</div>
+	<script>
+		init();
+	</script>
+</body>
+
+</html>

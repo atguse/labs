@@ -1,0 +1,21 @@
+
+	<div id="test">Send me a message!</div>
+
+	<script>
+	alert("aici");
+	function listener(event){
+	alert("aici");
+	//  if ( event.origin !== "http://localhost:8111/" )
+	//    return;
+		alert(event);
+	  document.getElementById("test").innerHTML = "received: "+event.data;
+	}
+
+	if (window.addEventListener){
+	  addEventListener("message", listener, false);
+	} else {
+	  attachEvent("onmessage", listener);
+	}
+
+</script>
+

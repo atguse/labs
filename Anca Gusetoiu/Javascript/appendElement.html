@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	img{
+		float:left;
+	}
+</style>
+	<script type="text/javascript">
+		function myFunction() {
+		    var node = document.createElement("DIV");
+		    var pickMe = document.createElement("IMG");
+		    pickMe.src = "XYZ";
+		    node.appendChild(pickMe);
+		    document.getElementById("boardgame").appendChild(node);
+		}
+	</script>
+</head>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+
+
+<div id = "boardgame"></div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<script type = "text/javascript">
+
+var globalVariable = 5;
+function f(){
+	var localVariable = 6;
+	localOrGlobal = 8; // aceasta variabila va primi context global
+	alert(localVariable);
+}
+function g(){
+	localOrGlobal += 3;
+	alert(localOrGlobal);
+}
+</script>
+<body>
+
+<h1>Variable Scopes JavaScript</h1>
+<script type="text/javascript">
+	
+alert(globalVariable);
+f();
+alert(localOrGlobal);
+
+</script>
+<button onClick = "g()">click me</button>
+</body>
+</html> 

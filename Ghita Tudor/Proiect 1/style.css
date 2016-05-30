@@ -228,7 +228,11 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-   #content {
-	   background-color: red;
+   .content_photo {
+	/*display: inline-block;*/
+	height: 150px;
+	width: 200px;
+	float:right;
+	margin: 0px;
    }
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<button id="myBtn">Try it</button>
+<div>
+<p id="demo"></p>
+</div>
+<script>
+
+/*
+Events can be activated at two occasions: At the beginning ("capture"), and at the end ("bubble"). 
+Events are executed in the order of how they're defined. Say, you define 3 event listeners:
+The alert boxes will pop up in this order:
+
+2 (defined first, using capture=true)
+3 (defined by default event with capture=false)
+1 (first defined event with capture=false)
+*/
+window.addEventListener("click", function(){alert(1)}, false);
+window.addEventListener("click", function(){alert(2)}, true);
+document.getElementById("myBtn").addEventListener("click", function(){ displayDate(this); alert(3);});
+
+function displayDate(obj) {
+    	obj.innerHTML = Date();
+	alert("here");
+}
+</script>
+
+</body>
+</html> 
