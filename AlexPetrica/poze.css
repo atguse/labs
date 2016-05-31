@@ -1,0 +1,87 @@
+.poza{
+    width: 22%;
+    margin: 15px;
+    float: left;
+    
+}
+.poza:hover{
+    position: relative;
+    transform: scale(1.2);
+            
+}
+
+.a1{
+    animation-name: position;
+    animation-duration: 3s;
+}
+
+.a2{
+    animation-name: position1;
+    animation-duration: 3s;
+}
+
+.a3{
+    animation-name: position2;
+    animation-duration: 3s;
+}
+.a4{
+    animation-name: position3;
+    animation-duration: 3s;
+}
+
+
+.poza img{
+    width: 100%;
+    max-height: 250px;
+    height: 250px;
+}
+
+.poza h3{
+    text-align: center;
+}
+
+
+@keyframes anim1{
+    0%{
+        
+    }
+    100%{transform: rotateX(360deg);
+        
+    }
+    
+}
+@keyframes position{
+    0%{
+        transform: translate(-500px,500px);
+        
+    }
+    100%{transform: translate(0px);
+ 
+    }
+        
+    }
+
+
+    @keyframes position3{
+    0%{
+        transform: translate(500px,-500px);
+        
+    }
+    100%{transform: translate(0px);
+ 
+        }
+        
+    }
+
+
+    @keyframes position2{
+    0%{}
+    100%{transform: rotate(360deg);  }
+        
+    }
+    @keyframes position1{
+    0%{}
+    100%{transform: rotate(-360deg);  }
+        
+    }
+    

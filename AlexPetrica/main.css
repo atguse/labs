@@ -1,0 +1,344 @@
+
+body{
+    
+   margin: 0;
+    background-color: antiquewhite;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+50,bce0ee+100;Blue+Pipe */
+background: rgb(179,220,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(179,220,237,1) 0%, rgba(41,184,229,1) 50%, rgba(188,224,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 50%,rgba(188,224,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+    font-family: sans-serif;
+}
+.container{
+     margin: 0 auto;
+    width: 1000px;
+    background-color:white;
+}
+
+
+.imagine{
+    
+    height: inherit;
+    width: 220px;
+    position: absolute;
+  z-index: 1;
+    top:0px;
+    
+}
+.imagine img{
+    width: 100%;
+ height: 100%;
+             animation-name: anim2;
+    animation-duration: 5s;
+}
+
+.imagine img:hover{
+             animation-name: anim4;
+    animation-duration: 3s;
+    
+}
+
+@keyframes anim2{
+        0%{}
+      25%{transform: rotateX(90deg);}
+    50%{transform: rotateY(180deg);}
+    75%{transform: rotateZ(45deg);}
+    100%{transform: rotate3d(34deg);}
+}
+
+@keyframes anim3{
+    0%{}
+    
+    50%{transform: rotateX(180deg);}
+    
+
+}
+
+@keyframes anim4{
+    0%{}
+    
+    100%{transform:translate3d(10px,30px,40px);}
+    
+
+}
+@-webkit-keyframes anim5 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+@-webkit-keyframes anim6 {
+    0% {
+         
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+.imagine2{
+    
+    height: 300px;
+    width: 300px;
+    
+}
+.imagine2 img{
+    width: 100%;
+}
+.logo{
+    
+    height: 150px;
+    width: 100%;
+    z-index: 0;
+
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo img:hover{
+
+}
+
+
+#titlu{
+    color: #FFD20B;
+float: right;
+    margin-top: 0px;
+        font-size: 35px
+    
+}
+
+.clear{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.noutati{
+    
+}
+
+.noutati h1{
+    text-align: center;
+    
+}
+.articol1{
+    float: left;
+    width: 45%;
+    margin: 17px;
+        height: 650px;
+    border: 2px solid #0E1B24;
+    border-radius: 15px;
+    animation-name: art;
+    animation-duration: 3s;
+    padding: 5px;
+background-color: #FFD20B;    
+}
+.articol1 h2{
+    
+}
+.articol1 iframe{
+    width: 100%;
+    height: 350px;
+    
+}
+.articol1 img{
+    width: 100%;
+    height: 350px;
+    
+}
+.articol1:hover{
+    
+    transform: scale(1.1);
+    
+}
+
+.articol{
+    float: left;
+    width: 45%;
+    margin: 17px;
+        height: 650px;
+    border: 2px solid #0E1B24;
+    border-radius: 15px;
+    animation-name: you;
+    animation-duration: 3s;
+    padding: 5px;
+background-color: #FFD20B;    
+}
+.articol h2{
+    
+}
+.articol iframe{
+    width: 100%;
+    height: 350px;
+    
+}
+.articol img{
+    width: 100%;
+    height: 350px;
+    
+}
+.articol:hover{
+    
+    transform: scale(1.1);
+    
+}
+.articoll{
+    float: left;
+    width: 45%;
+    margin: 17px;
+        height: 650px;
+    border: 2px solid #0E1B24;
+    border-radius: 15px;
+    animation-name: art;
+    animation-duration: 3s;
+    padding: 5px;
+background-color: #0E1B24; 
+}
+.articoll iframe{
+    width: 100%;
+    height: 450px;
+position: relative;
+    top: 70px;
+    border-radius: 15px;
+}
+.articoll img{
+    width: 100%;
+    height: 350px;
+    
+}
+.articoll:hover{
+    
+    transform: scale(1.1);
+    
+}
+footer{
+    background-color: #0E1B24;
+    padding: 13px;
+}
+footer p{
+    color: white;
+    text-align: center;
+margin: 0px;
+}
+
+
+
+
+.cir{
+    background-color: #FFD20B;
+    width: 120px;
+    height: 120px;
+    border-radius: 120%;
+    text-align: center;
+   font-size: 24px;
+    position: relative;
+    top: -145px;
+    margin-left: 1000px;
+   -webkit-animation-name: anim5, animchange;
+    -webkit-animation-duration: 6s, 6s;
+    -webkit-animation-iteration-count: 1, infinite;
+  
+}
+.cir p{
+    line-height: 35px;
+    position: relative;
+    top:5px;
+}
+.cir p:hover{
+    
+      -webkit-animation-name:fotbal ;
+    -webkit-animation-duration: 2s;
+    
+}
+
+@-webkit-keyframes fotbal {
+    0% {
+         
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+    }
+}
+
+.meniu1{
+    display: none;
+}
+
+.meniu2{
+    display: none;
+}
+
+.meniu_principal{
+    position: relative;
+    left: 180px;
+    top: -11px;
+}
+
+.dropdown1 li{
+    list-style-type: none;
+    float: left;
+}
+
+.dropdown1 a{
+    text-decoration: none;
+    color: #F9D503;
+    padding: 5px 10px;
+    background-color: #0E1B24;
+    font-weight: bold;
+}
+
+.dropdown1 a:hover{
+    color: white;
+    background-color: #F9D503;
+}
+
+.dropdown2 li{
+    list-style-type: none;
+    float: left;
+}
+
+.dropdown2 a{
+    text-decoration: none;
+    color: #F9D503;
+    padding: 5px 10px;
+    background-color: #0E1B24;
+    font-weight: bold;
+}
+
+.dropdown2 a:hover{
+    color: white;
+    background-color: #F9D503;
+}
+@keyframes you{
+    0%{
+        transform: translate(-500px,500px);
+        
+    }
+    100%{transform: translate(0px);
+ 
+    }
+        
+    }
+
+
+    @keyframes art{
+    0%{
+        transform: translate(500px,-500px);
+        
+    }
+    100%{transform: translate(0px);
+ 
+        }
+        
+    }
