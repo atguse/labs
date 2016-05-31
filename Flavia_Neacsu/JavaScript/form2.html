@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+	<title> Formular </title>
+	<script>
+		var articles={};
+		function f(){
+			var sw=1;
+			var myForm=document.forms["myForm"];
+			var titlu=myForm.elements["title"].value;
+			var area=myForm.elements["area"].value;
+			var imp=myForm.elements["imp"].value;
+			
+			if(titlu.length<10 || titlu.length>300)
+				sw=0;
+			if(area.length>1000)
+				sw=0;
+			if(isNaN(imp))
+				sw=0;
+			
+			if(sw==1){
+				
+				alert("Valid");
+				if (typeof(Storage) !== "undefined") {
+					localStorage.setItem("ar[0]", myForm.elements["title"].value);
+					localStorage.setItem("ar[1]", myForm.elements["area"].value);
+					localStorage.setItem("ar[2]", myForm.elements["cat"].value);
+					localStorage.setItem("imp", myForm.elements["imp"].value);
+				}
+				else{
+					alert("Sorry, your browser does not support Web Storage...");
+					return false;
+				}
+			}
+			else{
+				alert("Invalid");
+				return false;
+			}
+			
+		}
+	</script>
+</head>
+
+<body>
+	<form onsubmit="return f()" action=" " name="myForm" id="myFormId">
+		<p>Title</p>
+		<input type="text" name="title"/>
+		<p>Body</p>
+		<textarea name="area"></textarea>
+		<p>Categorie</p>
+		<select name="cat">
+			<option>Poezie</option>
+			<option>Proza</option>
+			<option>Jurnal</option>
+		</select>
+		<p>Importance</p>
+		<input type="text" name="imp"/>
+		<br>
+		<input type="submit"/ value="Submit!">
+	</form>
+</body>
+
+</html>
+	

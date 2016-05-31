@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type = "text/javascript">
+
+function onSubmit(){
+
+	var myForm = document.forms["myForm"];
+
+	// Check browser support
+	if (typeof(Storage) !== "undefined") {
+		// Store
+		localStorage.setItem("lastName", myForm.elements["lastName"].value);
+		 var win = document.getElementById("iframe").contentWindow;
+ 
+		    win.postMessage(
+		      myForm.elements["lastName"].value,
+		      "http://localhost:8111/localstorage/"
+		    );
+		  //  return false
+		  
+
+		// Retrieve
+		document.getElementById("result").innerHTML = localStorage.getItem("lastName");
+	} 
+	// do not submit form 
+	return false;
+}
+function loadLocalStorage(){
+
+	// Check browser support
+	if (typeof(Storage) !== "undefined") {		
+		// Retrieve
+		document.getElementById("result").innerHTML = localStorage.getItem("lastName");
+	} else {
+		document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+	}
+}
+
+</script>
+</head>
+
+<body onload="loadLocalStorage()">
+ 
+<form  onsubmit = "return onSubmit()" name = "myForm" method = "POST" >
+	First name: <input type="text" name="firstName" value="Mickey"><br>
+	Last name: <input type="text" name="lastName" value="Mouse"><br>
+	<input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will stored in localstorage.</p>
+<div id = "result">
+</div>
+
+ <iframe src="http://localhost:8111/localstorage/retrieveLocalStorage.html" id="iframe" style="height:160px"></iframe>
+
+
+</body>
+</html>

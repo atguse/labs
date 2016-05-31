@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+	<title> Formular </title>
+	<script>
+		function f(){
+			var sw=1;
+			var myForm=document.forms["myForm"];
+			var titlu=myForm.elements["title"].value;
+			var area=myForm.elements["area"].value;
+			var imp=myForm.elements["imp"].value;
+			var cat=myForm.elements["cat"].value;
+			
+				
+			if (typeof(Storage) !== "undefined") {
+					titlu.innerHTML=localStorage.getItem("ar[0]");
+					area.innerHTML=localStorage.getItem("ar[1]");
+					cat.innerHTML=localStorage.getItem("ar[2]");
+					imp.innerHTML=localStorage.getItem("imp");
+				}
+				else{
+					alert("Sorry, your browser does not support Web Storage...");
+					return false;
+				}
+			
+		}
+	</script>
+</head>
+
+<body>
+	<iframe src="form2.html"></iframe>
+		<form onsubmit="return f()" action=" " name="myForm" id="myFormId">
+			<p>Title</p>
+			<input type="text" name="title"/>
+			<p>Body</p>
+			<textarea name="area"></textarea>
+			<p>Categorie</p>
+			<select name="cat">
+				<option>Poezie</option>
+				<option>Proza</option>
+				<option>Jurnal</option>
+			</select>
+			<p>Importance</p>
+			<input type="text" name="imp"/>
+			<br>
+			<input type="submit"/ value="Submit!">
+		</form>
+	
+</body>
+
+</html>
+	

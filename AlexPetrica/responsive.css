@@ -1,0 +1,141 @@
+@media screen and (max-width: 1000px){
+ 
+    .container{
+        width: 100%;
+    }
+    
+    .imagine{
+        display: none;
+    }
+    
+    .articol{
+        margin-left: 0;
+        width: 95%;
+        height: auto;
+        animation: 0;
+    }
+    
+    .articol:hover{
+        transform: none;
+    }
+        .articoll{
+        margin-left: 0;
+        width: 95%;
+        height: auto;
+        animation: 0;
+    }
+    
+    .articoll:hover{
+        transform: none;
+    }
+    
+    .poza{
+        width: 30%;
+        min-width: 200px;
+        margin: 5px;
+        animation: 0;
+    }
+    
+    .poza:hover{
+        transform: none;
+    }
+    
+    /*meniu dropdown*/
+    .meniu_principal{
+        position: relative;
+        left: 25%;
+    }
+    
+    .meniu_principal a{
+        text-decoration: none;
+    }
+
+    .dropdown1{
+        position: relative;
+        float:left;
+    }
+
+    .meniu1{
+        display: block;
+        padding: 5px 10px;
+        background-color: #0E1B24;
+        color: white;
+        line-height: 30px;
+    }
+
+    .submeniu1{
+        margin: 0;
+        padding: 5px 0;
+        display: none;
+        list-style-type: none;
+        text-align: left;
+        background-color: #0E1B24;
+    }
+
+    .submeniu1 li{
+        float: none;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .submeniu1 a{
+        display: block;
+        width: 90%;
+        background-color:white;
+        padding: 5px;
+        color: black;
+    }
+    .submeniu1 a:hover{
+        background-color:#F5D600;
+        padding: 5px;
+    }
+
+    .dropdown1:hover .submeniu1{
+        display: block;
+    }
+
+    .dropdown2{
+        float:left;
+    }
+
+    .meniu2{
+        display:block;
+        padding: 5px 10px;
+        background-color: #0E1B24;
+        color: white;
+        line-height: 30px;
+    }
+
+    .submeniu2{
+        margin: 0;
+        padding: 5px 0;
+        display: none;
+        list-style-type: none;
+        text-align: left;
+        background-color: #0E1B24;
+    }
+    .submeniu2 li{
+        float: none;
+        margin: 5px;
+        padding: 5px;
+        
+    }
+
+    .submeniu2 a{
+        display: block;
+        width: 90%;
+        background-color:white;
+        padding: 5px;
+        color: black;
+    }
+    .submeniu2 a:hover{
+        background-color:#F5D600;
+        padding: 5px;
+    }
+
+    .dropdown2:hover .submeniu2{
+        display: block;
+    }
+
+       
+}
