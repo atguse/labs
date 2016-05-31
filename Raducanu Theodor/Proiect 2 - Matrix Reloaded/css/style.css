@@ -40,6 +40,10 @@
 *=BASE STYLE
 ****************
 */
+@font-face {
+  font-family: Segoe UI Light;
+  src: url(segoeuil.ttf);
+}
 body {
      color: #000;
      line-height: 1.4;
