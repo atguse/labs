@@ -1,0 +1,50 @@
+table {
+	border: solid 2px black;
+}
+
+
+td {
+
+	background-color: rgb(45, 78, 153);
+	width: 30px;
+	height: 30px;
+}
+
+td:hover {
+	background-color: rgb(25, 55, 124);
+}
+
+
+#containerTabela{
+
+	margin: 100px;
+	padding: 10px;
+	margin-top: 30px;
+}
+
+#button {
+	display: inline;
+	margin:30px;
+	padding: 10px;
+	border: solid 2px green;
+	margin-left: 155px;
+}
+
+#button:hover {
+	font-weight: bold;
+	padding: 8px;
+}
+
+#consoleLog{
+	background-color: rgb(37, 43, 57);
+	color: white;
+	border: 1px solid green;
+	width: 50%;
+	height: 30%;
+
+}
+
+body {
+	padding-top: 20px;
+	padding-left: 10px; 
+}
