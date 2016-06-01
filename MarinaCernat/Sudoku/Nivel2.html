@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sudoku</title>
+
+    <script src="Sudoku2JavaScript.js"> </script>
+	
+	<style>
+	 #titlu { color : #0000cc;
+	          font-family: "Arial",Times New Roman, Times, serif;
+			  font-size: 40px; }
+			  
+     #joc   { float: left;}
+	 
+		button 	 {  clear: left;
+					background-color:  #3399ff;
+					color: black;
+					padding: 5px 5px;
+					border: solid black 2px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 20px;
+					margin: 4px 4px;
+					cursor: pointer;	}
+					
+	    p   { float: right;
+			  color : #0000cc;
+	          font-family: "Arial",Times New Roman, Times, serif;
+			  font-size: 20px;
+	        }
+		   
+	 #desc {
+	        
+			  float:right;
+			  margin-top: -370px;
+			  margin-right: 200px;
+			  padding : 5px;
+	          border: solid #0000cc;
+			  width:500px;
+			  height:170px;
+	       }
+					
+    body {	background-color: #ccffff;	}
+	
+	.defaultClass { }
+	
+	.selectedClass { border: 5px red solid; }
+	
+	</style>
+	
+	<h1 id="titlu"><center> Sudoku - Nivelul II </center></h1>
+
+</head>
+
+
+<body>
+
+<div id="Joc">
+
+<div>
+<img src="casuta.png" alt="Casuta" id="img0">
+<img src="casuta.png" alt="Casuta" id="img1">
+<img src="2.png" alt="Casuta" id="img2">
+<img src="3.png" alt="Casuta" id="img3">
+<img src="casuta.png" alt="Casuta" id="img4">
+<img src="casuta.png" alt="Casuta" id="img5">
+</div>
+
+<div>
+<img src="5.png" alt="Casuta" id="img6">
+<img src="4.png" alt="Casuta" id="img7">
+<img src="casuta.png" alt="Casuta" id="img8">
+<img src="casuta.png" alt="Casuta" id="img9">
+<img src="casuta.png" alt="Casuta" id="img10">
+<img src="casuta.png" alt="Casuta" id="img11">
+</div>
+
+<div>
+<img src="casuta.png" alt="Casuta" id="img12">
+<img src="casuta.png" alt="Casuta" id="img13">
+<img src="casuta.png" alt="Casuta" id="img14">
+<img src="casuta.png" alt="Casuta" id="img15">
+<img src="casuta.png" alt="Casuta" id="img16">
+<img src="casuta.png" alt="Casuta" id="img17">
+</div>
+
+<div>
+<img src="casuta.png" alt="Casuta" id="img18">
+<img src="casuta.png" alt="Casuta" id="img19">
+<img src="casuta.png" alt="Casuta" id="img20">
+<img src="casuta.png" alt="Casuta" id="img21">
+<img src="casuta.png" alt="Casuta" id="img22">
+<img src="casuta.png" alt="Casuta" id="img23">
+</div>
+
+<div>
+<img src="casuta.png" alt="Casuta" id="img24">
+<img src="casuta.png" alt="Casuta" id="img25">
+<img src="casuta.png" alt="Casuta" id="img26">
+<img src="casuta.png" alt="Casuta" id="img27">
+<img src="5.png" alt="Casuta" id="img28">
+<img src="1.png" alt="Casuta" id="img29">
+</div>
+
+<div>
+<img src="casuta.png" alt="Casuta" id="img30">
+<img src="casuta.png" alt="Casuta" id="img31">
+<img src="6.png" alt="Casuta" id="img32">
+<img src="2.png" alt="Casuta" id="img33">
+<img src="casuta.png" alt="Casuta" id="img34">
+<img src="casuta.png" alt="Casuta" id="img35">
+</div>
+
+</div>
+
+<button onclick="ver()" id="verificare"> Verifica </button>
+<button onclick="undo()"> Undo </button>
+
+<div id="desc">
+<p>&nbsp &nbsp &nbsp Completati matricea de dimensiune 6x6, cu 36 de casute in total, folosind doar cifrele de la 1 la 6.</p>
+<p>&nbsp &nbsp &nbsp Fiecare din cele 6 cifre trebuie sa apara o singura data pe fiecare linie si o singura data pe fiecare coloana . </p>
+</div>
+
+<script>
+	init();
+</script>
+
+</body>
+</html>
