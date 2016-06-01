@@ -107,6 +107,14 @@
 		},false);
 		
 		window.addEventListener("click",function() {
+			var i;
+			var projectileCount = 0;
+			for (i=0;i<playerProjectiles.length;i++) {
+				if (playerProjectiles[i] != undefined) {
+					projectileCount++;
+				}
+			}
+			if (projectileCount > 4) return;
 			var projectile = {
 				x: playerRightHand.x + 6,
 				y: playerRightHand.y
@@ -168,7 +176,7 @@
 			if (enemies[i] != undefined) {
 				for (j=0;j<playerProjectiles.length;j++) {
 					if (playerProjectiles[j] != undefined) {
-						if (playerProjectiles[j].y <= enemies[i].y + 20 && playerProjectiles[j].y >= enemies[i].y - 10) {
+						if (playerProjectiles[j].y <= enemies[i].y + 20 && playerProjectiles[j].y + 3 >= enemies[i].y - 10) {
 							if (playerProjectiles[j].x > enemies[i].x + 15) {
 								delete playerProjectiles[j];
 								delete enemies[i];
