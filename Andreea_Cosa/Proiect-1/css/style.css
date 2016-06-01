@@ -176,7 +176,7 @@ article .atractii {
 
 /* img transformation */
 
-#zoom{
+.atractii{
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
        -o-transition: all 0.5s ease;
@@ -184,6 +184,21 @@ article .atractii {
           transition: all 0.5s ease;
 }
  
-#zoom:hover {
+.atractii:hover {
   width: 60%;
+}
+
+/* Rotation img   */
+.side {
+  
+  animation: rotation 2s;
+}
+
+@keyframes rotation {
+	0%{
+		transform: rotateY(0deg);
+	}
+	100%{
+		transform: rotateY(360deg);
+	}
 }

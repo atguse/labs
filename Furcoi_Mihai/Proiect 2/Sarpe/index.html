@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Șarpe</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="game">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="menu">
+      <h1 id="title">Sarpe</h1>
+      <p id="start" onClick="init();">Start</p>
+    </div>
+
+    <div id="gameOver">
+      <h1 id="title">Sarpe</h1>
+      <p id="infogo">Ai pierdut!</p>
+      <p id="restart" onClick="init();">Restart</p>
+    </div>
+
+    <p id="score">Scor: 0</p>
+    <p id="best">Record: 0</p>
+    <p id="time">Timp: 0s</p>
+
+  </div>
+<script src="game.js" type="text/javascript"></script>
+</body>
+</html>

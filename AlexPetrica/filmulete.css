@@ -1,0 +1,41 @@
+.video{
+    margin: 20px 30px 30px 0;
+    width: 45%;
+    float: left;
+    
+    -webkit-animation-name: anim5;
+    -webkit-animation-duration: 3s;
+}
+
+.video video{
+    width: 100%;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.video h3{
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    .video{
+        min-width: 250px;
+    }
+}
+ .fix{
+        width: 100%;
+ float: left;
+    margin: 17px;
+        height: 450px;
+    padding: 5px;
+    }
+@-webkit-keyframes fadeDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}

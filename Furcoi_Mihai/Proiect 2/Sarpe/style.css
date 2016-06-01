@@ -1,0 +1,69 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+#menu, #gameOver{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+h1, p, a{
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-family: "Press Start 2P",cursive;
+  font-size: 72px;
+  text-align: center;
+  margin: 0;
+}
+
+#title{
+  top: 10%;
+}
+
+#start, #restart{
+  top: 40%;
+  display: block;
+  font-size: 56px;
+  cursor: pointer;
+}
+
+#start:hover, #restart:hover{
+  transform: scale(0.9);
+}
+
+#infogo{
+  top: 15%;
+}
+
+#score{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  margin: 20px;
+}
+
+#best{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 16px;
+  margin: 20px;
+}
+
+#time{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
+    margin: 20px;
+  }
