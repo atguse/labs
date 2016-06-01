@@ -1,0 +1,143 @@
+<html>
+<head>
+<style>
+img
+{
+margin-left:-4px;
+margin-top:-4px;
+}
+</style>
+</head>
+<script src="Snake.js"></script>
+<body onload="init()">
+<div id="FUNDAL"> 
+    <div>
+		<img src="1pe1.png" id="img1" >
+		<img src="1pe1.png" id="img2" >
+		<img src="1pe1.png" id="img3" >
+		<img src="1pe1.png" id="img4" >
+		<img src="1pe1.png" id="img5" >
+		<img src="1pe1.png" id="img6" >
+		<img src="1pe1.png" id="img7" >
+		<img src="1pe1.png" id="img8" >
+		<img src="1pe1.png" id="img9" >
+		<img src="1pe1.png" id="img10" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img11" >
+		<img src="1pe1.png" id="img12" >
+		<img src="1pe1.png" id="img13" >
+		<img src="1pe1.png" id="img14" >
+		<img src="1pe1.png" id="img15" >
+		<img src="1pe1.png" id="img16" >
+		<img src="1pe1.png" id="img17" >
+		<img src="1pe1.png" id="img18" >
+		<img src="1pe1.png" id="img19" >
+		<img src="1pe1.png" id="img20" >      
+	</div>
+	<div>
+		<img src="1pe1.png" id="img21" >
+		<img src="1pe1.png" id="img22" >
+		<img src="1pe1.png" id="img23" >
+		<img src="1pe1.png" id="img24" >
+		<img src="1pe1.png" id="img25" >
+		<img src="1pe1.png" id="img26" >
+		<img src="1pe1.png" id="img27" >
+		<img src="1pe1.png" id="img28" >
+		<img src="1pe1.png" id="img29" >
+		<img src="1pe1.png" id="img30" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img31" >
+		<img src="1pe1.png" id="img32" >
+		<img src="1pe1.png" id="img33" >
+		<img src="1pe1.png" id="img34" >
+		<img src="1pe1.png" id="img35" >
+		<img src="1pe1.png" id="img36" >
+		<img src="1pe1.png" id="img37" >
+		<img src="1pe1.png" id="img38" >
+		<img src="1pe1.png" id="img39" >
+		<img src="1pe1.png" id="img40" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img41" >
+		<img src="1pe1.png" id="img42" >
+		<img src="1pe1.png" id="img43" >
+		<img src="1pe1.png" id="img44" >
+		<img src="1pe1.png" id="img45" >
+		<img src="1pe1.png" id="img46" >
+		<img src="1pe1.png" id="img47" >
+		<img src="1pe1.png" id="img48" >
+		<img src="1pe1.png" id="img49" >
+		<img src="1pe1.png" id="img50" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img51" >
+		<img src="1pe1.png" id="img52" >
+		<img src="1pe1.png" id="img53" >
+		<img src="1pe1.png" id="img54" >
+		<img src="1pe1.png" id="img55" >
+		<img src="1pe1.png" id="img56" >
+		<img src="1pe1.png" id="img57" >
+		<img src="1pe1.png" id="img58" >
+		<img src="1pe1.png" id="img59" >
+		<img src="1pe1.png" id="img60" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img61" >
+		<img src="1pe1.png" id="img62" >
+		<img src="1pe1.png" id="img63" >
+		<img src="1pe1.png" id="img64" >
+		<img src="1pe1.png" id="img65" >
+		<img src="1pe1.png" id="img66" >
+		<img src="1pe1.png" id="img67" >
+		<img src="1pe1.png" id="img68" >
+		<img src="1pe1.png" id="img69" >
+		<img src="1pe1.png" id="img70" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img71" >
+		<img src="1pe1.png" id="img72" >
+		<img src="1pe1.png" id="img73" >
+		<img src="1pe1.png" id="img74" >
+		<img src="1pe1.png" id="img75" >
+		<img src="1pe1.png" id="img76" >
+		<img src="1pe1.png" id="img77" >
+		<img src="1pe1.png" id="img78" >
+		<img src="1pe1.png" id="img79" >
+		<img src="1pe1.png" id="img80" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img81" >
+		<img src="1pe1.png" id="img82" >
+		<img src="1pe1.png" id="img83" >
+		<img src="1pe1.png" id="img84" >
+		<img src="1pe1.png" id="img85" >
+		<img src="1pe1.png" id="img86" >
+		<img src="1pe1.png" id="img87" >
+		<img src="1pe1.png" id="img88" >
+		<img src="1pe1.png" id="img89" >
+		<img src="1pe1.png" id="img90" >
+	</div>
+	<div>
+		<img src="1pe1.png" id="img91" >
+		<img src="1pe1.png" id="img92" >
+		<img src="1pe1.png" id="img93" >
+		<img src="1pe1.png" id="img94" >
+		<img src="1pe1.png" id="img95" >
+		<img src="1pe1.png" id="img96" >
+		<img src="1pe1.png" id="img97" >
+		<img src="1pe1.png" id="img98" >
+		<img src="1pe1.png" id="img99" >
+		<img src="1pe1.png" id="img100" >
+	</div>
+
+</div>
+<div>
+	<a style="font-size:50">Score:</a><a style="font-size:50" id="score"></a>
+</div>
+<div>
+	<a style="font-size:50">HighScore:</a><a style="font-size:50" id="highscore"></a>
+</div>
+</body>
+</html>
