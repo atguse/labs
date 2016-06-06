@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+div#tablajoc{
+        background:#CCC;
+        border:#999 1px solid;
+        width:800px;
+        height:540px;
+        padding:24px;
+        margin:0px auto;
+}
+div#tablajoc > div {
+        background: url(intrebare.jpg) no-repeat;
+        width:71px;
+        height:71px;
+        float:left;
+        margin:10px;
+        padding:20px;
+        font-size:64px;
+        cursor:pointer;
+        text-align:center;}
+</style>
+
+<script language="javascript" type="text/javascript">
+var memorievec = ['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8','9','9','10','10','11','11','12','12'];
+var memorievalori = [];
+var patratid = [];
+var intoarse = 0;
+Array.prototype.memorie_amesteca = function() {
+        var i = this.length, j, temp;
+        while(--i> 0 ){
+                j = Math.floor(Math.random() * (i+1));
+                temp = this[j];
+                this[j] = this[i];
+                this[i] = temp;}
+                }
+function tablanoua(){
+        intoarse=0;
+        var output = '';
+        memorievec.memorie_amesteca();
+        for (var i = 0; i < memorievec.length; i++)
+        {
+        output+= '<div id="tile_'+i+'" onclick="intoarcediv(this,\''+memorievec[i]+'\')"></div>';
+        }
+        document.getElementById('tablajoc').innerHTML = output;
+        }
+function intoarcediv(tile,val){
+        if(tile.innerHTML== "" && memorievalori.length<2){
+                tile.style.background= "url("+val+".jpg) no-repeat";
+                if(memorievalori.length == 0){
+                        memorievalori.push(val);
+                        patratid.push(tile.id);
+                } else if (memorievalori.length == 1){
+                        memorievalori.push(val);
+                        patratid.push(tile.id);
+                        if(memorievalori[0] == memorievalori[1]){
+                                intoarse +=2;
+                                memorievalori = [];
+                                patratid = [];
+                                if(intoarse == memorievec.length){
+                                        alert("Joc terminat.Generez tabla noua");
+                                        document.getElementById('tablajoc').innerHTML = "";
+                                        tablanoua();
+                                }
+                        } else {
+                                function intoarceinapoi(){
+                                        var patrat_1=document.getElementById(patratid[0]);
+                                        var patrat_2=document.getElementById(patratid[1]);
+                                        patrat_1.style.background = 'url(intrebare.jpg)no-repeat';
+                                        patrat_1.innerHTML="";
+                                        patrat_2.style.background = 'url(intrebare.jpg)no-repeat';
+                                        patrat_2.innerHTML="";
+                                        memorievalori=[];
+                                        patratid=[];
+                                } setTimeout(intoarceinapoi,650);
+                        }
+                }
+        }
+        }
+        
+</script>
+</head>
+
+<body>
+<div id = "tablajoc"></div>
+<script>
+tablanoua();
+</script>
+
+</body>
+</html>

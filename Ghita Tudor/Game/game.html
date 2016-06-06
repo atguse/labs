@@ -1,0 +1,261 @@
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <script type="application/javascript">
+  
+	var width = 800;
+	var height = 400;
+	
+	var enemyProjectileSpeed = 2;
+	
+	var gameOver = 0;
+	
+	var playerProjectiles = [];
+	var enemies = [];
+	var enemyProjectiles = [];
+  
+	var playerHead = {
+		x: 16,
+		y: 197
+	}
+		
+	var playerBody = {
+		x: 10,
+		y: 205
+	}
+      
+	var playerLeftHand = {
+		x: 4,
+		y: 205
+	}
+		
+	var playerRightHand = {
+		x: 30,
+		y: 205
+	}
+		
+	var playerLeftLeg = {
+		x: 14,
+		y: 225
+	}
+		
+	var playerRightLeg = {
+		x: 22,
+		y: 225
+	}
+	
+	function draw() {
+		
+		var canvas = document.getElementById("canvas");
+		  
+		if (canvas.getContext) {
+			  
+			var ctx = canvas.getContext("2d");
+			
+			ctx.fillStyle = "rgb(200,200,200)";
+			ctx.fillRect(0,0,800,400);
+			
+			ctx.fillStyle = "rgb(0,0,0)";
+			
+			ctx.beginPath();
+				ctx.rect(playerHead.x,playerHead.y,8,8);
+				ctx.rect(playerBody.x,playerBody.y,20,20);
+				ctx.rect(playerLeftHand.x,playerLeftHand.y,6,6);
+				ctx.rect(playerRightHand.x,playerRightHand.y,6,6);
+				ctx.rect(playerLeftLeg.x,playerLeftLeg.y,4,12);
+				ctx.rect(playerRightLeg.x,playerRightLeg.y,4,12);
+			ctx.fill();
+			
+			ctx.fillStyle = "rgb(255,0,0)";
+			
+			var i;
+			for (i=0;i<playerProjectiles.length;i++) {
+				if (playerProjectiles[i] != undefined) {
+					ctx.fillRect(playerProjectiles[i].x,playerProjectiles[i].y,3,3);
+				}
+			}
+			
+			ctx.fillStyle = "rgb(0,0,0)";
+			for (i=0;i<enemies.length;i++) {
+				if (enemies[i] != undefined) {
+					ctx.fillRect(enemies[i].x,enemies[i].y,5,10);
+					ctx.fillRect(enemies[i].x + 5,enemies[i].y - 10,10,30);
+					//ctx.fillRect(enemies[i].x + 15,enemies[i].y - 40,20,90);
+				}
+			}
+			
+			ctx.fillStyle = "rgb(255,255,0)";
+			for (i=0;i<enemyProjectiles.length;i++) {
+				if (enemyProjectiles[i] != undefined) {
+					ctx.fillRect(enemyProjectiles[i].x,enemyProjectiles[i].y,3,3);
+				}
+			}
+		}
+    }
+	
+	function gameInit() {
+		window.addEventListener("mousemove",function(event) {
+			var ms = playerBody.y + 20 - event.clientY;
+			if (playerHead.y - ms >= 0 && playerLeftLeg.y + 12 - ms <= height) {
+				playerHead.y -= ms;
+				playerBody.y -= ms;						
+				playerLeftHand.y -= ms;
+				playerRightHand.y -= ms;
+				playerLeftLeg.y -= ms;
+				playerRightLeg.y -= ms;
+			}
+		},false);
+		
+		window.addEventListener("click",function() {
+			var i;
+			var projectileCount = 0;
+			for (i=0;i<playerProjectiles.length;i++) {
+				if (playerProjectiles[i] != undefined) {
+					projectileCount++;
+				}
+			}
+			if (projectileCount > 4) return;
+			var projectile = {
+				x: playerRightHand.x + 6,
+				y: playerRightHand.y
+			}
+			playerProjectiles.push(projectile);
+		});
+		
+		gameLoop();
+	}
+	
+	function addEnemy() {
+		var enemyCount = 0;
+		var i;
+		for (i=0;i<enemies.length;i++) {
+			if (enemies[i] != undefined) {
+				enemyCount++;
+			}
+		}
+		if (enemyCount > 5) return;
+		
+		//var goodPosition = 0;
+		var newEnemy = {
+			x: width - 20,
+			y: parseInt((Math.random() * 1000)) % (height - 100) + 50,
+			cooldown: 50
+		}
+		for (i=0;i<enemies.length;i++)
+			if (enemies[i] != undefined) {
+				if (enemies[i].y + 20 > newEnemy.y) {
+					return;
+				}
+			}
+		enemies.push(newEnemy);
+	}
+	
+	function enemyAttack() {
+		var i;
+		for (i=0;i<enemies.length;i++) {
+			if (enemies[i] != undefined) {
+				if (enemies[i].cooldown == 0) {
+					var newProjectile = {
+						x: enemies[i].x,
+						y: enemies[i].y,
+						trajectorySlope: parseInt(((enemies[i].x - playerHead.x) / (playerBody.y + 10 - enemies[i].y))),
+						trajectoryManeuvre: 0
+					}
+					newProjectile.trajectoryManeuvre = Math.abs(newProjectile.trajectorySlope);
+					enemyProjectiles.push(newProjectile);
+					enemies[i].cooldown = 150;
+				}
+			}
+		}
+	}
+	
+	function checkKill() {
+		var i;
+		var j;
+		for (i=0;i<enemies.length;i++) {
+			if (enemies[i] != undefined) {
+				for (j=0;j<playerProjectiles.length;j++) {
+					if (playerProjectiles[j] != undefined) {
+						if (playerProjectiles[j].y <= enemies[i].y + 20 && playerProjectiles[j].y + 3 >= enemies[i].y - 10) {
+							if (playerProjectiles[j].x > enemies[i].x + 15) {
+								delete playerProjectiles[j];
+								delete enemies[i];
+								break;
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		for (i=0;i<enemyProjectiles.length;i++) {
+			if (enemyProjectiles[i] != undefined) {
+				if (enemyProjectiles[i].y > playerHead.y && enemyProjectiles[i].y < playerLeftLeg.y + 12) {
+					if (enemyProjectiles[i].x <= playerBody.x + 20)
+						gameOver = 1;
+				}
+			}
+		}
+	}
+	
+	function gameLoop() {
+		addEnemy();
+		enemyAttack();
+		checkKill();
+		gameUpdate();
+		draw();
+		if (gameOver == 0)
+			window.requestAnimationFrame(gameLoop);
+		else {
+			var go = document.getElementById("gameover");
+			go.innerHTML = "GAME OVER"
+			go.style = "color: red;";
+		}
+	}
+	
+	function gameUpdate() {
+		var i;
+		for (i=0;i<playerProjectiles.length;i++) {
+			if (playerProjectiles[i] != undefined) {
+				playerProjectiles[i].x += 3;
+				if (playerProjectiles[i].x > width) {
+					delete playerProjectiles[i];
+				}
+			}
+		}
+		
+		for (i=0;i<enemies.length;i++) {
+			if (enemies[i] != undefined) {
+				enemies[i].x -= 1;
+				enemies[i].cooldown--;
+				if (enemies[i].x + 15 <= 0)
+					delete enemies[i];
+			}
+		}
+		
+		for (i=0;i<enemyProjectiles.length;i++) {
+			if (enemyProjectiles[i] != undefined) {
+				enemyProjectiles[i].x -= enemyProjectileSpeed;
+				enemyProjectiles[i].trajectoryManeuvre -= enemyProjectileSpeed;
+				if (enemyProjectiles[i].trajectoryManeuvre <= 0) {
+					if (enemyProjectiles[i].trajectorySlope < 0) enemyProjectiles[i].y--;
+					if (enemyProjectiles[i].trajectorySlope > 0) enemyProjectiles[i].y++;
+					enemyProjectiles[i].trajectoryManeuvre = Math.abs(enemyProjectiles[i].trajectorySlope);
+				}
+			}
+		}
+		
+		for (i=0;i<enemyProjectiles.length;i++) {
+			if (enemyProjectiles[i] != undefined) {
+				if (enemyProjectiles[i].x < 0)
+					delete enemyProjectiles[i];
+			}
+		}
+	}
+  </script>
+ </head>
+ <body onload="gameInit()">
+   <canvas id="canvas" width="800" height="400"></canvas>
+   <h1 id="gameover"></h1>
+ </body>
+</html>

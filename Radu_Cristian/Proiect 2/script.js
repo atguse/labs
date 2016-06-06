@@ -69,7 +69,6 @@ var canvas = document.getElementById("myCanvas");
                         b.status = 0;
                         score++;
                         if(score%(brickRowCount*brickColumnCount) == 0) {
-                            //alert("YOU WIN, CONGRATS!");
                             localStorage.setItem('score', score.toString());
                             localStorage.setItem('lives', lives.toString());
                             document.location.reload();
@@ -82,14 +81,14 @@ var canvas = document.getElementById("myCanvas");
     function drawBall() {
         ctx.beginPath();
         ctx.arc(x, y, ballRadius, 0, Math.PI*2);
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#ffff00";
         ctx.fill();
         ctx.closePath();
     }
     function drawPaddle() {
         ctx.beginPath();
         ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#ffff00";
         ctx.fill();
         ctx.closePath();
     }
@@ -103,7 +102,7 @@ var canvas = document.getElementById("myCanvas");
                     bricks[c][r].y = brickY;
                     ctx.beginPath();
                     ctx.rect(brickX, brickY, brickWidth, brickHeight);
-                    ctx.fillStyle = "#0095DD";
+                    ctx.fillStyle = "#993300";
                     ctx.fill();
                     ctx.closePath();
                 }
@@ -112,12 +111,12 @@ var canvas = document.getElementById("myCanvas");
     }
     function drawScore() {
         ctx.font = "16px Arial";
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#000000";
         ctx.fillText("Score: "+score, 8, 20);
     }
     function drawLives() {
         ctx.font = "16px Arial";
-        ctx.fillStyle = "#0095DD";
+        ctx.fillStyle = "#000000";
         ctx.fillText("Lives: "+lives, canvas.width-65, 20);
     }
     function draw() {
@@ -145,7 +144,6 @@ var canvas = document.getElementById("myCanvas");
                     localStorage.removeItem('score');
                     localStorage.removeItem('lives');
                     document.location.reload();
-                    //clear();
                 }
                 else {
                     x = canvas.width/2;

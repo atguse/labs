@@ -121,6 +121,7 @@
     text-align: center;
     text-decoration: underline;
 }
+
 @media screen and (max-width:640px){
     .pmeniu{
       font-size:1.6em;
@@ -132,4 +133,36 @@
       font-size:2.2em;
       margin-right:2%;
     }
+}
+
+#buton{
+  position: relative;
+}
+
+#demo{
+
+  color:white;
+  position: relative;
+  width:70%;
+  height:auto;
+  margin-left: 20%;
+  border-style: outset;
+  border-width: 20px;
+  border-color: #404040;
+  background-color: #606060;
+  margin-top: -22px;
+}
+#demo2{
+  color:white;
+  position: relative;
+  width:70%;
+  height:auto;
+  margin-left: 20%;
+  border-style: inset;
+  border-width: 20px;
+  border-color: #404040;
+  background-color: #606060;
+  margin-top: -22px;
+
+
 }

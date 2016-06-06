@@ -14,7 +14,7 @@
 		function onLoadEvent(){
 			inputButton = document.getElementById("button1");
 			paragraph = document.getElementById("demo");
-			paragraph.onchange=function(){onChangeEvent();};
+			
 			/*
 				http://www.w3schools.com/jsref/met_document_addeventlistener.asp
 			*/
@@ -23,6 +23,7 @@
 		}
 		function onClickEvent()
 		{
+			paragraph.onchange=function(){onChangeEvent();};
 			cnt ++;
 			document.getElementById("demo").value = "You clicked the button " + cnt + " time(s)!";
 			inputButton.value = "click me again";
